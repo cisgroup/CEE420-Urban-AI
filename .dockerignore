@@ -1,0 +1,4 @@
+# image build needs only the environment definition
+*
+!pyproject.toml
+!uv.lock

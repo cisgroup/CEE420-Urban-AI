@@ -1,0 +1,19 @@
+# python
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+.ruff_cache/
+
+# your own work stays out of version control so `git pull` never conflicts
+*-mywork*
+work/
+
+# exports and OS noise
+*.html
+.DS_Store
+Thumbs.db
+
+# osmnx cache (A01 recipe cell)
+cache/

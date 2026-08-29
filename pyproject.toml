@@ -1,0 +1,38 @@
+[project]
+name = "urban-ai"
+version = "2026.9"
+description = "CEE420 Urban AI course environment, Princeton University, Fall 2026"
+requires-python = "==3.12.*"
+dependencies = [
+    # core geospatial stack (P01+)
+    "geopandas>=1.1,<2",
+    "pyogrio>=0.13,<1",
+    "shapely>=2.1,<3",
+    "pyproj>=3.7,<4",
+    "osmnx>=2.1,<3",
+    "folium>=0.20,<1",
+    "mapclassify>=2.9,<3",
+    "matplotlib>=3.10,<4",
+    # raster + ML additions for P02-P05 (first-half stack)
+    "rasterio>=1.4,<2",
+    "rioxarray>=0.19,<1",
+    "xarray>=2025.1",
+    "contextily>=1.6,<2",
+    "scikit-learn>=1.6,<2",
+    # notebooks
+    "ipykernel>=6",
+    "jupyterlab>=4",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8",
+    "nbmake>=1.5",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+addopts = "--nbmake"
+testpaths = ["tests", "P01", "A01"]

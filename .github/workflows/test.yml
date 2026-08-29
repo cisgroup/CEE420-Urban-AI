@@ -1,0 +1,19 @@
+name: test
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  pytest-in-image:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/cisgroup/cee420-urban-ai:fa26
+      options: --user root
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run the harness inside the student image
+        run: |
+          cd "$GITHUB_WORKSPACE"
+          /opt/venv/bin/python -m pytest -q

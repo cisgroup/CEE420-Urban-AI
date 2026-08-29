@@ -1,0 +1,23 @@
+{
+    "name": "CEE420 Urban AI (FA26)",
+    "image": "ghcr.io/cisgroup/cee420-urban-ai:fa26",
+    "init": true,
+    "remoteUser": "student",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-toolsai.jupyter"
+            ],
+            "settings": {
+                "python.defaultInterpreterPath": "/opt/venv/bin/python",
+                "jupyter.notebookFileRoot": "${fileDirname}"
+            }
+        }
+    },
+    "postAttachCommand": "cat .devcontainer/welcome.txt || true",
+    "hostRequirements": {
+        "cpus": 2,
+        "memory": "8gb"
+    }
+}

@@ -1,0 +1,39 @@
+{
+  "generated": "2026-08-29",
+  "crs": {
+    "data": "EPSG:4326",
+    "meters": "EPSG:26918",
+    "nj_feet": "EPSG:3424"
+  },
+  "walk_radius_m": 400,
+  "boundary": {
+    "area_km2": 47.66,
+    "total_bounds": [
+      -74.7221,
+      40.3049,
+      -74.6175,
+      40.3911
+    ]
+  },
+  "mystery": {
+    "area_km2": 7.96,
+    "total_bounds": [
+      -81.1228,
+      37.3512,
+      -81.0683,
+      37.3881
+    ]
+  },
+  "counts": {
+    "buildings": 7893,
+    "food": 92
+  },
+  "duel": {
+    "food_within_400m_of_e225": 20
+  },
+  "stretch": {
+    "buildings_within_400m_of_dinky": 105,
+    "largest_building_ft2": 206051,
+    "largest_building_name": null
+  }
+}

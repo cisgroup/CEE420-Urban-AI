@@ -1,0 +1,8 @@
+
+  CEE420 Urban AI, your environment is running.
+
+  Next step: open P01/00-check.ipynb and click Run All.
+  When asked for a kernel, pick "Urban AI (Python 3.12)".
+
+  Your environment is set up when Princeton appears.
+
