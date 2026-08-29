@@ -39,3 +39,21 @@ def test_osm_files_carry_attribution():
 
 def test_landmarks_inside_boundary(landmarks, boundary):
     assert landmarks.within(boundary.geometry.iloc[0]).all()
+
+
+def test_notebook_reference_numbers_match_the_data(ground_truth):
+    """Numbers quoted in the notebook prose must not drift from the shipped data.
+
+    The pipeline's promise is that no published number is hand-typed. The mystery-file
+    markdown and the break-glass comment quote the boundary area and bounds, so they
+    are the one place that promise could silently break.
+    """
+    import json as _json
+
+    nb = _json.loads((Path(__file__).resolve().parents[1] / "P01" / "01-first-map.ipynb").read_text())
+    prose = "\n".join("".join(c["source"]) for c in nb["cells"] if c["cell_type"] == "markdown")
+
+    area = str(ground_truth["boundary"]["area_km2"])
+    assert area in prose, f"notebook prose no longer quotes the real area {area}"
+    for value in ground_truth["boundary"]["total_bounds"][:2]:
+        assert str(value) in prose, f"notebook prose no longer quotes the bound {value}"
