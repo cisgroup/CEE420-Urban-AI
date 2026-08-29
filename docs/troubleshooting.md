@@ -87,11 +87,11 @@ Read the last line of the message first; that is the actual error. Then hand it 
 error text and one question: what was wrong, in one line? Debugging with an agent is a skill this
 course wants you to practise, not something to feel bad about.
 
-### The interactive map is blank or the editor freezes
+### The interactive map is blank or very slow
 
 Interactive maps draw every feature into the page. The boundary and the food points are small enough;
-all 7,893 buildings are not. If you asked for too much, close the notebook without saving, reopen it,
-and filter your data first.
+all 7,893 buildings are about 3 MB of geometry and will crawl. If you asked for too much, close the
+notebook without saving, reopen it, and filter your data first.
 
 Interactive maps also need internet for their background tiles. If the campus wifi is unhappy, use
 `.plot()` instead of `.explore()` and carry on; nothing in the course depends on the pretty version.
