@@ -36,15 +36,19 @@ You need one here, unlike the local path.
 3. A new tab opens with VS Code in your browser. The first start takes two or three minutes while it
    pulls the course environment. Later starts take seconds.
 
-[SCREENSHOT: cs-01-code-button.png, the green Code button with the Codespaces tab open]
-[SCREENSHOT: cs-02-codespace-loading.png, the browser VS Code while the container starts]
+<!-- SCREENSHOT: cs-01-code-button.png, the green Code button with the Codespaces tab open -->
+<!-- SCREENSHOT: cs-02-codespace-loading.png, the browser VS Code while the container starts -->
 
 ### 3. Prove it works
 
 1. In the file list on the left, open `P01` and click `00-check.ipynb`.
 2. Click **Run All**.
 3. If asked for a kernel, choose **Urban AI (Python 3.12)**.
-4. A map of Princeton should appear, followed by a green READY line.
+4. A map of Princeton should appear, and under it a line beginning with a green check mark:
+   `✅ READY, your environment works.`
+
+You will not need any other Jupyter skill today. To run a single cell later in class, click it and
+press `Shift+Enter`. To add your own cell, hover below an existing one and click `+ Code`.
 
 **Your environment is set up when Princeton appears.** Reply DONE in the Canvas thread and say that
 you are on the Codespaces lane, so we know to look after you differently in class.

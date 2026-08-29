@@ -1,7 +1,7 @@
 # CEE420 Urban AI, course code
 
 Princeton University, Fall 2026. Everything we run together in the Wednesday precepts lives here.
-Each week adds a folder. You get the new material with one `git pull`.
+Each week adds a folder. You get the new material with one click in GitHub Desktop.
 
 | Folder | Session |
 |---|---|

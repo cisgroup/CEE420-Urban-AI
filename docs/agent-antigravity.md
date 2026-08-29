@@ -30,7 +30,7 @@ signed-in account per pair is enough.
    with your personal Google account and come back to VS Code.
 
 ![The Google Antigravity extension in the marketplace](img/agent-01-marketplace.png)
-[SCREENSHOT: agent-02-signed-in.png, the Antigravity panel after a successful sign-in]
+<!-- SCREENSHOT: agent-02-signed-in.png, the Antigravity panel after a successful sign-in -->
 
 ## How we use it in class
 
@@ -43,6 +43,20 @@ Two windows, one folder. It sounds odd for about a minute and then feels natural
 Both windows look at the same files on your disk, so code the agent writes is immediately visible to
 the notebook side. In practice you will ask the agent for a piece of code, read it, and paste it into
 your notebook cell, which is exactly the workflow we are practising: specify, delegate, verify.
+
+**One thing to know before you start.** The course packages live inside the container, not on your
+laptop, so the agent's own window cannot run this code. If you let it try, it will hit
+`ModuleNotFoundError: geopandas` and may then offer to install things on your machine. Do not let it.
+Nothing needs installing, and an agent reorganising your laptop's Python is a bad afternoon. Say so in
+the request itself, which is why the printed template ends with:
+
+```text
+Write the code only. Do not run it, do not install anything, and do not
+change my environment. I will run it myself in the notebook.
+```
+
+That line is not politeness. It is the difference between a tool that helps you and a tool that
+wanders off.
 
 To open the second window on the same folder: **File > New Window**, then **File > Open Folder** and
 pick the same `CEE420-Urban-AI` folder GitHub Desktop cloned for you.

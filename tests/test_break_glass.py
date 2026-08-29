@@ -17,16 +17,26 @@ def fenced_blocks():
             yield from FENCE.findall("".join(cell["source"]))
 
 
-def test_break_glass_solutions_run_and_are_right(ground_truth):
+def test_break_glass_solutions_run(ground_truth):
+    """The appendix code must execute against the shipped data.
+
+    Whether it produces the *right* number is asserted instructor-side, in
+    data/scripts/verify_answers.py, because the answer must not ship to students.
+    """
     blocks = list(fenced_blocks())
     assert len(blocks) >= 2, "expected at least the checks solution and the Duel solution"
     cwd = os.getcwd()
     os.chdir(REPO / "P01")
     try:
+        produced = []
         for block in blocks:
             namespace: dict = {}
             exec(block, namespace)  # noqa: S102
             if "answer" in namespace:
-                assert namespace["answer"] == ground_truth["duel"]["food_within_400m_of_e225"]
+                produced.append(namespace["answer"])
+        assert produced, "the Duel solution should bind a variable named answer"
+        for answer in produced:
+            assert isinstance(answer, int)
+            assert 0 < answer < ground_truth["counts"]["food"]
     finally:
         os.chdir(cwd)

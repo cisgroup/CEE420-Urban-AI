@@ -21,7 +21,7 @@ Click the Apple menu in the top left, then **About This Mac**. Look at the line 
 
 You need this once, in step 3. Everything else is identical.
 
-[SCREENSHOT: mac-01-about-this-mac.png, the About This Mac window with the chip line visible]
+<!-- SCREENSHOT: mac-01-about-this-mac.png, the About This Mac window with the chip line visible -->
 
 ## 2. Install VS Code
 
@@ -49,7 +49,7 @@ every package we use. You will never have to install a Python package by hand in
    window says **Engine running**.
 
 ![The Docker Desktop download page](img/mac-03-docker-download.png)
-[SCREENSHOT: mac-04-docker-running.png, Docker Desktop showing Engine running, bottom left]
+<!-- SCREENSHOT: mac-04-docker-running.png, Docker Desktop showing Engine running, bottom left -->
 
 **Leave Docker running before class.** It starts on login by default. If the whale is not in your menu
 bar, Docker is not running, and the next steps will fail with a confusing message.
@@ -67,7 +67,7 @@ bar, Docker is not running, and the next steps will fail with a confusing messag
 4. Note the **Local path** it offers, something like `~/Documents/GitHub/CEE420-Urban-AI`. That is
    where the course code now lives. Click **Clone**.
 
-[SCREENSHOT: mac-05-github-desktop-clone.png, the Clone a repository dialog with the URL filled in]
+<!-- SCREENSHOT: mac-05-github-desktop-clone.png, the Clone a repository dialog with the URL filled in -->
 
 ## 5. Connect VS Code to Docker
 
@@ -90,8 +90,8 @@ several minutes the first time. It happens exactly once; every later start takes
    reading **Dev Container: CEE420 Urban AI (FA26)**. That green label is how you know you are inside
    the course environment rather than on your bare Mac.
 
-[SCREENSHOT: mac-07-reopen-in-container.png, the Reopen in Container notification]
-[SCREENSHOT: mac-08-container-connected.png, the green Dev Container label, bottom left]
+<!-- SCREENSHOT: mac-07-reopen-in-container.png, the Reopen in Container notification -->
+<!-- SCREENSHOT: mac-08-container-connected.png, the green Dev Container label, bottom left -->
 
 ## 7. Prove it works
 
@@ -99,10 +99,14 @@ several minutes the first time. It happens exactly once; every later start takes
 2. Click **Run All** in the toolbar above the notebook.
 3. If VS Code asks you to select a kernel, choose **Urban AI (Python 3.12)**. If it offers several
    options, that is the one; ignore anything mentioning your Mac's own Python.
-4. A map of Princeton should appear, followed by a green READY line.
+4. A map of Princeton should appear, and under it a line beginning with a green check mark:
+   `✅ READY, your environment works.`
 
-[SCREENSHOT: mac-09-select-kernel.png, the kernel picker with Urban AI (Python 3.12) highlighted]
-[SCREENSHOT: mac-10-princeton-appears.png, the rendered Princeton boundary and the READY message]
+<!-- SCREENSHOT: mac-09-select-kernel.png, the kernel picker with Urban AI (Python 3.12) highlighted -->
+<!-- SCREENSHOT: mac-10-princeton-appears.png, the rendered Princeton boundary and the READY message -->
+
+You will not need any other Jupyter skill today. To run a single cell later in class, click it and
+press `Shift+Enter`. To add your own cell, hover below an existing one and click `+ Code`.
 
 **Your environment is set up when Princeton appears.** Reply DONE in the Canvas thread.
 

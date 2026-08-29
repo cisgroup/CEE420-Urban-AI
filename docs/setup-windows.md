@@ -22,7 +22,7 @@ worth more than an hour of fighting it alone, and we have a clinic for exactly t
 **Virtualization.** In the same Performance tab, click **CPU** and look at the bottom right for
 **Virtualization**. It should say **Enabled**.
 
-[SCREENSHOT: win-01-task-manager-virtualization.png, Task Manager CPU page with Virtualization: Enabled]
+<!-- SCREENSHOT: win-01-task-manager-virtualization.png, Task Manager CPU page with Virtualization: Enabled -->
 
 If it says Disabled, it must be switched on in your computer's firmware, which is a menu that appears
 before Windows starts:
@@ -58,7 +58,7 @@ moment to let it run.
    wsl --update
    ```
 
-[SCREENSHOT: win-02-wsl-install.png, PowerShell running wsl --install successfully]
+<!-- SCREENSHOT: win-02-wsl-install.png, PowerShell running wsl --install successfully -->
 
 If Windows opens an Ubuntu window asking for a username and password, you may close it. The course
 does not need it, though setting one does no harm.
@@ -82,8 +82,8 @@ every package we use. You will never have to install a Python package by hand in
 5. You may skip the sign-in it suggests. **You do not need a Docker account for this course.**
 6. Wait until the Docker Desktop window says **Engine running** in the bottom left.
 
-[SCREENSHOT: win-04-docker-wsl2-option.png, the installer with the WSL 2 checkbox ticked]
-[SCREENSHOT: win-05-docker-running.png, Docker Desktop showing Engine running]
+<!-- SCREENSHOT: win-04-docker-wsl2-option.png, the installer with the WSL 2 checkbox ticked -->
+<!-- SCREENSHOT: win-05-docker-running.png, Docker Desktop showing Engine running -->
 
 **Leave Docker running before class.** If Docker Desktop is closed, the next steps fail with a
 confusing message about a daemon.
@@ -102,7 +102,7 @@ confusing message about a daemon.
    Keep it in your user folder; do not put it on a network drive or in OneDrive, which cause odd
    permission problems later. Click **Clone**.
 
-[SCREENSHOT: win-06-github-desktop-clone.png, the Clone a repository dialog with the URL filled in]
+<!-- SCREENSHOT: win-06-github-desktop-clone.png, the Clone a repository dialog with the URL filled in -->
 
 ## 6. Connect VS Code to Docker
 
@@ -110,7 +110,7 @@ confusing message about a daemon.
 2. Click the **Extensions** icon in the left bar (four squares, one detached).
 3. Search for `Dev Containers`, the one published by Microsoft, and click **Install**.
 
-[SCREENSHOT: win-07-devcontainers-extension.png, the Dev Containers extension page inside VS Code]
+<!-- SCREENSHOT: win-07-devcontainers-extension.png, the Dev Containers extension page inside VS Code -->
 
 ## 7. Open the course in its container
 
@@ -123,8 +123,8 @@ minutes the first time. It happens exactly once; every later start takes seconds
 3. Watch the bottom left corner. It ends up reading **Dev Container: CEE420 Urban AI (FA26)**. That
    green label is how you know you are inside the course environment rather than on bare Windows.
 
-[SCREENSHOT: win-08-reopen-in-container.png, the Reopen in Container notification]
-[SCREENSHOT: win-09-container-connected.png, the green Dev Container label, bottom left]
+<!-- SCREENSHOT: win-08-reopen-in-container.png, the Reopen in Container notification -->
+<!-- SCREENSHOT: win-09-container-connected.png, the green Dev Container label, bottom left -->
 
 ## 8. Prove it works
 
@@ -132,10 +132,14 @@ minutes the first time. It happens exactly once; every later start takes seconds
 2. Click **Run All** in the toolbar above the notebook.
 3. If VS Code asks you to select a kernel, choose **Urban AI (Python 3.12)**. Ignore anything
    mentioning a Python on your own Windows.
-4. A map of Princeton should appear, followed by a green READY line.
+4. A map of Princeton should appear, and under it a line beginning with a green check mark:
+   `✅ READY, your environment works.`
 
-[SCREENSHOT: win-10-select-kernel.png, the kernel picker with Urban AI (Python 3.12) highlighted]
-[SCREENSHOT: win-11-princeton-appears.png, the rendered Princeton boundary and the READY message]
+<!-- SCREENSHOT: win-10-select-kernel.png, the kernel picker with Urban AI (Python 3.12) highlighted -->
+<!-- SCREENSHOT: win-11-princeton-appears.png, the rendered Princeton boundary and the READY message -->
+
+You will not need any other Jupyter skill today. To run a single cell later in class, click it and
+press `Shift+Enter`. To add your own cell, hover below an existing one and click `+ Code`.
 
 **Your environment is set up when Princeton appears.** Reply DONE in the Canvas thread.
 
