@@ -36,8 +36,10 @@ before Windows starts:
 
 If you cannot find it, do not force it. Use Codespaces and tell us which laptop model you have.
 
-**Windows version.** Press `Win+R`, type `winver`, press Return. Windows 11 is ideal. Windows 10 must
-be version 22H2. Older versions will not run Docker; use Codespaces.
+**Windows version.** Press `Win+R`, type `winver`, press Return. Docker needs Windows 11 version 23H2
+or newer, or Windows 10 version 22H2. Anything older will not run it, so use
+[Codespaces](setup-codespaces.md) instead. If Windows Update has been waiting for you, this is the
+moment to let it run.
 
 ## 2. Install WSL2
 
