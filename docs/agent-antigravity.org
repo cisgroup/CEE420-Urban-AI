@@ -35,15 +35,14 @@ You will see it as a small icon in the left activity bar once the container has 
 #+ATTR_LATEX: :width \linewidth :float nil
 [[file:img/shared-agent-extension.png]]
 
-* What you do need: a personal Google account
-One thing is yours to arrange. Antigravity's free tier works with a *personal Google account*, an =@gmail.com= address. University Workspace accounts are not supported on this tier, so your =@princeton.edu= address will not sign in. Making a free personal account for the course is entirely fine and takes two minutes.
+* Signing in is all you need
+Sign in with your *Princeton Google account*, the one behind your @princeton.edu address. It works, and it is the account to use.
 
 Free tier, as of the start of the semester: unlimited completions and basic weekly rate limits, with access to current Gemini and Claude models. The limits are per person, so in class you will work in pairs and one signed-in account per pair is plenty.
 
-* Signing in
 1. Click the Antigravity icon in the left activity bar.
 2. Click *Sign In*. Your browser opens.
-3. Sign in with your personal Google account, then come back to VS Code.
+3. Sign in with your Princeton Google account, then come back to VS Code.
 
 Do this before Wednesday, not during class. It is the one step that needs a browser, an account, and your patience all at once.
 
@@ -74,7 +73,7 @@ The constraint about packages matters. The environment is pinned so that twelve 
 [[file:img/shared-agent-working.png]]
 
 * When it does not work
-- *Sign-in fails with your Princeton address*: expected, use a personal =@gmail.com= account.
+- *Sign-in will not complete*: try once more in a browser where you are already signed in to your Princeton account. If it still refuses, a personal Google account works too, and either is fine for this course.
 - *The icon is missing*: the container is probably still starting, or you are in a plain VS Code window. Check the bottom left corner for the blue *Dev Container: CEE420 Urban AI (FA26)* label.
 - *You hit a rate limit mid-session*: pair up, one working account per pair is all we need.
 - *Nothing works on your machine at all*: you are still fine. Bring the written specification to class and use any chat assistant in a browser tab. That path is fully supported, and A01 explicitly accepts an honest "I tried, it failed, here is how I did it by hand".
