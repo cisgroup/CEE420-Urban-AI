@@ -17,3 +17,11 @@ Thumbs.db
 
 # osmnx cache (A01 recipe cell)
 cache/
+
+# LaTeX build artifacts (PDFs are distributed via Canvas, not here)
+*.tex
+*.pdf
+*.aux
+*.log
+*.out
+*.toc
