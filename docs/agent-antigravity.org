@@ -7,8 +7,8 @@
 #+OPTIONS: toc:nil
 #+OPTIONS: num:nil
 #+OPTIONS: tags:nil
-#+TITLE: Urban AI
-#+SUBTITLE: Your coding agent
+#+TITLE: Your Coding Agent
+#+SUBTITLE: CEE420 Urban AI
 #+AUTHOR: Jürgen Hackl
 #+EMAIL: <hackl@princeton.edu>
 

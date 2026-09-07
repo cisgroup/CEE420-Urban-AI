@@ -7,8 +7,8 @@
 #+OPTIONS: toc:nil
 #+OPTIONS: num:nil
 #+OPTIONS: tags:nil
-#+TITLE: Urban AI
-#+SUBTITLE: Setup on Windows
+#+TITLE: Setup on Windows
+#+SUBTITLE: CEE420 Urban AI
 #+AUTHOR: Jürgen Hackl
 #+EMAIL: <hackl@princeton.edu>
 

@@ -7,8 +7,8 @@
 #+OPTIONS: toc:nil
 #+OPTIONS: num:nil
 #+OPTIONS: tags:nil
-#+TITLE: Urban AI
-#+SUBTITLE: CEE420 Urban AI, course code
+#+TITLE: CEE420 Urban AI, Course Code
+#+SUBTITLE: CEE420 Urban AI
 #+AUTHOR: Jürgen Hackl
 #+EMAIL: <hackl@princeton.edu>
 
