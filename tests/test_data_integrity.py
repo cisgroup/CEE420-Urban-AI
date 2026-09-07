@@ -68,8 +68,11 @@ def test_notebook_area_claims_match_the_shipped_data(ground_truth):
         code = "\n".join("".join(c["source"]) for c in cells if c["cell_type"] == "code")
         reads_the_file |= "ground_truth.json" in code
 
-        # A notebook that loads the impostor is comparing two towns on purpose, so a
-        # second, different area is the whole point of it.
+        # Only claims about our own town are policed. A notebook that never loads the
+        # boundary is measuring something else (a buffer, a building), and one that
+        # loads the impostor is comparing two towns on purpose.
+        if "princeton_boundary.geojson" not in code:
+            continue
         teaches_the_impostor = "mystery_boundary.geojson" in code
         for match in claim.finditer(prose):
             quoted = match.group(1)
