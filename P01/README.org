@@ -12,18 +12,18 @@ Python, maps, and your coding agent. The notebooks are numbered and meant to be 
 
 The first four are what we run together in class. The rest are self-paced: each one takes something the class used quickly and explains it properly, and none of them is assessed.
 
-| Notebook | What it covers | Time |
-|----------+----------------+------|
-| =01_01_environment_check= | One button, and a map of Princeton, to prove your setup works | 10 min |
-| =01_02_a_first_map_of_princeton= | Reading spatial files, what a GeoDataFrame is, drawing layers, a map you can click | 30 min |
-| =01_03_is_this_the_right_princeton= | The three checks that decide whether to believe a dataset, run on one that is lying | 25 min |
-| =01_04_the_walk_radius_duel= | Answering a real question by hand, then delegating it to an agent and auditing the answer | 35 min |
-|----------+----------------+------|
-| =01_05_inside_a_geodataframe= | Rows, columns, categories, and what 95 percent missing names tells you | 35 min |
-| =01_06_coordinate_reference_systems= | Why degrees are not distances, and the same walk measured four ways | 40 min |
-| =01_07_buffers_within_and_intersects= | What a buffer really is, and the one word missing from most reports | 30 min |
-| =01_08_reading_a_map_you_drew= | Improving a plot deliberately, and naming the artefacts that are not bugs | 30 min |
-| =01_09_three_places_three_radii= | Asking the question twelve times, and finding that the threshold does the work | 25 min |
+| Notebook | What it covers |
+|----------+----------------|
+| =01_01_environment_check= | One button, and a map of Princeton, to prove your setup works |
+| =01_02_a_first_map_of_princeton= | Reading spatial files, what a GeoDataFrame is, drawing layers, a map you can click |
+| =01_03_is_this_the_right_princeton= | The three checks that decide whether to believe a dataset, run on one that is lying |
+| =01_04_the_walk_radius_duel= | Answering a real question by hand, then delegating it to an agent and auditing the answer |
+|----------+----------------|
+| =01_05_inside_a_geodataframe= | Rows, columns, categories, and what 95 percent missing names tells you |
+| =01_06_coordinate_reference_systems= | Why degrees are not distances, and the same walk measured four ways |
+| =01_07_buffers_within_and_intersects= | What a buffer really is, and the one word missing from most reports |
+| =01_08_reading_a_map_you_drew= | Improving a plot deliberately, and naming the artefacts that are not bugs |
+| =01_09_three_places_three_radii= | Asking the question twelve times, and finding that the threshold does the work |
 
 If you have never programmed, work through the =F00= folder first, or alongside. Nothing in these notebooks assumes more than it covers.
 

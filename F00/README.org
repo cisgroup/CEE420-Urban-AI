@@ -12,18 +12,18 @@ This folder is the on-ramp. It assumes you have never programmed, it is not mark
 
 Everything here uses the same Princeton data you meet in the precepts, so nothing you learn is thrown away. You never count items in a made-up list; you count 92 real restaurants.
 
-| Notebook | What it covers | Time |
-|----------+----------------+------|
-| =00_01_notebooks_and_kernels= | What a cell is, how to run one, and why the notebook and the kernel behind it can disagree | 20 min |
-| =00_02_variables_and_values= | Naming things, the four kinds of value, and why the kind matters | 20 min |
-| =00_03_calling_functions= | Calls, arguments, methods, and the mistake that produces no error | 20 min |
-| =00_04_lists_and_loops= | Holding many things, going through them, and deciding as you go | 25 min |
-| =00_05_tables_with_pandas= | Reading a table, choosing rows, counting, and finding what is missing | 30 min |
-| =00_06_coordinates_as_numbers= | Making a map out of two number columns, and the argument order that silently ruins it | 25 min |
-| =00_07_reading_errors= | The five errors you will actually meet, and what to send when you are stuck | 25 min |
-| =00_08_working_with_an_agent= | Specifying work you delegate, and auditing what comes back | 20 min |
+| Notebook | What it covers |
+|----------+----------------|
+| =00_01_notebooks_and_kernels= | What a cell is, how to run one, and why the notebook and the kernel behind it can disagree |
+| =00_02_variables_and_values= | Naming things, the four kinds of value, and why the kind matters |
+| =00_03_calling_functions= | Calls, arguments, methods, and the mistake that produces no error |
+| =00_04_lists_and_loops= | Holding many things, going through them, and deciding as you go |
+| =00_05_tables_with_pandas= | Reading a table, choosing rows, counting, and finding what is missing |
+| =00_06_coordinates_as_numbers= | Making a map out of two number columns, and the argument order that silently ruins it |
+| =00_07_reading_errors= | The five errors you will actually meet, and what to send when you are stuck |
+| =00_08_working_with_an_agent= | Specifying work you delegate, and auditing what comes back |
 
-About three hours in total, and you do not have to do it in one sitting or in one week.
+You do not have to do these in one sitting or in one week.
 
 Start with =00_01=. If you read only one notebook before the first precept, read that one: it prevents the confusion that otherwise costs people an evening in week three.
 
