@@ -27,7 +27,7 @@ Rules of the house. *Two minutes, then switch lanes*: if something will not work
 
 * Getting the code, and keeping your own work
 ** The one habit that prevents all git pain
-Before editing any notebook, *File > Save As* and put =-mywork= in the name: =01-first-map-mywork.ipynb=. Files with =-mywork= are ignored by git. Your work is yours, and a pull can never overwrite it or refuse to run.
+Before editing any notebook, *File > Save As* and put =-mywork= in the name: =01_02-mywork.ipynb=. Files with =-mywork= are ignored by git. Your work is yours, and a pull can never overwrite it or refuse to run.
 
 ** "Pull origin" is greyed out or nothing happens
 You are already up to date, or GitHub Desktop is pointed at a different repository. Check the repository name in the top left.

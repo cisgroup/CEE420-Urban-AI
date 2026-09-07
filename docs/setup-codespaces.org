@@ -48,12 +48,14 @@ You need one here, unlike the local path.
 # SCREENSHOT: cs-01-code-button.png, the green Code button with the Codespaces tab open
 
 ** 3. Prove it works
-1. In the file list on the left, open =P01= and click =00-check.ipynb=.
+1. In the file list on the left, open =P01= and click =01_01_environment_check.ipynb=.
 2. Click *Run All*.
 3. If asked which Python environment to use, pick the one marked *Recommended*, at =/opt/venv/bin/python=.
 4. A map of Princeton should appear, and under it a line beginning with a green check mark: =✅ READY, your environment works.=
 
 You will not need any other Jupyter skill today. To run a single cell later in class, click it and press =Shift+Enter=. To add your own cell, hover below an existing one and click =+ Code=.
+
+If you have never programmed, there is one more thing worth doing before Wednesday. Open =F00/00_01_notebooks_and_kernels.ipynb= in the same repository and work through it. It takes twenty minutes, it assumes nothing, and it explains what a notebook and a kernel actually are, which is the thing that otherwise confuses people in week three.
 
 *Your environment is set up when Princeton appears.* Reply DONE in the Canvas thread and say that you are on the Codespaces lane, so we know to look after you differently in class.
 

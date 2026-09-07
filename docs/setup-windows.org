@@ -139,12 +139,14 @@ This step downloads the environment, roughly 1 to 2 GB, so do it on decent wifi 
 [[file:img/shared-workspace-trust.png]]
 
 * 8. Prove it works
-1. In the file list on the left, open the =P01= folder and click =00-check.ipynb=.
+1. In the file list on the left, open the =P01= folder and click =01_01_environment_check.ipynb=.
 2. Click *Run All* in the toolbar above the notebook.
 3. VS Code asks which Python environment to use. Pick the one marked *Recommended*, whose path is =/opt/venv/bin/python=. It is named after the course, =urban-ai=; ignore anything mentioning a Python on your own Windows.
 4. A map of Princeton should appear, and under it a line beginning with a green check mark: =✅ READY, your environment works.=
 
 You will not need any other Jupyter skill today. To run a single cell later in class, click it and press =Shift+Enter=. To add your own cell, hover below an existing one and click =+ Code=.
+
+If you have never programmed, there is one more thing worth doing before Wednesday. Open =F00/00_01_notebooks_and_kernels.ipynb= in the same repository and work through it. It takes twenty minutes, it assumes nothing, and it explains what a notebook and a kernel actually are, which is the thing that otherwise confuses people in week three.
 
 *Your environment is set up when Princeton appears.* Reply DONE in the Canvas thread.
 
@@ -161,7 +163,7 @@ Every Wednesday brings a new folder. To get it:
 2. Make sure *CEE420-Urban-AI* is the current repository, top left.
 3. Click *Pull origin*.
 
-One rule keeps this painless: *before you edit any notebook, save your own copy* with File > Save As and =-mywork= in the name, for example =01-first-map-mywork.ipynb=. Your copies are invisible to git, so a pull can never overwrite your work or refuse to run.
+One rule keeps this painless: *before you edit any notebook, save your own copy* with File > Save As and =-mywork= in the name, for example =01_02-mywork.ipynb=. Your copies are invisible to git, so a pull can never overwrite your work or refuse to run.
 
 If something does go wrong, [[file:troubleshooting.org][docs/troubleshooting.org]] has the two-minute fix.
 

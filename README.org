@@ -23,10 +23,15 @@
 
 Princeton University, Fall 2026. Everything we run together in the Wednesday precepts lives here. Each week adds a folder. You get the new material with one click in GitHub Desktop.
 
-| Folder | Session                                                         |
-|--------+-----------------------------------------------------------------|
+| Folder | What is in it                                                    |
+|--------+------------------------------------------------------------------|
+| =F00/= | Python foundations, self-study, start here if you have never programmed |
 | =P01/= | Getting Started: Python, Maps & Your Coding Agent (Wed Sep 9)   |
 | =A01/= | Assignment 01: Your Town, Your Agent, Your Map (due Wed Sep 23) |
+
+The precept notebooks are numbered and meant to be read in order. The first few in each folder are what we run together in class; the rest are self-contained continuations you work through at your own pace, and they explain properly whatever the class used quickly.
+
+If you have never programmed, open =F00/00_01_notebooks_and_kernels.ipynb= first. It takes twenty minutes and it prevents the one confusion that otherwise costs people an evening.
 
 * Before the first precept
 Do this at home, not in class. The downloads are large and the campus wifi is not.
@@ -40,7 +45,7 @@ No laptop that can run a browser is out of the game: if the local install fights
 * Working in this repository
 Your environment is set up when Princeton appears.
 
-- *Before you edit a notebook, make it yours*: File > Save As, add =-mywork= to the name (=01-first-map-mywork.ipynb=). Files named =-mywork= are ignored by git, so your work is yours and =git pull= will never overwrite it or refuse to run.
+- *Before you edit a notebook, make it yours*: File > Save As, add =-mywork= to the name (=01_02-mywork.ipynb=). Files named =-mywork= are ignored by git, so your work is yours and =git pull= will never overwrite it or refuse to run.
 - *Getting each week's code*: open GitHub Desktop, select this repository, click *Pull origin*. New folders appear; nothing you wrote is touched.
 - *If a pull ever complains*, see [[file:docs/troubleshooting.org]]. The short version: save your file under a =-mywork= name, then discard changes to the original.
 
