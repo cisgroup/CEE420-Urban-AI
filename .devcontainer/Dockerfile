@@ -16,6 +16,14 @@ RUN apt-get update \
  && useradd -m -u 1000 -s /bin/bash student \
  && mkdir -p /opt/mplcache && chmod 777 /opt/mplcache
 
+# Debian's /etc/profile overwrites PATH rather than appending to it, so a LOGIN shell
+# (bash -l, or a terminal profile configured with -l) throws away the /opt/venv/bin set
+# above and finds the system python, which has none of the course packages. VS Code's
+# default terminal is not a login shell and is unaffected, but anyone who opens one gets
+# an inexplicable ModuleNotFoundError. profile.d is sourced after that reset, so putting
+# the venv back here covers both kinds of shell.
+RUN printf 'PATH=/opt/venv/bin:$PATH\n' > /etc/profile.d/10-venv-path.sh
+
 # Dependencies come ONLY from the two source-of-truth files; --locked fails on a stale lock.
 COPY pyproject.toml uv.lock /opt/project/
 WORKDIR /opt/project
