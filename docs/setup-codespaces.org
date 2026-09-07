@@ -43,15 +43,30 @@ You need one here, unlike the local path.
 ** 2. Create your Codespace
 1. Go to [[https://github.com/cisgroup/CEE420-Urban-AI]].
 2. Click the green *Code* button, choose the *Codespaces* tab, then *Create codespace on main*.
-3. A new tab opens with VS Code in your browser. The first start takes two or three minutes while it pulls the course environment. Later starts take seconds.
 
-# SCREENSHOT: cs-01-code-button.png, the green Code button with the Codespaces tab open
+#+ATTR_LATEX: :width \linewidth :float nil
+[[file:img/codespace-button.png]]
+
+A new tab opens with VS Code in your browser and starts building. The first start takes two or three minutes while it pulls the course environment, and you will see /Setting up remote connection: Building codespace/ along the bottom. Later starts take seconds. Leave the tab alone until it finishes.
+
+#+ATTR_LATEX: :width \linewidth :float nil
+[[file:img/codespace-loading.png]]
+
+When it is ready the file list fills in on the left, a terminal opens at the bottom, and the bottom left corner shows the name your Codespace was given, something like /Codespaces: turbo xylophone/. The names are randomly generated and mean nothing.
+
+#+ATTR_LATEX: :width \linewidth :float nil
+[[file:img/codespace-start.png]]
+
+Note that this corner reads *Codespaces*, not *Dev Container*. The rest of the course documentation tells you to look for a =Dev Container= label, because that is what the laptop lane shows. On this lane, /Codespaces: something/ is the equivalent and means the same thing, i.e. you are inside the course environment rather than on your own machine.
 
 ** 3. Prove it works
 1. In the file list on the left, open =P01= and click =01_01_environment_check.ipynb=.
 2. Click *Run All*.
-3. If asked which Python environment to use, pick the one marked *Recommended*, at =/opt/venv/bin/python=.
-4. A map of Princeton should appear, and under it a line beginning with a green check mark: =✅ READY, your environment works.=
+3. If asked which Python environment to use, take the one whose path is =/opt/venv/bin/python=. It is usually marked /Recommended/ and appears as =urban-ai (3.12.14)= in the picker, though it is also registered as /Urban AI (Python 3.12)/. The path is the part that never changes, so trust that if the names confuse you.
+4. A map of Princeton appears, and under it a line reading =READY. Your environment works.=
+
+#+ATTR_LATEX: :width \linewidth :float nil
+[[file:img/codespace-after-run.png]]
 
 You will not need any other Jupyter skill today. To run a single cell later in class, click it and press =Shift+Enter=. To add your own cell, hover below an existing one and click =+ Code=.
 
@@ -60,9 +75,6 @@ If you have never programmed, there is one more thing worth doing before Wednesd
 *Your environment is set up when Princeton appears.* Reply DONE in the Canvas thread and say that you are on the Codespaces lane, so we know to look after you differently in class.
 
 --------------
-
-#+ATTR_LATEX: :width \linewidth :float nil
-[[file:img/shared-princeton-appears.png]]
 
 * Living in a Codespace
 *Coming back.* Go to [[https://github.com/codespaces]] and click your Codespace. Everything is as you left it. Do not create a new one each time: your files live in the one you already have, and unused ones quietly consume your allowance.

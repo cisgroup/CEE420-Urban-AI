@@ -122,9 +122,9 @@ This is the step that downloads the environment, roughly 1 to 2 GB, so do it on 
 * 7. Prove it works
 1. In the file list on the left, open the =P01= folder and click =01_01_environment_check.ipynb=.
 2. Click *Run All* in the toolbar above the notebook.
-3. VS Code asks which Python environment to use. Pick the one marked *Recommended*, whose path is =/opt/venv/bin/python=. It is named after the course, =urban-ai=, and it is the only one inside the container; anything reading =/usr/local/bin/python= is the wrong choice.
+3. VS Code asks which Python environment to use. Take the one whose path is =/opt/venv/bin/python=. It is usually marked /Recommended/ and appears as =urban-ai (3.12.14)= in the picker, though it is also registered as /Urban AI (Python 3.12)/. The path is the part that never changes, so trust that if the names confuse you. It is named after the course, =urban-ai=, and it is the only one inside the container; anything reading =/usr/local/bin/python= is the wrong choice.
 
-4. A map of Princeton should appear, and under it a line beginning with a green check mark: =✅ READY, your environment works.=
+4. A map of Princeton appears, and under it a line reading =READY. Your environment works.=
 
 You will not need any other Jupyter skill today. To run a single cell later in class, click it and press =Shift+Enter=. To add your own cell, hover below an existing one and click =+ Code=.
 

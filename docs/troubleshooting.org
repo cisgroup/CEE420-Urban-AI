@@ -66,7 +66,7 @@ Rare, and you will be told on Canvas. One command: =Cmd+Shift+P= or =Ctrl+Shift+
 
 * Notebooks
 ** "Select kernel" and none of the options look right
-Choose *Urban AI (Python 3.12)*. If you only see options mentioning your own computer's Python, you are not inside the container; see the green label above.
+Take the entry whose path is =/opt/venv/bin/python=, usually marked /Recommended/ and shown as =urban-ai (3.12.14)=, though it is also registered as /Urban AI (Python 3.12)/. Trust the path rather than the name. If you only see options mentioning your own computer's Python, you are not inside the container; see the green label above.
 
 ** ModuleNotFoundError, for example "No module named geopandas"
 Same cause, almost always: the notebook is running on your computer's Python instead of the course environment. Check the green label, then the kernel picker in the top right of the notebook.
