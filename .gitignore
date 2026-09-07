@@ -25,3 +25,6 @@ cache/
 *.log
 *.out
 *.toc
+
+# a student fetching their own place saves it here
+A01/data/my_*

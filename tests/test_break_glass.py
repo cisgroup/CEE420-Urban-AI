@@ -6,7 +6,7 @@ import re
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
-NOTEBOOK = REPO / "P01" / "01-first-map.ipynb"
+NOTEBOOK = REPO / "P01" / "01_04_the_walk_radius_duel.ipynb"
 FENCE = re.compile(r"```python\n(.*?)```", re.DOTALL)
 
 

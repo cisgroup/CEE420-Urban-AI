@@ -32,7 +32,7 @@ Princeton University, Fall 2026. Everything we run together in the Wednesday pre
 Do this at home, not in class. The downloads are large and the campus wifi is not.
 
 1. Follow *[[file:docs/setup-mac.org]]* or *[[file:docs/setup-windows.org]]*. You install VS Code, Docker Desktop, and GitHub Desktop, then clone this repository and open it once in its container.
-2. Open =P01/00-check.ipynb= and click *Run All*. A map of Princeton should appear.
+2. Open =P01/01_01_environment_check.ipynb= and click *Run All*. A map of Princeton should appear.
 3. Reply *DONE* in the Canvas pre-flight thread, or tell us what broke. Either answer helps.
 
 No laptop that can run a browser is out of the game: if the local install fights you, use *[[file:docs/setup-codespaces.org]]* and work in the browser instead.

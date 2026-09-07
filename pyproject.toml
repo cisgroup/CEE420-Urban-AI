@@ -13,6 +13,7 @@ dependencies = [
     "folium>=0.20,<1",
     "mapclassify>=2.9,<3",
     "matplotlib>=3.10,<4",
+    "seaborn>=0.13,<1",
     # raster + ML additions for P02-P05 (first-half stack)
     "rasterio>=1.4,<2",
     "rioxarray>=0.19,<1",
@@ -34,5 +35,6 @@ dev = [
 package = false
 
 [tool.pytest.ini_options]
-addopts = "--nbmake"
-testpaths = ["tests", "P01", "A01"]
+addopts = "--nbmake -m 'not network'"
+testpaths = ["tests", "F00", "P01", "A01"]
+markers = ["network: hits a live service, deselected by default"]
