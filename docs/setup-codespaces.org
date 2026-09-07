@@ -47,12 +47,10 @@ You need one here, unlike the local path.
 
 # SCREENSHOT: cs-01-code-button.png, the green Code button with the Codespaces tab open
 
-# SCREENSHOT: cs-02-codespace-loading.png, the browser VS Code while the container starts
-
 ** 3. Prove it works
 1. In the file list on the left, open =P01= and click =00-check.ipynb=.
 2. Click *Run All*.
-3. If asked for a kernel, choose *Urban AI (Python 3.12)*.
+3. If asked which Python environment to use, pick the one marked *Recommended*, at =/opt/venv/bin/python=.
 4. A map of Princeton should appear, and under it a line beginning with a green check mark: =✅ READY, your environment works.=
 
 You will not need any other Jupyter skill today. To run a single cell later in class, click it and press =Shift+Enter=. To add your own cell, hover below an existing one and click =+ Code=.
@@ -60,6 +58,9 @@ You will not need any other Jupyter skill today. To run a single cell later in c
 *Your environment is set up when Princeton appears.* Reply DONE in the Canvas thread and say that you are on the Codespaces lane, so we know to look after you differently in class.
 
 --------------
+
+#+ATTR_LATEX: :width \linewidth :float nil
+[[file:img/shared-princeton-appears.png]]
 
 * Living in a Codespace
 *Coming back.* Go to [[https://github.com/codespaces]] and click your Codespace. Everything is as you left it. Do not create a new one each time: your files live in the one you already have, and unused ones quietly consume your allowance.
@@ -76,4 +77,4 @@ You will not need any other Jupyter skill today. To run a single cell later in c
 - *No Codespaces tab under the Code button*: you are not signed in to GitHub. Sign in and reload.
 - *"You have exhausted your usage"*: you have used the month's free hours, usually because a Codespace was left running. Stop it, and tell us; we have options.
 - *The browser tab feels sluggish*: close other tabs. If it stays bad, a Codespace can also be opened from VS Code on your laptop via the GitHub Codespaces extension, which often feels smoother.
-- *Your coding agent will not sign in here*: known and expected in the browser lane. See [[file:agent-antigravity.org]] for what to do instead. You will not be stuck in class.
+- *Your coding agent will not sign in here*: possible in the browser lane, since sign-in uses a browser callback. See [[file:agent-antigravity.org]] for what to do instead. You will not be stuck in class.

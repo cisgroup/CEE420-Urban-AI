@@ -27,6 +27,8 @@ Windows needs two things macOS does not: a Linux subsystem called WSL2, and virt
 
 If any step fails, stop and write down the exact message. An honest report in the Canvas thread is worth more than an hour of fighting it alone, and we have a clinic for exactly this.
 
+The screenshots below that show VS Code, GitHub Desktop and Docker were taken on a Mac. Those applications look the same on Windows apart from the window frame, so follow the arrows and labels rather than the colour of the buttons.
+
 --------------
 
 * 1. Check your machine can run this
@@ -72,8 +74,8 @@ If Windows opens an Ubuntu window asking for a username and password, you may cl
 1. Go to [[https://code.visualstudio.com/download]] and click the *Windows* button.
 2. Run the installer. Accept the defaults; the offered *Add to PATH* option is worth keeping.
 
-#+ATTR_LATEX: :width 0.95\textwidth :float nil
-[[file:img/win-03-vscode-download.png]]
+#+ATTR_LATEX: :width \linewidth :float nil
+[[file:img/shared-vscode-download.png]]
 
 * 4. Install Docker Desktop
 Docker runs the course environment, a small prepared Linux system that already contains Python and every package we use. You will never have to install a Python package by hand in this course.
@@ -87,9 +89,10 @@ Docker runs the course environment, a small prepared Linux system that already c
 
 # SCREENSHOT: win-04-docker-wsl2-option.png, the installer with the WSL 2 checkbox ticked
 
-# SCREENSHOT: win-05-docker-running.png, Docker Desktop showing Engine running
-
 *Leave Docker running before class.* If Docker Desktop is closed, the next steps fail with a confusing message about a daemon.
+
+#+ATTR_LATEX: :width \linewidth :float nil
+[[file:img/shared-docker-engine-running.png]]
 
 * 5. Install GitHub Desktop and get the course code
 1. Go to [[https://desktop.github.com/]] and download for Windows. Run it.
@@ -104,39 +107,52 @@ Docker runs the course environment, a small prepared Linux system that already c
 
 4. Note the *Local path* it offers, something like =C:\Users\you\Documents\GitHub\CEE420-Urban-AI=. Keep it in your user folder; do not put it on a network drive or in OneDrive, which cause odd permission problems later. Click *Clone*.
 
-# SCREENSHOT: win-06-github-desktop-clone.png, the Clone a repository dialog with the URL filled in
+#+ATTR_LATEX: :width \linewidth :float nil
+[[file:img/shared-github-desktop-clone.png]]
 
 * 6. Connect VS Code to Docker
 1. Open VS Code.
 2. Click the *Extensions* icon in the left bar (four squares, one detached).
 3. Search for =Dev Containers=, the one published by Microsoft, and click *Install*.
 
-# SCREENSHOT: win-07-devcontainers-extension.png, the Dev Containers extension page inside VS Code
+#+ATTR_LATEX: :width \linewidth :float nil
+[[file:img/shared-devcontainers-extension.png]]
 
 * 7. Open the course in its container
 This step downloads the environment, roughly 1 to 2 GB, so do it on decent wifi and expect several minutes the first time. It happens exactly once; every later start takes seconds.
 
 1. In VS Code choose *File > Open Folder* and select the folder GitHub Desktop cloned in step 5.
-2. VS Code shows a notification in the bottom right: *Reopen in Container*. Click it. If you miss it, press =Ctrl+Shift+P=, type =Reopen in Container=, and press Return.
-3. Watch the bottom left corner. It ends up reading *Dev Container: CEE420 Urban AI (FA26)*. That green label is how you know you are inside the course environment rather than on bare Windows.
+2. VS Code asks whether you trust the authors of the files in this folder. Click *Yes, I trust the authors*. If you dismiss it, VS Code stays in Restricted Mode, extensions are disabled, and nothing below will work.
 
-# SCREENSHOT: win-08-reopen-in-container.png, the Reopen in Container notification
+3. A notification appears in the bottom right: *Reopen in Container*. Click it.
 
-# SCREENSHOT: win-09-container-connected.png, the green Dev Container label, bottom left
+   If the notification has already gone, use the command palette instead, which is what the picture below shows: press =Ctrl+Shift+P=, type =reopen in=, and choose *Dev Containers: Reopen in Container*. Read the list before you click, because several commands match and only that one is ours.
+4. Watch the bottom left corner. It ends up reading *Dev Container: CEE420 Urban AI (FA26)*. That blue label is how you know you are inside the course environment rather than on bare Windows.
+
+#+ATTR_LATEX: :width \linewidth :float nil
+[[file:img/shared-reopen-in-container.png]]
+
+#+ATTR_LATEX: :width \linewidth :float nil
+[[file:img/shared-container-connected.png]]
+
+#+ATTR_LATEX: :width \linewidth :float nil
+[[file:img/shared-workspace-trust.png]]
 
 * 8. Prove it works
 1. In the file list on the left, open the =P01= folder and click =00-check.ipynb=.
 2. Click *Run All* in the toolbar above the notebook.
-3. If VS Code asks you to select a kernel, choose *Urban AI (Python 3.12)*. Ignore anything mentioning a Python on your own Windows.
+3. VS Code asks which Python environment to use. Pick the one marked *Recommended*, whose path is =/opt/venv/bin/python=. It is named after the course, =urban-ai=; ignore anything mentioning a Python on your own Windows.
 4. A map of Princeton should appear, and under it a line beginning with a green check mark: =✅ READY, your environment works.=
-
-# SCREENSHOT: win-10-select-kernel.png, the kernel picker with Urban AI (Python 3.12) highlighted
-
-# SCREENSHOT: win-11-princeton-appears.png, the rendered Princeton boundary and the READY message
 
 You will not need any other Jupyter skill today. To run a single cell later in class, click it and press =Shift+Enter=. To add your own cell, hover below an existing one and click =+ Code=.
 
 *Your environment is set up when Princeton appears.* Reply DONE in the Canvas thread.
+
+#+ATTR_LATEX: :width \linewidth :float nil
+[[file:img/shared-princeton-appears.png]]
+
+#+ATTR_LATEX: :width \linewidth :float nil
+[[file:img/shared-select-kernel.png]]
 
 * 9. Getting each week's code
 Every Wednesday brings a new folder. To get it:

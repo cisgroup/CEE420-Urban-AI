@@ -16,7 +16,7 @@
 #+LATEX_COMPILER: lualatex
 #+LATEX_CLASS: princeton
 #+LATEX_CLASS_OPTIONS: [11pt]
-#+LATEX_HEADER: \version{v0.1}
+#+LATEX_HEADER: \version{v0.2}
 # =============================================================================
 
 #+latex: \maketitle
@@ -27,61 +27,54 @@ If you already pay for another agent, keep using it. The course never asks which
 
 --------------
 
-* What you need
-- A *personal Google account* (an =@gmail.com= address). University Workspace accounts are not supported by Antigravity's free tier, so your =@princeton.edu= address will not work here. Making a free personal account for the course is fine and takes two minutes.
-- VS Code, already installed in the setup guide.
+* You do not have to install it
+Antigravity is part of the course environment. When you open the repository in its container, VS Code installs the extension for you and it runs *inside* the container, next to your notebooks and your data. There is no separate download, no second window, and nothing to configure.
 
-Free tier, as of the start of the semester: unlimited completions and basic weekly rate limits, with access to Gemini and Claude models. Limits are per person, so in class you will work in pairs and one signed-in account per pair is enough.
+You will see it as a small icon in the left activity bar once the container has finished starting.
 
-* Install it
-1. Open VS Code *in a normal window*, not the container window. If the bottom left corner shows a green *Dev Container* label, open a second window with *File > New Window*.
-2. Open the Extensions sidebar (=Cmd+Shift+X= on a Mac, =Ctrl+Shift+X= on Windows).
-3. Search for *Google Antigravity*, published by Google, and click *Install*.
-4. Click the Antigravity icon in the left activity bar, then *Sign In*. Your browser opens; sign in with your personal Google account and come back to VS Code.
+#+ATTR_LATEX: :width \linewidth :float nil
+[[file:img/shared-agent-extension.png]]
 
-#+ATTR_LATEX: :width 0.95\textwidth :float nil
-[[file:img/agent-01-marketplace.png]]
+* What you do need: a personal Google account
+One thing is yours to arrange. Antigravity's free tier works with a *personal Google account*, an =@gmail.com= address. University Workspace accounts are not supported on this tier, so your =@princeton.edu= address will not sign in. Making a free personal account for the course is entirely fine and takes two minutes.
 
-# SCREENSHOT: agent-02-signed-in.png, the Antigravity panel after a successful sign-in
+Free tier, as of the start of the semester: unlimited completions and basic weekly rate limits, with access to current Gemini and Claude models. The limits are per person, so in class you will work in pairs and one signed-in account per pair is plenty.
 
-* How we use it in class
-Two windows, one folder. It sounds odd for about a minute and then feels natural.
+* Signing in
+1. Click the Antigravity icon in the left activity bar.
+2. Click *Sign In*. Your browser opens.
+3. Sign in with your personal Google account, then come back to VS Code.
 
-- The *container window* is where notebooks run. It has the course environment, the data, and the kernel.
-- The *normal window*, opened on the same course folder, is where your agent lives.
+Do this before Wednesday, not during class. It is the one step that needs a browser, an account, and your patience all at once.
 
-Both windows look at the same files on your disk, so code the agent writes is immediately visible to the notebook side. In practice you will ask the agent for a piece of code, read it, and paste it into your notebook cell, which is exactly the workflow we are practising: specify, delegate, verify.
+#+ATTR_LATEX: :width \linewidth :float nil
+[[file:img/shared-agent-sign-in.png]]
 
-*One thing to know before you start.* The course packages live inside the container, not on your laptop, so the agent's own window cannot run this code. If you let it try, it will hit =ModuleNotFoundError: geopandas= and may then offer to install things on your machine. Do not let it. Nothing needs installing, and an agent reorganising your laptop's Python is a bad afternoon. Say so in the request itself, which is why the printed template ends with:
+* Working with it
+The agent sees the same files and the same Python as you do, so it can read =P01/data=, write a cell, and run it. That convenience is exactly why the course spends a whole session on verification: an agent that can run things can also be confidently wrong at speed.
 
-#+begin_src text
-Write the code only. Do not run it, do not install anything, and do not
-change my environment. I will run it myself in the notebook.
-#+end_src
+Two habits, and they are the whole method.
 
-That line is not politeness. It is the difference between a tool that helps you and a tool that wanders off.
+*Specify before you ask.* Write three lines first, so that you know what a correct answer would look like before you see one:
 
-To open the second window on the same folder: *File > New Window*, then *File > Open Folder* and pick the same =CEE420-Urban-AI= folder GitHub Desktop cloned for you.
-
-* If you are on the Codespaces lane
-Agent extensions that sign in through a browser callback tend not to work inside a browser-based Codespace. If Antigravity will not sign in there, do not fight it. Open [[https://gemini.google.com]] or any chat assistant you have in another tab and use the same written specification from the handout. You lose the in-editor convenience and lose nothing that the course grades.
-
-* The specification, not the wish
-The one habit worth forming now. Before you ask an agent for anything, write three lines:
-
-#+begin_src text
+#+begin_example
 PLACE:  which data, which file, which coordinate system
 TASK:   what to compute, in what units
 OUTPUT: what you want back, a number, a map, a table
 
 Constraints: work only in this notebook, geopandas only, do not modify
-earlier cells, no new packages, no internet access.
-#+end_src
+earlier cells, do not install new packages.
+#+end_example
 
-Then read what comes back before you run it, and check it afterwards. In this course an unverified answer is not an answer, whether a human or a machine produced it.
+The constraint about packages matters. The environment is pinned so that twelve laptops behave identically, and an agent that installs something to solve a problem has quietly made your setup different from everyone else's.
+
+*Verify after it answers.* Read the code before you trust the number. Check the coordinate reference system, check the result against something you computed yourself, and look at the map rather than only the figure it prints. In this course an unverified answer is not an answer, whoever produced it.
+
+#+ATTR_LATEX: :width \linewidth :float nil
+[[file:img/shared-agent-working.png]]
 
 * When it does not work
-- *Sign-in fails with a Workspace account*: use a personal =@gmail.com= account, this is a documented limitation.
-- *The panel never loads in the container window*: expected, that is why we run it in a normal window. Use the two-window setup above.
+- *Sign-in fails with your Princeton address*: expected, use a personal =@gmail.com= account.
+- *The icon is missing*: the container is probably still starting, or you are in a plain VS Code window. Check the bottom left corner for the blue *Dev Container: CEE420 Urban AI (FA26)* label.
 - *You hit a rate limit mid-session*: pair up, one working account per pair is all we need.
-- *Nothing works on your machine at all*: you are still fine. Bring the written specification to class and use any chat assistant; that path is fully supported and A01 explicitly accepts an honest "I tried, it failed, here is how I did it by hand".
+- *Nothing works on your machine at all*: you are still fine. Bring the written specification to class and use any chat assistant in a browser tab. That path is fully supported, and A01 explicitly accepts an honest "I tried, it failed, here is how I did it by hand".
