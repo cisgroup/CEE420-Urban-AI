@@ -36,5 +36,5 @@ package = false
 
 [tool.pytest.ini_options]
 addopts = "--nbmake -m 'not network'"
-testpaths = ["tests", "F00", "P01", "A01"]
+testpaths = ["tests", "F00", "P01"]  # A01 is parked until it is handed out
 markers = ["network: hits a live service, deselected by default"]
