@@ -1,0 +1,22 @@
+# =============================================================================
+# File      : README.org -- The foundations series
+# Author    : Jürgen Hackl <hackl@princeton.edu>
+# Copyright (c) 2026 Jürgen Hackl <hackl@princeton.edu>
+# =============================================================================
+#+OPTIONS: toc:nil num:nil tags:nil
+#+TITLE: Python Foundations
+#+SUBTITLE: CEE420 Urban AI
+#+AUTHOR: Jürgen Hackl
+
+This folder is the on-ramp. It assumes you have never programmed, it is not marked, and you work through it at your own pace.
+
+Everything here uses the same Princeton data you meet in the precepts, so nothing you learn is thrown away. You never count items in a made-up list; you count 92 real restaurants.
+
+| Notebook | What it covers | Time |
+|----------+----------------+------|
+| =00_01_notebooks_and_kernels= | What a cell is, how to run one, and the difference between the notebook and the kernel that remembers your work | 20 min |
+| =00_07_reading_errors= | The five errors you will actually meet, how to read a traceback, and what to send when you are stuck | 25 min |
+
+Start with =00_01=. If you read only one notebook before the first precept, read that one: it prevents the confusion that otherwise costs people an evening in week three.
+
+More notebooks land here through the semester, covering variables, calling functions, lists and loops, tables with pandas, coordinates as numbers, and working with a coding agent.

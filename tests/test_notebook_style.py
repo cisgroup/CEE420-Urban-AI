@@ -53,6 +53,11 @@ def sources(notebook, kind=None):
     ]
 
 
+def tags(notebook, index):
+    cells = json.loads(notebook.read_text())["cells"]
+    return cells[index].get("metadata", {}).get("tags", [])
+
+
 @pytest.mark.parametrize("notebook", NOTEBOOKS, ids=IDS)
 def test_no_emoji_in_any_notebook(notebook):
     """House style. Escaped forms count, since a print of an emoji escape shows an emoji."""
@@ -112,6 +117,8 @@ def test_notebooks_only_use_files_from_their_own_folder(notebook):
         assert "../" not in text, f"{notebook.name} cell {index} ({kind}) reaches outside its folder"
         if kind != "code":
             continue  # prose may name a file without opening it
+        if "raises-exception" in tags(notebook, index):
+            continue  # a deliberate failure demo reads a file that is meant to be missing
         for quoted in READ_PATH.findall(text):
             assert not Path(quoted).is_absolute(), f"{notebook.name} cell {index}: absolute path"
             assert (notebook.parent / quoted).exists(), (
