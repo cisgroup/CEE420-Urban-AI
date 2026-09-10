@@ -60,7 +60,14 @@ Cancel and retry; it resumes rather than starting over. On a hotel or airport ne
 You are not actually in the container. The bottom left corner must read *Dev Container: CEE420 Urban AI (FA26)*. If it does not, run =Reopen in Container= from the command palette (=Cmd+Shift+P= or =Ctrl+Shift+P=).
 
 ** We shipped an environment update
-Rare, and you will be told on Canvas. One command: =Cmd+Shift+P= or =Ctrl+Shift+P=, then *Dev Containers: Rebuild Container*.
+Rare, and you will be told on Canvas. Two steps, and the first one is the one people skip. In a terminal on your own machine, not inside the container, run =docker pull ghcr.io/cisgroup/cee420-urban-ai:fa26=. Then in VS Code press =Cmd+Shift+P= or =Ctrl+Shift+P= and choose *Dev Containers: Rebuild Container*.
+
+Rebuild on its own is not enough. The course environment is named by a tag rather than by a version number, so if you already have an image with that tag, VS Code reuses the copy you have and never asks whether a newer one exists. Pulling first is what replaces it.
+
+** A package is missing even though I am inside the container
+For example =ModuleNotFoundError: No module named seaborn= while the corner really does read *Dev Container: CEE420 Urban AI (FA26)*. Your copy of the course environment is older than the course. Pull and rebuild as described just above.
+
+This is worth recognising because everything else looks correct. You are in the right container, the kernel is right, and the environment check may even have passed. It is only out of date.
 
 --------------
 
