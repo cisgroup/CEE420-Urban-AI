@@ -34,3 +34,12 @@ P02/output/
 
 # the showcase script writes its map and layers here
 P01/showcase_output/
+
+# the P03 notebooks export here, and the lane in 03_06 would save its window of the full orthomosaic here
+P03/output/
+P03/data/full/
+P03/data/my_*
+
+# point clouds never travel through git; the thinned sample in P03/data/ stands in for them
+*.laz
+*.las

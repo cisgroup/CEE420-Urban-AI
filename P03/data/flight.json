@@ -1,0 +1,108 @@
+{
+ "label": "preflight-2026-09-17",
+ "date": "2026-09-17",
+ "site": "Poe Field",
+ "timezone": "America/New_York",
+ "aircraft": "DJI Mini 3",
+ "camera_model": "FC3682",
+ "image_px": [
+  4000,
+  2250
+ ],
+ "aspect": "16:9",
+ "focal_mm": 6.72,
+ "focal_35mm_equivalent": 24,
+ "altitude_agl_m": 82.5,
+ "n_photos": 78,
+ "interval_s": 5.0,
+ "speed_m_s": 3.74,
+ "app": "to fill: the app that flew the mission (DJI Fly waypoints or another), the interval set to 5 s",
+ "pattern": "concentric loops around the field, as the positions show; the planned parallel strips were not flown, the nose stayed on one heading for most of the flight",
+ "gcp_used": false,
+ "photos_checked_for_people": true,
+ "people_note": "checked 2026-09-18 by the instructor on thumbnails: figures on the lawn are a few pixels tall at 2.9 cm, no face or plate is resolvable; the kit ships four downsized photographs and the products only",
+ "samples": [
+  {
+   "file": "photo_01.jpg",
+   "from": "DJI_0493.JPG",
+   "time_local": "2026-09-17 17:10:53",
+   "bytes": 653864
+  },
+  {
+   "file": "photo_02.jpg",
+   "from": "DJI_0519.JPG",
+   "time_local": "2026-09-17 17:13:03",
+   "bytes": 644678
+  },
+  {
+   "file": "photo_03.jpg",
+   "from": "DJI_0544.JPG",
+   "time_local": "2026-09-17 17:15:08",
+   "bytes": 632201
+  },
+  {
+   "file": "photo_04.jpg",
+   "from": "DJI_0570.JPG",
+   "time_local": "2026-09-17 17:17:18",
+   "bytes": 626126
+  }
+ ],
+ "other_flights": {
+  "120m": {
+   "folder": "photos_120m",
+   "file": "photos_120m.csv",
+   "n_photos": 63,
+   "altitude_agl_m": 119.2,
+   "interval_s": 5.0,
+   "orthophoto_full": {
+    "crs": "EPSG:32618",
+    "res_cm": 3.87,
+    "width": 10315,
+    "height": 8364
+   }
+  }
+ },
+ "processing": {
+  "software": "OpenDroneMap",
+  "project": "/Users/juergen/cloud/teaching/2026-CEE420-Urban-AI/data/raw/drone/preflight-2026-09-17/odm_80m",
+  "orthophoto_full": {
+   "crs": "EPSG:32618",
+   "res_cm": 3.0,
+   "width": 11078,
+   "height": 8794,
+   "bands": 4,
+   "dtype": "uint8",
+   "transform": [
+    0.02999822732512307,
+    0.0,
+    529179.7626450517,
+    0.0,
+    -0.029999999669082896,
+    4466071.911653024
+   ],
+   "bounds": [
+    529179.7626450517,
+    4465808.091655934,
+    529512.0830073594,
+    4466071.911653024
+   ],
+   "compression": "Compression.deflate",
+   "overviews": [
+    2,
+    4,
+    8,
+    16,
+    32,
+    64
+   ],
+   "colorinterp": [
+    "red",
+    "green",
+    "blue",
+    "alpha"
+   ],
+   "bytes": 144233796
+  },
+  "date": "2026-09-18"
+ }
+}

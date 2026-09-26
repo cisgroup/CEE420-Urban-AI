@@ -1,0 +1,886 @@
+{
+  "generated": "2026-09-18",
+  "p03": {
+    "snapshots": {
+      "stac": "2026-09-13",
+      "dem_1m": "2026-09-14",
+      "osm": "2026-08-29",
+      "nj2020": "2026-09-17"
+    },
+    "site": {
+      "name": "Poe Field",
+      "area_ha": 2.42,
+      "rect_length_m": 270.9,
+      "rect_width_m": 116.7,
+      "centre_epsg_26918": [
+        529364.5,
+        4465949.3
+      ],
+      "centre_epsg_32618": [
+        529364.5,
+        4465949.3
+      ],
+      "centre_lonlat": [
+        -74.65425,
+        40.34358
+      ],
+      "datum": {
+        "pyproj_default": "Inverse of UTM zone 18N + NAD83 to WGS 84 (1) + UTM zone 18N",
+        "pyproj_default_accuracy_m": 4.0,
+        "pyproj_default_shift_m": 0.0,
+        "itrf2014_epoch": 2026.73,
+        "itrf2014_plan_shift_m": 1.25,
+        "itrf2014_shift_e_m": 0.64,
+        "itrf2014_shift_n_m": -1.08,
+        "itrf2014_height_shift_m": -1.25,
+        "note": "NAD 83(2011) against ITRF2014 at the flight's epoch, from the time-dependent Helmert transformation; WGS 84 is realised on ITRF. The east and north entries are the move that takes a picture placed in ITRF onto a NAD 83 reference; the height entry is the ITRF ellipsoidal height of a point whose NAD 83 ellipsoidal height is zero"
+      },
+      "buildings_within_400m": 73
+    },
+    "sensors": {
+      "landsat_9": {
+        "file": "landsat_20250914_site.tif",
+        "crs": "EPSG:32618",
+        "res": 30.0,
+        "unit": "metre",
+        "res_m": 30.0,
+        "dtype": "float32",
+        "bands": 8,
+        "width": 40,
+        "height": 40,
+        "band_names": [
+          "blue reflectance",
+          "green reflectance",
+          "red reflectance",
+          "nir08 reflectance",
+          "swir16 reflectance",
+          "swir22 reflectance",
+          "lwir11 surface temperature K",
+          "qa_pixel flags, bit 1 dilated cloud, 2 cirrus, 3 cloud, 4 shadow, 7 water"
+        ],
+        "date": "2025-09-14T15:40:05.618768+00:00",
+        "item": "LC09_L2SP_014032_20250914_02_T1",
+        "pixels_across_field": 9.0,
+        "pixels_along_field": 3.9,
+        "cells_over_field": 27
+      },
+      "sentinel_2": {
+        "file": "s2_20250822_campus_10m.tif",
+        "crs": "EPSG:32618",
+        "res": 10.0,
+        "unit": "metre",
+        "res_m": 10.0,
+        "dtype": "float32",
+        "bands": 4,
+        "width": 400,
+        "height": 400,
+        "band_names": [
+          "blue reflectance",
+          "green reflectance",
+          "red reflectance",
+          "nir reflectance"
+        ],
+        "date": "2025-08-22T16:02:21.073000+00:00",
+        "item": "S2C_18TWK_20250822_0_L2A",
+        "pixels_across_field": 27.1,
+        "pixels_along_field": 11.7,
+        "cells_over_field": 242
+      },
+      "naip_2022": {
+        "file": "naip_2022_site.tif",
+        "crs": "EPSG:26918",
+        "res": 0.6,
+        "unit": "metre",
+        "res_m": 0.6,
+        "dtype": "uint8",
+        "bands": 4,
+        "width": 1000,
+        "height": 1000,
+        "band_names": [
+          "red",
+          "green",
+          "blue",
+          "near infrared"
+        ],
+        "date": "2022-07-04T16:00:00+00:00",
+        "item": "nj_m_4007443_ne_18_060_20220704",
+        "pixels_across_field": 451.6,
+        "pixels_along_field": 194.5,
+        "cells_over_field": 67112
+      },
+      "naip_2023": {
+        "file": "naip_2023_site.tif",
+        "crs": "EPSG:26918",
+        "res": 0.3,
+        "unit": "metre",
+        "res_m": 0.3,
+        "dtype": "uint8",
+        "bands": 4,
+        "width": 1000,
+        "height": 1000,
+        "band_names": [
+          "red",
+          "green",
+          "blue",
+          "near infrared"
+        ],
+        "date": "2023-08-20T16:00:00+00:00",
+        "item": "nj_m_4007443_ne_18_030_20230820_20231019",
+        "pixels_across_field": 903.1,
+        "pixels_along_field": 389.0,
+        "cells_over_field": 268450
+      },
+      "nj_2020": {
+        "file": "nj2020_site_1ft.tif",
+        "crs": "EPSG:3424",
+        "res": 1.0,
+        "unit": "US survey foot",
+        "res_m": 0.3048,
+        "dtype": "uint8",
+        "bands": 4,
+        "width": 1000,
+        "height": 1000,
+        "band_names": [
+          "near infrared",
+          "red",
+          "green",
+          "blue"
+        ],
+        "date": "2020, leaf-off season, day not stated by the service",
+        "item": null,
+        "pixels_across_field": 888.9,
+        "pixels_along_field": 382.8,
+        "cells_over_field": 260060
+      }
+    },
+    "pixels": {
+      "town_area_km2": 47.66,
+      "ladder": [
+        {
+          "sensor": "landsat_9",
+          "cell_m": 30.0,
+          "cells": 52954,
+          "bytes_one_band_uint8": 52954,
+          "bytes_as_shipped": 1694528
+        },
+        {
+          "sensor": "sentinel_2",
+          "cell_m": 10.0,
+          "cells": 476586,
+          "bytes_one_band_uint8": 476586,
+          "bytes_as_shipped": 7625376
+        },
+        {
+          "sensor": "naip_2022",
+          "cell_m": 0.6,
+          "cells": 132385001,
+          "bytes_one_band_uint8": 132385001,
+          "bytes_as_shipped": 529540002
+        },
+        {
+          "sensor": "nj_2020",
+          "cell_m": 0.3048,
+          "cells": 512990851,
+          "bytes_one_band_uint8": 512990851,
+          "bytes_as_shipped": 2051963404
+        },
+        {
+          "sensor": "naip_2023",
+          "cell_m": 0.3,
+          "cells": 529540002,
+          "bytes_one_band_uint8": 529540002,
+          "bytes_as_shipped": 2118160008
+        },
+        {
+          "sensor": "drone_80m",
+          "cell_m": 0.0286,
+          "cells": 58381785231,
+          "bytes_one_band_uint8": 58381785231,
+          "bytes_as_shipped": 175145355692
+        }
+      ]
+    },
+    "ndvi": {
+      "places_20250822": {
+        "golf fairway": 0.931,
+        "campus lawn": 0.759,
+        "Institute Woods": 0.888,
+        "Nassau Street": 0.12,
+        "Lake Carnegie": -0.312
+      },
+      "places_20250310": {
+        "golf fairway": 0.5,
+        "campus lawn": 0.632,
+        "Institute Woods": 0.349,
+        "Nassau Street": 0.051,
+        "Lake Carnegie": -0.58
+      },
+      "year": {
+        "passes": 168,
+        "dates": 154,
+        "clear_readings": 184,
+        "places": {
+          "Institute Woods": {
+            "clear_readings": 65,
+            "ndvi_min": 0.154,
+            "ndvi_max": 0.906,
+            "first_above_0_5": "2025-04-23",
+            "last_above_0_5": "2025-10-26",
+            "summer_median": 0.866
+          },
+          "campus lawn": {
+            "clear_readings": 58,
+            "ndvi_min": 0.394,
+            "ndvi_max": 0.874,
+            "first_above_0_5": "2025-01-04",
+            "last_above_0_5": "2025-12-22",
+            "summer_median": 0.724
+          },
+          "golf fairway": {
+            "clear_readings": 61,
+            "ndvi_min": 0.258,
+            "ndvi_max": 0.968,
+            "first_above_0_5": "2025-01-14",
+            "last_above_0_5": "2025-12-22",
+            "summer_median": 0.865
+          }
+        }
+      }
+    },
+    "camera": {
+      "name": "DJI Mini 3, 12 megapixel mode",
+      "pixel_um": 2.4,
+      "focal_mm": 6.72,
+      "width_px": 4000,
+      "height_px": 3000,
+      "min_interval_s": 2.0,
+      "altitude_m": 80.0,
+      "gsd_cm": {
+        "60": 2.14,
+        "80": 2.86,
+        "100": 3.57,
+        "120": 4.29
+      },
+      "footprint_m": [
+        114.3,
+        85.7
+      ],
+      "scale_denominator": 11905,
+      "f_over_p": 2800,
+      "ceiling_m": 121.9,
+      "sensor_mm": [
+        9.6,
+        7.2
+      ],
+      "equivalent_focal_mm": 24
+    },
+    "plan": {
+      "rect_length_m": 270.9,
+      "rect_width_m": 116.7,
+      "rect_angle_deg": 19.5,
+      "altitude_m": 80.0,
+      "speed_m_s": 5.0,
+      "overlap_80_70": {
+        "n_strips": 5,
+        "n_per_strip": 17,
+        "n_photos": 95,
+        "n_photos_without_ends": 85,
+        "by_density": 41.11,
+        "base_m": 17.14,
+        "spacing_m": 34.29,
+        "neat_m2": 587.76,
+        "per_km2": 1701.39,
+        "rays": 16.67,
+        "base_to_height": 0.21,
+        "path_m": 1680.0,
+        "time_min": 5.6,
+        "interval_s": 3.43,
+        "speed": 5.0,
+        "coverage_inside_site": {
+          "min": 10,
+          "median": 14,
+          "max": 21,
+          "cell_m": 2.0
+        }
+      },
+      "overlap_60_30": {
+        "n_strips": 3,
+        "n_per_strip": 9,
+        "n_photos": 33,
+        "n_photos_without_ends": 27,
+        "by_density": 8.81,
+        "base_m": 34.29,
+        "spacing_m": 80.0,
+        "neat_m2": 2742.86,
+        "per_km2": 364.58,
+        "rays": 3.57,
+        "base_to_height": 0.43,
+        "path_m": 1188.57,
+        "time_min": 3.96,
+        "interval_s": 6.86,
+        "speed": 5.0,
+        "coverage_inside_site": {
+          "min": 3,
+          "median": 3,
+          "max": 8,
+          "cell_m": 2.0
+        }
+      },
+      "intervals": [
+        {
+          "interval_s": 2,
+          "base_m_at_plan_speed": 10.0,
+          "forward_pct_at_plan_speed": 88.3,
+          "speed_for_80_pct_m_s": 8.57
+        },
+        {
+          "interval_s": 3,
+          "base_m_at_plan_speed": 15.0,
+          "forward_pct_at_plan_speed": 82.5,
+          "speed_for_80_pct_m_s": 5.71
+        },
+        {
+          "interval_s": 5,
+          "base_m_at_plan_speed": 25.0,
+          "forward_pct_at_plan_speed": 70.8,
+          "speed_for_80_pct_m_s": 3.43
+        },
+        {
+          "interval_s": 7,
+          "base_m_at_plan_speed": 35.0,
+          "forward_pct_at_plan_speed": 59.2,
+          "speed_for_80_pct_m_s": 2.45
+        },
+        {
+          "interval_s": 10,
+          "base_m_at_plan_speed": 50.0,
+          "forward_pct_at_plan_speed": 41.7,
+          "speed_for_80_pct_m_s": 1.71
+        }
+      ],
+      "chosen": {
+        "interval_s": 3,
+        "speed_m_s": 5.0,
+        "base_m": 15.0,
+        "forward_pct": 82.5,
+        "side_pct": 70,
+        "status": "the plan's; the interval menu was confirmed on the pre-flight, which itself flew 5 s"
+      }
+    },
+    "relief": {
+      "building_m": 20,
+      "offset_m": 40,
+      "top_images_at_m": 53.3,
+      "lean_m": 13.3,
+      "r_base_mm": 3.36,
+      "r_top_mm": 4.48,
+      "d_mm": 1.12,
+      "d_px": 467
+    },
+    "precision": {
+      "pointing_px": 0.3,
+      "sigma_h_cm_80": 4.0,
+      "base_to_height_80": 0.21,
+      "sigma_h_cm_60": 2.0,
+      "base_to_height_60": 0.43,
+      "sigma_xy_cm": 0.86
+    },
+    "accuracy_table": {
+      "plan_mm": 5.3,
+      "height_mm": 8.0,
+      "spot_cm": 1.6,
+      "contour_min_cm": 5.3,
+      "contour_max_cm": 6.7
+    },
+    "target_cm": 29,
+    "terrain": {
+      "file": "dem_3dep_1m_site.tif",
+      "crs": "EPSG:26918",
+      "res_m": 1.0,
+      "units": "metres above NAVD88",
+      "retrieved": "2026-09-14",
+      "vintage": "the service does not state the acquisition date of the lidar behind this surface",
+      "site_ground_m": 41.88,
+      "site_min_m": 40.28,
+      "site_max_m": 43.03,
+      "relief_over_site_m": 2.76,
+      "window_min_m": 15.8,
+      "window_max_m": 65.46,
+      "section_azimuth_deg": 0,
+      "section_length_m": 500.0,
+      "section_buildings_crossed": 8,
+      "geoid18_n_m": -33.27,
+      "geoid18_note": "N from the pinned GEOID18 grid at the site centroid; an ellipsoidal height is the NAVD88 height plus N",
+      "geoid18_grid": "us_noaa_g2018u0.tif",
+      "geoid18_type": "VERTICAL_OFFSET_GEOGRAPHIC_TO_VERTICAL",
+      "slope_deg_p50": 2.92,
+      "slope_deg_p99": 30.37
+    },
+    "shadows": {
+      "item": "nj_m_4007443_ne_18_060_20220704",
+      "datetime_nominal": "2022-07-04T16:00:00+00:00",
+      "shadow_azimuth_deg": 75,
+      "sun_elevation_deg": 52.0,
+      "sun_azimuth_deg": 255.0,
+      "solved_time_utc": "19:44",
+      "sun_elevation_nominal_deg": 68.0,
+      "sun_azimuth_nominal_deg": 138.0,
+      "dark_level": 85.3,
+      "buildings": [
+        {
+          "name": "Guyot Hall",
+          "area_m2": 3163,
+          "shadow_m": 11.1,
+          "rays": 5,
+          "height_m": 14.2,
+          "spread": 0.05,
+          "centroid": [
+            529346.7,
+            4466195.2
+          ]
+        },
+        {
+          "name": "unnamed",
+          "area_m2": 5098,
+          "shadow_m": 20.1,
+          "rays": 5,
+          "height_m": 25.7,
+          "spread": 0.19,
+          "centroid": [
+            529516.4,
+            4465908.3
+          ]
+        },
+        {
+          "name": "Carl Icahn Laboratory",
+          "area_m2": 3937,
+          "shadow_m": 13.8,
+          "rays": 6,
+          "height_m": 17.6,
+          "spread": 0.49,
+          "centroid": [
+            529445.4,
+            4466039.5
+          ]
+        }
+      ]
+    },
+    "flown": {
+      "n_photos": 78,
+      "first_time_local": "2026-09-17 17:10:53",
+      "last_time_local": "2026-09-17 17:17:18",
+      "duration_min": 6.4,
+      "median_interval_s": 5.0,
+      "median_speed_m_s": 3.74,
+      "median_relative_alt_m": 82.5,
+      "min_relative_alt_m": 81.6,
+      "max_relative_alt_m": 84.2,
+      "median_absolute_alt_m": 76.5,
+      "median_gps_alt_m": 76.5,
+      "median_gimbal_pitch_deg": 0.0,
+      "gsd_cm_from_exif": 2.95,
+      "footprint_m": [
+        117.9,
+        66.3
+      ],
+      "median_base_m": 18.7,
+      "forward_overlap_pct": 71.8,
+      "nose_along_motion_share": 0.86,
+      "coverage_inside_site": {
+        "min": 5,
+        "median": 15,
+        "max": 28,
+        "share_under_3": 0.0,
+        "share_under_5": 0.0
+      },
+      "hull_ha": 2.07,
+      "sun_elevation_deg_start": 20.5,
+      "sun_azimuth_deg_start": 254.4,
+      "sun_elevation_deg_end": 19.4,
+      "sun_azimuth_deg_end": 255.5,
+      "exposure_s_median": 0.005,
+      "iso_median": 100,
+      "camera_model": "FC3682",
+      "aircraft": "DJI Mini 3",
+      "image_px": [
+        4000,
+        2250
+      ],
+      "focal_mm": 6.72,
+      "pixel_um": 2.4,
+      "label": "preflight-2026-09-17",
+      "date": "2026-09-17",
+      "aspect": "16:9",
+      "timezone": "America/New_York",
+      "plan_for_this_camera_and_height": {
+        "n_strips": 5,
+        "n_per_strip": 22,
+        "n_photos": 120,
+        "n_photos_without_ends": 110,
+        "by_density": 51.54,
+        "base_m": 13.26,
+        "spacing_m": 35.36,
+        "neat_m2": 468.8,
+        "per_km2": 2133.12,
+        "rays": 16.67,
+        "base_to_height": 0.16,
+        "path_m": 1666.21,
+        "time_min": 5.55,
+        "interval_s": 2.65,
+        "speed": 5.0,
+        "coverage_inside_site": {
+          "min": 7,
+          "median": 18,
+          "max": 18,
+          "cell_m": 2.0
+        }
+      }
+    },
+    "other_flights": {
+      "120m": {
+        "n_photos": 63,
+        "first_time_local": "2026-09-17 17:17:58",
+        "last_time_local": "2026-09-17 17:23:08",
+        "duration_min": 5.2,
+        "median_interval_s": 5.0,
+        "median_speed_m_s": 3.19,
+        "median_relative_alt_m": 119.2,
+        "min_relative_alt_m": 118.2,
+        "max_relative_alt_m": 120.2,
+        "median_absolute_alt_m": 113.2,
+        "median_gps_alt_m": 113.2,
+        "median_gimbal_pitch_deg": 0.0,
+        "gsd_cm_from_exif": 4.26,
+        "footprint_m": [
+          170.3,
+          95.8
+        ],
+        "median_base_m": 16.0,
+        "forward_overlap_pct": 83.3,
+        "nose_along_motion_share": 0.92,
+        "coverage_inside_site": {
+          "min": 10,
+          "median": 20,
+          "max": 33,
+          "share_under_3": 0.0,
+          "share_under_5": 0.0
+        },
+        "hull_ha": 2.11,
+        "sun_elevation_deg_start": 19.2,
+        "sun_azimuth_deg_start": 255.6,
+        "sun_elevation_deg_end": 18.3,
+        "sun_azimuth_deg_end": 256.6,
+        "exposure_s_median": 0.005,
+        "iso_median": 100,
+        "camera_model": "FC3682",
+        "aircraft": "DJI Mini 3",
+        "image_px": [
+          4000,
+          2250
+        ],
+        "focal_mm": 6.72,
+        "pixel_um": 2.4,
+        "ortho": {
+          "file": "ortho_120m_10cm.tif",
+          "res_cm_shipped": 10.0,
+          "width_shipped": 3890,
+          "height_shipped": 3144,
+          "valid_share_of_window": 0.73,
+          "crs": "EPSG:32618",
+          "res_cm": 3.87,
+          "width": 10315,
+          "height": 8364,
+          "pixels_full": 86274660
+        }
+      }
+    },
+    "heights": {
+      "dsm_file": "dsm_25cm.tif",
+      "dtm_file": "dtm_50cm.tif",
+      "crs": "EPSG:32618",
+      "dsm_res_cm": 25,
+      "dtm_res_cm": 50,
+      "nodata": -9999.0,
+      "lawn_cells": 308206,
+      "vertical_shift_m": -45.64,
+      "vertical_shift_mad_m": 0.28,
+      "geoid18_n_m": -33.27,
+      "datum_height_shift_m": -1.25,
+      "receiver_height_error_m": -11.12,
+      "lawn_tilt_cm_per_100m": 65.2,
+      "lawn_residual_rms_cm": 45.0,
+      "lawn_residual_p95_cm": 89.4,
+      "canopy_share_of_window": 0.281,
+      "canopy_max_m": 24.8,
+      "canopy_median_m": 10.1,
+      "dtm_minus_3dep_under_trees_median_m": 1.46,
+      "dtm_minus_3dep_on_lawn_median_m": -0.02,
+      "buildings": {
+        "Bloomberg Hall": {
+          "dsm_minus_dtm_m": 11.6,
+          "dsm_minus_3dep_m": 14.0,
+          "footprint_m2": 1960,
+          "cells": 31336
+        },
+        "Hariri": {
+          "dsm_minus_dtm_m": 16.1,
+          "dsm_minus_3dep_m": 19.8,
+          "footprint_m2": 799,
+          "cells": 12775
+        },
+        "1912 Pavilion": {
+          "dsm_minus_dtm_m": 4.4,
+          "dsm_minus_3dep_m": 4.6,
+          "footprint_m2": 75,
+          "cells": 1203
+        }
+      },
+      "points": {
+        "n_total": 7895809,
+        "n_sample": 100000,
+        "crs": "WGS 84 / UTM zone 18N, as OpenDroneMap wrote it",
+        "class_share": {
+          "1": 0.004,
+          "2": 0.74,
+          "3": 0.141,
+          "6": 0.115
+        },
+        "density_on_lawn_per_m2": 190.1
+      }
+    },
+    "ortho": {
+      "file": "ortho_10cm.tif",
+      "crs": "EPSG:32618",
+      "res_cm_shipped": 10.0,
+      "width_shipped": 3323,
+      "height_shipped": 2638,
+      "pixels_shipped": 8766074,
+      "bands": 3,
+      "dtype": "uint8",
+      "compression": "JPEG",
+      "overviews": [
+        2,
+        4,
+        8
+      ],
+      "block": [
+        512,
+        512
+      ],
+      "bytes_shipped": 2116732,
+      "valid_share_of_window": 0.664,
+      "valid_share_of_site": 1.0,
+      "res_cm_full": 3.0,
+      "width_full": 11078,
+      "height_full": 8794,
+      "pixels_full": 97419932,
+      "bytes_full": 144233796,
+      "compression_full": "Compression.deflate",
+      "pixels_over_the_rectangle": 35128074,
+      "full_crop": {
+        "file": "ortho_full_crop.tif",
+        "res_cm": 3.0,
+        "width": 1667,
+        "height": 1167,
+        "bounds": [
+          529450.197,
+          4465913.212,
+          529500.204,
+          4465948.222
+        ]
+      }
+    },
+    "report": {
+      "reconstruction_statistics": {
+        "components": 1,
+        "has_gps": true,
+        "has_gcp": false,
+        "initial_points_count": 71782,
+        "initial_shots_count": 78,
+        "reconstructed_points_count": 70647,
+        "reconstructed_shots_count": 78,
+        "observations_count": 393184,
+        "average_track_length": 5.5655,
+        "average_track_length_over_two": 7.1657,
+        "histogram_track_length": {
+          "2": 21885,
+          "3": 11854,
+          "4": 7212,
+          "5": 4943,
+          "6": 3950,
+          "7": 3080,
+          "8": 2635,
+          "9": 2267,
+          "10": 2133,
+          "11": 1958,
+          "12": 1784,
+          "13": 1579,
+          "14": 1176,
+          "15": 1036,
+          "16": 861,
+          "17": 745,
+          "18": 586,
+          "19": 392,
+          "20": 214,
+          "21": 138,
+          "22": 74,
+          "23": 55,
+          "24": 45,
+          "25": 32,
+          "26": 10,
+          "27": 1,
+          "28": 1,
+          "36": 1
+        },
+        "reprojection_error_normalized": 0.1449,
+        "reprojection_error_pixels": 0.8792,
+        "reprojection_error_angular": 0.0003
+      },
+      "features_statistics": {
+        "detected_features": {
+          "min": 2542,
+          "max": 6898,
+          "mean": 5263,
+          "median": 5167
+        },
+        "reconstructed_features": {
+          "min": 2367,
+          "max": 6732,
+          "mean": 5040,
+          "median": 4875
+        }
+      },
+      "gps_errors": {
+        "mean": {
+          "x": 0.0026,
+          "y": 0.0003,
+          "z": 0.0007
+        },
+        "std": {
+          "x": 0.5013,
+          "y": 0.3692,
+          "z": 0.5742
+        },
+        "error": {
+          "x": 0.5013,
+          "y": 0.3692,
+          "z": 0.5742
+        },
+        "average_error": 0.7864,
+        "ce90": 0.9214,
+        "le90": 0.8534
+      },
+      "odm_processing_statistics": {
+        "total_time": 1216.9331,
+        "total_time_human": "20.0m:17.0s",
+        "average_gsd": 3.0013
+      },
+      "processing_statistics": {
+        "steps_times": {
+          "Feature Extraction": 46.9511,
+          "Features Matching": 33.9129,
+          "Tracks Merging": 7.1633,
+          "Reconstruction": 97.0579,
+          "Total Time": 185.0852
+        },
+        "date": "18/09/2026 at 13:53:56",
+        "start_date": "17/09/2026 at 17:10:53",
+        "end_date": "17/09/2026 at 17:17:18",
+        "area": 37619.777
+      },
+      "software": "OpenDroneMap"
+    },
+    "control": {
+      "method": "phase correlation of edge images, the orthomosaic masked to bare ground and the reference left whole, with a self test of an injected shift",
+      "references": {
+        "naip_2022": {
+          "shift_e_m": 2.17,
+          "shift_n_m": -1.82,
+          "shift_m": 2.83,
+          "peak": 0.0102,
+          "ground_share": 0.063,
+          "reference_res_m": 0.6,
+          "n_tiles": 2,
+          "tiles_median_e_m": 23.11,
+          "tiles_median_n_m": 44.1,
+          "tiles_spread_m": 52.68,
+          "self_test": {
+            "injected_m": 2.0,
+            "recovered_e_m": 2.19,
+            "recovered_n_m": 1.88,
+            "passed": true
+          }
+        },
+        "naip_2023": {
+          "shift_e_m": 2.14,
+          "shift_n_m": -0.54,
+          "shift_m": 2.21,
+          "peak": 0.0113,
+          "ground_share": 0.248,
+          "reference_res_m": 0.3,
+          "n_tiles": 8,
+          "tiles_median_e_m": 1.46,
+          "tiles_median_n_m": -1.33,
+          "tiles_spread_m": 3.0,
+          "self_test": {
+            "injected_m": 2.0,
+            "recovered_e_m": 2.2,
+            "recovered_n_m": 1.98,
+            "passed": true
+          }
+        },
+        "nj2020": {
+          "shift_e_m": 9.76,
+          "shift_n_m": -80.18,
+          "shift_m": 80.77,
+          "peak": 0.0048,
+          "ground_share": 0.269,
+          "reference_res_m": 0.3048,
+          "n_tiles": 8,
+          "tiles_median_e_m": 0.01,
+          "tiles_median_n_m": -2.26,
+          "tiles_spread_m": 78.57,
+          "self_test": {
+            "injected_m": 2.0,
+            "recovered_e_m": 31.39,
+            "recovered_n_m": -78.88,
+            "passed": false
+          }
+        },
+        "ortho_120m": {
+          "shift_e_m": 0.44,
+          "shift_n_m": -0.62,
+          "shift_m": 0.76,
+          "peak": 0.0155,
+          "ground_share": 0.188,
+          "reference_res_m": 0.1,
+          "n_tiles": 7,
+          "tiles_median_e_m": 0.33,
+          "tiles_median_n_m": -0.81,
+          "tiles_spread_m": 0.24,
+          "self_test": {
+            "injected_m": 2.0,
+            "recovered_e_m": 2.0,
+            "recovered_n_m": 2.01,
+            "passed": true
+          }
+        }
+      },
+      "usable_references": [
+        "naip_2022",
+        "naip_2023"
+      ],
+      "same_receiver_flights": [
+        "ortho_120m"
+      ],
+      "consensus_e_m": 2.16,
+      "consensus_n_m": -1.18,
+      "datum_e_m": 0.64,
+      "datum_n_m": -1.08,
+      "receiver_e_m": 1.52,
+      "receiver_n_m": -0.1,
+      "receiver_error_reported_m": 0.7864,
+      "tape_distances": false
+    }
+  }
+}

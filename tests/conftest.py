@@ -70,3 +70,30 @@ def grid():
 def census():
     path = P02_DATA / "census_princeton.gpkg"
     return {name: gpd.read_file(path, layer=name) for name in gpd.list_layers(path)["name"]}
+
+
+# Precept 03, the imagery around the site and the flight. Rasters are opened once per session.
+P03_DATA = REPO / "P03" / "data"
+
+
+@pytest.fixture(scope="session")
+def p03():
+    return json.loads((P03_DATA / "ground_truth.json").read_text())["p03"]
+
+
+@pytest.fixture(scope="session")
+def site03():
+    """A dict of every layer in the site GeoPackage, in the CRS it was written in."""
+    path = P03_DATA / "site.gpkg"
+    return {name: gpd.read_file(path, layer=name) for name in gpd.list_layers(path)["name"]}
+
+
+@pytest.fixture(scope="session")
+def rasters03():
+    """Every GeoTIFF the kit ships, as an open rasterio dataset keyed by file name."""
+    import rasterio
+
+    opened = {path.name: rasterio.open(path) for path in sorted(P03_DATA.glob("*.tif"))}
+    yield opened
+    for src in opened.values():
+        src.close()

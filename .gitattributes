@@ -4,3 +4,10 @@
 *.ipynb text
 *.geojson text
 *.gpkg binary
+*.tif binary
+*.tiff binary
+*.jpg binary
+*.JPG binary
+*.png binary
+*.npz binary
+*.laz binary

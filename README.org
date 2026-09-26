@@ -1,7 +1,7 @@
 # =============================================================================
 # File      : README.org -- Student quickstart for the course code
 # Author    : Jürgen Hackl <hackl@princeton.edu>
-# Time-stamp: <2026-09-11>
+# Time-stamp: <2026-09-17>
 # Copyright (c) 2026 Jürgen Hackl <hackl@princeton.edu>
 # =============================================================================
 #+OPTIONS: toc:nil
@@ -29,6 +29,7 @@ Princeton University, Fall 2026. Everything we run in the Wednesday precepts liv
 | =P01/= | Getting Started: Python, Maps & Your Coding Agent (Wed Sep 9)   |
 | =A01/= | Your Town, Your Agent, Your Map: the first assignment, due Fri Sep 25 |
 | =P02/= | The Open City kit: the town's own data, one number per block, a map for the lobby, self-paced from Mon Sep 14 |
+| =P03/= | Eyes in the Sky: the site in five sensors, bands and an index, the flight planned, the ground under the field, then the flight's own photographs, orthomosaic and surface model; self-paced from Mon Sep 21, the second half after the flight |
 
 Assignment folders such as =A01/= appear beside the precept folders on the day they are released.
 
@@ -65,4 +66,4 @@ The container and the =uv= path install exactly the same packages, pinned in =py
 The course agent for the first weeks is Google Antigravity, on its free tier. Setup and sign-in are in [[file:docs/agent-antigravity.org]]. Any agent you already have is welcome too. What the course asks is not which tool you use but that you can say what it did and what you verified.
 
 * Licenses
-Course code and notebooks are MIT (see =LICENSE=), so reuse them freely. Data files carry their own terms, listed in each folder's =data/README.org=. OpenStreetMap extracts are ODbL 1.0 and require attribution. The State's boundaries and parcel composite are public records that ask for an acknowledgement of NJOGIS. The Municipality of Princeton's layers are public records under OPRA whose publisher states no licence, which we say plainly rather than assume. Census files are US federal public domain. No file in this repository names a person; owner name, owner mailing address and reporter columns were never requested from the services that publish them, and a parcel's own street location is kept because it names land, not a person.
+Course code and notebooks are MIT (see =LICENSE=), so reuse them freely. Data files carry their own terms, listed in each folder's =data/README.org=. OpenStreetMap extracts are ODbL 1.0 and require attribution. The State's boundaries and parcel composite are public records that ask for an acknowledgement of NJOGIS. The Municipality of Princeton's layers are public records under OPRA whose publisher states no licence, which we say plainly rather than assume. Census files are US federal public domain. The satellite and aerial windows of =P03/= are public domain (USDA NAIP, USGS Landsat and 3DEP) or carry the Copernicus condition "contains modified Copernicus Sentinel data 2025"; the State's 2020 orthophoto is a public record of the NJ Office of GIS; the drone photographs and every product made from them are the course's own under CC BY 4.0 and show no recognisable person. No file in this repository names a person; owner name, owner mailing address and reporter columns were never requested from the services that publish them, and a parcel's own street location is kept because it names land, not a person.
