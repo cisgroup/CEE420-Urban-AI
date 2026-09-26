@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-13",
+  "generated": "2026-09-18",
   "p02": {
     "snapshots": {
       "municipal": "2026-09-11",
@@ -191,6 +191,58 @@
     "inlets": {
       "coordinate_disagreements_over_1ft": 31,
       "worst_disagreement_ft": 223
+    },
+    "deer": {
+      "unassigned_to_zoning": 164,
+      "unassigned_within_15m_of_road": 163,
+      "within_15m_of_road": 203,
+      "inside_a_block": 329,
+      "blocks_with_a_report": 149,
+      "smallest_home_denominator": 4,
+      "years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
+    },
+    "food_by_zoning": {
+      "grid_250m": {
+        "zones": 839,
+        "placed": 92,
+        "max_in_one_zone": 26,
+        "zones_with_any": 19,
+        "top_share": 0.28
+      },
+      "grid_500m": {
+        "zones": 228,
+        "placed": 92,
+        "max_in_one_zone": 40,
+        "zones_with_any": 14,
+        "top_share": 0.43
+      },
+      "grid_500m_offset_250m": {
+        "zones": 226,
+        "placed": 92,
+        "max_in_one_zone": 38,
+        "zones_with_any": 11,
+        "top_share": 0.41
+      },
+      "zoning_districts": {
+        "zones": 126,
+        "placed": 91,
+        "max_in_one_zone": 53,
+        "zones_with_any": 13,
+        "top_share": 0.58
+      },
+      "tax_blocks": {
+        "zones": 484,
+        "placed": 91,
+        "max_in_one_zone": 14,
+        "zones_with_any": 24,
+        "top_share": 0.15
+      }
     }
   }
 }
