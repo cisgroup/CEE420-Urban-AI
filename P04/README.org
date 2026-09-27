@@ -1,0 +1,23 @@
+# =============================================================================
+# File      : README.org -- Precept 04
+# Author    : Jürgen Hackl <hackl@princeton.edu>
+# Copyright (c) 2026 Jürgen Hackl <hackl@princeton.edu>
+# =============================================================================
+#+OPTIONS: toc:nil num:nil tags:nil
+#+TITLE: Precept 04 Kit, A First Classifier
+#+SUBTITLE: CEE420 Urban AI
+#+AUTHOR: Jürgen Hackl
+
+The first classifier, on the town. Precept 04 runs along these three notebooks in class on Wednesday 30 September, cell by cell, and they are self-paced from then on, finished and shipped with their outputs, so you can read them before you run them. None of it is assessed. The scene, the labels, the chips, the forest and every number are those of Lecture 04, so what you see on your laptop is what was on the slides on Monday.
+
+Start with the first two cells of =04_01=. They open the satellite scene and print its date and its name, and if that works your environment is ready for the kit. Then read in order. Every notebook prints the numbers it computes beside the numbers the lecture quoted, which travel in =data/ground_truth.json=, so nothing is typed twice. Each notebook ends with a your-turn cell whose answer is not in the kit; it comes in the Friday post.
+
+| Notebook | What it covers |
+|----------+----------------|
+| =04_01_the_scene_and_its_labels= | The Sentinel-2 scene of the town as a file and as eight numbers per cell, the twelve lines of Lecture 03 as a live lane that is off by default, a land cover map somebody else made as the labels, its classes collapsed to four with the reasons, where the four classes sit in feature space, and a second map that disagrees |
+| =04_02_chips_and_sixteen_numbers= | One chip and its majority label, every chip of the town cut half overlapping and edge to edge, the class imbalance that sets the baseline, sixteen numbers per chip as the mean and the spread of each feature, and the chips on the map with the 3 km blocks of the next notebook |
+| =04_03_a_first_classifier= | A random forest on the chips, its error matrix with producer's and user's accuracy, the majority baseline beside every score, the same forest on random folds and on folds of whole blocks and the leak of overlapping chips, what the forest looked at, a map painted from the chips, an optional cell that asks a pretrained network for 512 numbers per chip where the deep learning library exists, and the August forest applied to March |
+
+The third notebook has one optional cell. It tries to import the deep learning library, which is not part of the course environment, and where the library is missing it prints one sentence and the notebook continues. It runs in the environment of P05.
+
+The data in =data/= is the Lecture 04 running example, pinned: the Sentinel-2 scene of 22 August 2025 over the whole town at 10 m (blue, green, red and near infrared) and at 20 m (the two shortwave infrared bands and the scene classification), the leaf-off scene of 10 March 2025 in the same two files, ESA WorldCover 2021 and the Impact Observatory 2023 land cover map relocated onto the scene's grid, the municipal boundary, and the reference numbers. Every raster carries its source, its licence and its retrieval date in its tags. Sources and licences are listed in =data/README.org=. The Sentinel-2 files contain modified Copernicus Sentinel data 2025; WorldCover is CC BY 4.0 (Zanaga et al. 2022); the Impact Observatory map is CC BY 4.0 (Karra et al. 2021); the boundary is a public record of NJGIN. Nothing that identifies a person is in any file.

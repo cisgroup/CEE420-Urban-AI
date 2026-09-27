@@ -18,4 +18,4 @@ Small, pinned snapshots so nothing here depends on a live service.
 | princeton_food.geojson     | OpenStreetMap, snapshot 2026-08-29          | ODbL 1.0, (c) OpenStreetMap contributors |
 | ground_truth.json          | Generated reference numbers for the checks  | CC0                                      |
 
-Retrieved 2026-09-13 by the course data pipeline.
+Retrieved 2026-09-26 by the course data pipeline.

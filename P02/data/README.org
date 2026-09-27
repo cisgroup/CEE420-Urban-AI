@@ -24,4 +24,4 @@ Small, pinned snapshots so nothing here depends on a live service.
 | census_princeton.gpkg       | US Census Bureau, cartographic boundaries 2024, geometry only; ACS 5-year estimates arrive with a later pull                                                  | Public domain, US federal government                                                     |
 | princeton_grid_250m.gpkg    | Generated: 250 m grid with OpenStreetMap building counts, snapshot 2026-08-29                                                                                 | ODbL 1.0, (c) OpenStreetMap contributors                                                 |
 
-Retrieved 2026-09-13 by the course data pipeline.
+Retrieved 2026-09-26 by the course data pipeline.

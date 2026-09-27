@@ -45,4 +45,4 @@ Small, pinned snapshots so nothing here depends on a live service.
 | points_sample.npz          | 100 000 points of the classified dense cloud as offsets from an origin, with colours and class codes                                                                                                                                      | CC BY 4.0, CEE420 Urban AI course flight                                      |
 | check_windows.csv          | The orthomosaic against the 2022 NAIP flight by phase correlation in 60 m windows: the shift that moves the orthomosaic onto the State's photograph, window by window                                                                     | CC BY 4.0, CEE420 Urban AI course flight                                      |
 
-Retrieved 2026-09-18 by the course data pipeline.
+Retrieved 2026-09-26 by the course data pipeline.

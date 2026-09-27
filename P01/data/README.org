@@ -23,4 +23,4 @@ Small, pinned snapshots so nothing here depends on a live service.
 | walk_network_nodes.geojson  | OpenStreetMap walkable network, snapshot 2026-09-07    | ODbL 1.0, (c) OpenStreetMap contributors |
 | walk_network_edges.geojson  | OpenStreetMap walkable network, snapshot 2026-09-07    | ODbL 1.0, (c) OpenStreetMap contributors |
 
-Retrieved 2026-09-13 by the course data pipeline.
+Retrieved 2026-09-26 by the course data pipeline.

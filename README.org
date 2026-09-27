@@ -30,6 +30,7 @@ Princeton University, Fall 2026. Everything we run in the Wednesday precepts liv
 | =A01/= | Your Town, Your Agent, Your Map: the first assignment, due Fri Sep 25 |
 | =P02/= | The Open City kit: the town's own data, one number per block, a map for the lobby, self-paced from Mon Sep 14 |
 | =P03/= | Eyes in the Sky: the site in five sensors, bands and an index, the flight planned, the ground under the field, then the flight's own photographs, orthomosaic and surface model; self-paced from Mon Sep 21, the second half after the flight |
+| =P04/= | A First Classifier: the town's satellite scene and a land cover map as its labels, the scene cut into chips with sixteen numbers each, a random forest with its error matrix, the majority baseline, a random split against a split by whole blocks, and what a pretrained network adds; run along on Wed Sep 30, self-paced after |
 
 Assignment folders such as =A01/= appear beside the precept folders on the day they are released.
 

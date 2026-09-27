@@ -1,0 +1,218 @@
+{
+  "generated": "2026-09-26",
+  "p04": {
+    "snapshots": {
+      "stac": "2026-09-13",
+      "landcover": "2026-09-26"
+    },
+    "scene": {
+      "date": "2025-08-22",
+      "leaf_off_date": "2025-03-10",
+      "item": "S2C_18TWK_20250822_0_L2A",
+      "platform": "sentinel-2c",
+      "cloud_cover_percent": 0.03,
+      "crs": "EPSG:32618",
+      "res_m": 10,
+      "width": 930,
+      "height": 998,
+      "cells": 928140,
+      "cells_in_town": 476595,
+      "cells_labelled": 476425,
+      "features": [
+        "blue",
+        "green",
+        "red",
+        "nir",
+        "swir16",
+        "swir22",
+        "ndvi",
+        "ndbi"
+      ],
+      "scl_vegetation_percent": 92.9
+    },
+    "labels": {
+      "source": "ESA WorldCover 2021 v200, 10 m",
+      "second_map": "Impact Observatory annual land use and land cover 2023, 10 m",
+      "raw_share_percent": {
+        "10 tree cover": 80.08,
+        "30 grassland": 9.57,
+        "40 cropland": 1.82,
+        "50 built-up": 7.11,
+        "60 bare or sparse vegetation": 0.04,
+        "80 permanent water bodies": 1.38
+      },
+      "collapse": {
+        "10 tree cover": "tree cover",
+        "30 grassland": "grass",
+        "40 cropland": "grass",
+        "90 herbaceous wetland": "grass",
+        "50 built-up": "built-up",
+        "80 permanent water bodies": "water"
+      },
+      "share_percent": {
+        "tree cover": 80.1,
+        "grass": 11.4,
+        "built-up": 7.1,
+        "water": 1.4
+      },
+      "dropped_percent": 0.04,
+      "io_share_percent": {
+        "tree cover": 26.3,
+        "grass": 7.3,
+        "built-up": 64.7,
+        "water": 1.7
+      },
+      "both_labelled_percent": 100.0
+    },
+    "chips": {
+      "size_cells": 16,
+      "size_m": 160,
+      "stride_cells": 8,
+      "numbers_per_chip": 16,
+      "names": [
+        "mean blue",
+        "mean green",
+        "mean red",
+        "mean nir",
+        "mean swir16",
+        "mean swir22",
+        "mean ndvi",
+        "mean ndbi",
+        "spread blue",
+        "spread green",
+        "spread red",
+        "spread nir",
+        "spread swir16",
+        "spread swir22",
+        "spread ndvi",
+        "spread ndbi"
+      ],
+      "overlapping": {
+        "n": 7166,
+        "class_counts": {
+          "tree cover": 6136,
+          "grass": 645,
+          "built-up": 318,
+          "water": 67
+        },
+        "majority_class": "tree cover",
+        "majority_class_percent": 85.6,
+        "share_mean_percent": 87.0,
+        "mixed_percent": 10.0
+      },
+      "tiled": {
+        "n": 1791,
+        "class_counts": {
+          "tree cover": 1531,
+          "grass": 157,
+          "built-up": 88,
+          "water": 15
+        },
+        "majority_class": "tree cover",
+        "majority_class_percent": 85.5,
+        "share_mean_percent": 87.1,
+        "mixed_percent": 9.4
+      }
+    },
+    "forest": {
+      "trees": 100,
+      "min_samples_leaf": 2,
+      "seed": 20260928,
+      "folds": 5,
+      "block_m": 3000,
+      "blocks_n": 10,
+      "random_folds_percent": [
+        95.7,
+        96.7,
+        96.2,
+        95.6,
+        95.8
+      ],
+      "random_mean_percent": 96.0,
+      "blocked_folds_percent": [
+        90.1,
+        97.1,
+        97.3,
+        95.6,
+        94.5
+      ],
+      "blocked_mean_percent": 94.9,
+      "first_block_fold": {
+        "n_train": 5799,
+        "n_test": 1367,
+        "accuracy_percent": 90.1,
+        "majority_class": "tree cover",
+        "majority_percent": 73.4,
+        "matrix": [
+          [
+            968,
+            5,
+            30,
+            0
+          ],
+          [
+            30,
+            130,
+            4,
+            0
+          ],
+          [
+            63,
+            3,
+            134,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "classes": [
+          "tree cover",
+          "grass",
+          "built-up",
+          "water"
+        ],
+        "producers_percent": {
+          "tree cover": 96.5,
+          "grass": 79.3,
+          "built-up": 67.0,
+          "water": null
+        },
+        "users_percent": {
+          "tree cover": 91.2,
+          "grass": 94.2,
+          "built-up": 79.8,
+          "water": null
+        },
+        "importances_percent": {
+          "mean blue": 3.1,
+          "mean green": 6.1,
+          "mean red": 2.6,
+          "mean nir": 17.6,
+          "mean swir16": 24.7,
+          "mean swir22": 8.6,
+          "mean ndvi": 9.4,
+          "mean ndbi": 5.3,
+          "spread blue": 4.1,
+          "spread green": 2.7,
+          "spread red": 3.0,
+          "spread nir": 2.9,
+          "spread swir16": 2.8,
+          "spread swir22": 2.4,
+          "spread ndvi": 3.4,
+          "spread ndbi": 1.4
+        },
+        "top_three": [
+          "mean swir16",
+          "mean nir",
+          "mean ndvi"
+        ]
+      },
+      "tiled_random_mean_percent": 95.3,
+      "tiled_blocked_mean_percent": 94.8
+    }
+  }
+}

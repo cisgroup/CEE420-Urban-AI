@@ -97,3 +97,23 @@ def rasters03():
     yield opened
     for src in opened.values():
         src.close()
+
+
+# Precept 04, the town scene and the labels of the first classifier. Rasters are opened once per session.
+P04_DATA = REPO / "P04" / "data"
+
+
+@pytest.fixture(scope="session")
+def p04():
+    return json.loads((P04_DATA / "ground_truth.json").read_text())["p04"]
+
+
+@pytest.fixture(scope="session")
+def rasters04():
+    """Every GeoTIFF the kit ships, as an open rasterio dataset keyed by file name."""
+    import rasterio
+
+    opened = {path.name: rasterio.open(path) for path in sorted(P04_DATA.glob("*.tif"))}
+    yield opened
+    for src in opened.values():
+        src.close()
