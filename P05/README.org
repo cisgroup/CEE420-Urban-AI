@@ -1,0 +1,28 @@
+# =============================================================================
+# File      : README.org -- Precept 05
+# Author    : Jürgen Hackl <hackl@princeton.edu>
+# Copyright (c) 2026 Jürgen Hackl <hackl@princeton.edu>
+# =============================================================================
+#+OPTIONS: toc:nil num:nil tags:nil
+#+TITLE: Precept 05 Kit, Segmenting Princeton
+#+SUBTITLE: CEE420 Urban AI
+#+AUTHOR: Jürgen Hackl
+
+Lecture 05 trained a network that paints every roof in three kilometres of Princeton. These four notebooks put that model on your laptop. They follow the lecture's four chapters: the data the model learned from, its answer at every pixel and how that answer is scored, what a few labels of your own buy on a pretrained body, and the same idea at street level. Each notebook opens on the whole window or the whole street, then works on one test block at full size or on one street frame. You run and read. You do not write code. None of it is assessed.
+
+Start with =05_01=. Its first cell prints the window and whether the deep learning library is ready, and if that works your environment is ready for the rest. Then read in order. Every number a notebook computes is printed beside the number the course pipeline computed from the same files, which travel in =data/ground_truth.json=, so you can see at once whether your run agrees.
+
+| Notebook | What it shows |
+|----------+---------------|
+| =05_01_chips_and_masks= | The window at 2.4 m with its 25 blocks dealt out before any training, the mask rule at full size on one block, the 1,600 chips and their split, the first batch the lecture's classifier saw, a head of 513 weights on the frozen features under two splits, and the feature space of the frozen and the fine-tuned body |
+| =05_02_semantic_segmentation= | The model's map over the window, the frozen-encoder U-Net loaded and counted, the test block predicted on your laptop beside the lecture's map, one chip scored by its four counts, the block scored chip by chip and pooled, blobs matched to footprints, one chip's mask after every epoch, and two chips with the same pixels right and very different IoU |
+| =05_03_fine_tuning= | The lecture's four runs as curves, 24 training chips, a fresh decoder on the frozen encoder trained for twelve epochs on your own processor, your curve beside the lecture's, and the eight symmetries of one chip |
+| =05_04_street_level= | One Mapillary image of Nassau Street, the label map a published street segmenter drew, the class shares and the green view index, where the labels fail, and the switched-off cell that would label a picture of your own |
+
+Every computation is one call into =seg_tools.py=, the kit's toolbox. It holds the U-Net of the lecture, the metrics, the head, the loaders and the plots, written with a sentence of explanation on each, and you can open it and read how any step works. The course pipeline that computes the reference numbers imports the same file, so the notebooks and the references cannot disagree.
+
+The cells that need the deep learning library sit under =if torch_ok:= and print one line when it is missing, so every notebook runs to its end either way, and the shipped maps carry what a skipped cell would have computed. The library is in the course environment from this week on, as a CPU build; pull and rebuild the container once before you start. The one cell that trains runs a minute or two on a laptop's processor.
+
+Each notebook ends with "Your turn": a cell that runs as it is, with one marked value to change. Change it, run again, and answer one question in words. The answers come in the Friday post, not in the kit. "Check your understanding" asks four questions you can answer from what the notebook showed.
+
+The data in =data/= is the lecture's running example cut to what a laptop needs: the NAIP 2023 window around Nassau Hall averaged to 2.4 m with the mask's roof share and the fine-tuned model's map at the same size; block 7, the residential test block, at 30 cm with its mask, its 338 footprints and both models' maps; the table of the 1,600 chips with the lecture's split; the frozen-encoder U-Net's weights as half-precision numbers; the 512 frozen and the 512 fine-tuned numbers of every chip; 24 training chips and the first batch; the lecture's training curves; one validation chip's map after every epoch; and one Mapillary image with its label map. =data/scene.json= records the window, the blocks, the split and the choices the pipeline made. The imagery is NAIP 2023 of the USDA, public domain. The footprints and the masks drawn from them are ODbL 1.0, copyright OpenStreetMap contributors. The street image is CC BY-SA 4.0 by a Mapillary contributor, with faces and plates blurred by the platform. The model, its maps and the kit are the course's own work under CC BY 4.0. Every raster carries its source, its licence and its retrieval date in its tags, every array file the same in its own arrays, and the sources are listed in =data/README.org=. Nothing that identifies a person is in any file.

@@ -143,3 +143,29 @@ def p03b():
 @pytest.fixture(scope="session")
 def choices03b():
     return json.loads((P03B_DATA / "flight.json").read_text())["p03b"]
+
+
+# Precept 05, the lecture's footprint model on one test block, and one street image through a published segmenter.
+P05_KIT = REPO / "P05"
+P05_DATA = P05_KIT / "data"
+
+
+@pytest.fixture(scope="session")
+def seg():
+    """The kit's toolbox, loaded from its file so that no sys.path entry leaks into other tests."""
+    from importlib.util import module_from_spec, spec_from_file_location
+
+    spec = spec_from_file_location("seg_tools_for_tests", P05_KIT / "seg_tools.py")
+    module = module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+@pytest.fixture(scope="session")
+def p05():
+    return json.loads((P05_DATA / "ground_truth.json").read_text())["p05"]
+
+
+@pytest.fixture(scope="session")
+def scene05():
+    return json.loads((P05_DATA / "scene.json").read_text())

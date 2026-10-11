@@ -1,0 +1,319 @@
+{
+  "generated": "2026-10-11",
+  "p05": {
+    "window": {
+      "pixels": 10240,
+      "resolution_m": 0.3,
+      "metres": 3072.0,
+      "date": "2023-08-20",
+      "item": "nj_m_4007443_ne_18_030_20230820_20231019",
+      "mask_share": 0.1077,
+      "footprints": 3418,
+      "small_resolution_m": 2.4
+    },
+    "chips": {
+      "size_px": 256,
+      "metres": 76.8,
+      "label_share": 0.025,
+      "tiled": {
+        "total": 1600,
+        "train": 1024,
+        "val": 256,
+        "test": 320,
+        "with_building": 1079
+      },
+      "overlapping": {
+        "total": 5625,
+        "train": 3600,
+        "val": 900,
+        "test": 1125
+      },
+      "first_batch": {
+        "size": 32,
+        "with_building": 22
+      }
+    },
+    "blocks": {
+      "n": 25,
+      "size_m": 614.4,
+      "test": [
+        7,
+        10,
+        13,
+        18,
+        20
+      ],
+      "val": [
+        2,
+        12,
+        14,
+        22
+      ],
+      "train": 16
+    },
+    "block": {
+      "id": 7,
+      "share": 0.1602,
+      "footprints": 338,
+      "chips": 64,
+      "finetuned": {
+        "threshold": 0.5,
+        "iou": 0.7444,
+        "accuracy": 0.9535,
+        "precision": 0.8613,
+        "recall": 0.8457,
+        "no_building_accuracy": 0.8398,
+        "dice": 0.8534,
+        "per_chip_mean": 0.7193,
+        "chips_defined": 57,
+        "chips": 64,
+        "objects": {
+          "reference": 338,
+          "predicted": 294,
+          "matched": 236,
+          "precision": 0.8027,
+          "recall": 0.6982
+        },
+        "blobs": {
+          "at_threshold": 323,
+          "cleaned": 308,
+          "polygons": 308,
+          "min_px": 49,
+          "min_area_m2": 4.41
+        },
+        "roof_area_m2": 58979,
+        "labelled_area_m2": 62289
+      },
+      "frozen": {
+        "threshold": 0.5,
+        "iou": 0.7069,
+        "accuracy": 0.9441,
+        "precision": 0.815,
+        "recall": 0.842,
+        "no_building_accuracy": 0.8398,
+        "dice": 0.8283,
+        "per_chip_mean": 0.6653,
+        "chips_defined": 59,
+        "chips": 64,
+        "objects": {
+          "reference": 338,
+          "predicted": 292,
+          "matched": 226,
+          "precision": 0.774,
+          "recall": 0.6686
+        },
+        "blobs": {
+          "at_threshold": 409,
+          "cleaned": 315,
+          "polygons": 323,
+          "min_px": 49,
+          "min_area_m2": 4.41
+        },
+        "roof_area_m2": 62807,
+        "labelled_area_m2": 62289
+      },
+      "pair": {
+        "low": {
+          "row": 0,
+          "col": 768,
+          "share": 0.0762,
+          "accuracy": 0.9425,
+          "iou": 0.4708,
+          "tp": 3350,
+          "fp": 2121,
+          "fn": 1645
+        },
+        "high": {
+          "row": 0,
+          "col": 256,
+          "share": 0.4767,
+          "accuracy": 0.945,
+          "iou": 0.8923,
+          "tp": 29864,
+          "fp": 2228,
+          "fn": 1376
+        }
+      }
+    },
+    "head": {
+      "C": 0.01,
+      "block_split": 0.9,
+      "train_block_split": 0.9609,
+      "random_split": 0.9,
+      "finetuned_features": 0.9219,
+      "baseline": 0.7656,
+      "test_chips": 320,
+      "train_chips": 1024
+    },
+    "model": {
+      "parameters": 12460881,
+      "decoder": 1284369,
+      "encoder": 11176512,
+      "run": "frozen",
+      "best_epoch": 18,
+      "epochs": 26
+    },
+    "train_chips": {
+      "n": 24,
+      "blocks": [
+        3,
+        4,
+        6,
+        8,
+        9,
+        11,
+        16,
+        17
+      ],
+      "share_min": 0.1052,
+      "share_max": 0.1894,
+      "epochs": 12,
+      "batch": 4
+    },
+    "lecture": {
+      "main": {
+        "best_epoch": 24,
+        "epochs": 30,
+        "val_iou": 0.718337203482735,
+        "test_iou": 0.663,
+        "test_accuracy": 0.9441,
+        "trainable": 12460881
+      },
+      "frozen": {
+        "best_epoch": 18,
+        "epochs": 26,
+        "val_iou": 0.6942293633208564,
+        "test_iou": 0.5918,
+        "test_accuracy": 0.9321,
+        "trainable": 1284369
+      },
+      "scratch": {
+        "best_epoch": 30,
+        "epochs": 30,
+        "val_iou": 0.6917440098264183,
+        "test_iou": 0.6247,
+        "test_accuracy": 0.9378,
+        "trainable": 12460881
+      },
+      "noskip": {
+        "best_epoch": 25,
+        "epochs": 30,
+        "val_iou": 0.7100354888952239,
+        "test_iou": 0.6258,
+        "test_accuracy": 0.9394,
+        "trainable": 12064593
+      },
+      "random_split": {
+        "best_epoch": 29,
+        "epochs": 30,
+        "val_iou": 0.780120855466449,
+        "test_iou": 0.7755,
+        "test_accuracy": 0.9735,
+        "trainable": 12460881
+      },
+      "stitched": {
+        "iou": 0.6813,
+        "accuracy": 0.9469,
+        "precision": 0.82,
+        "recall": 0.801,
+        "no_building_accuracy": 0.8584
+      },
+      "tiled": {
+        "iou": 0.6695,
+        "accuracy": 0.9443
+      },
+      "objects": {
+        "reference": 693,
+        "predicted": 639,
+        "at_05": {
+          "matched": 474,
+          "precision": 0.7417840375586855,
+          "recall": 0.683982683982684,
+          "f1": 0.7117117117117117,
+          "false": 165,
+          "missed": 219
+        }
+      },
+      "best_threshold": {
+        "threshold": 0.4,
+        "precision": 0.8002463050965404,
+        "recall": 0.8240466798712586,
+        "iou": 0.6834621786779574,
+        "accuracy": 0.9459567070007324
+      },
+      "classifier": {
+        "finetuned": {
+          "test_acc": 0.9187,
+          "best_epoch": 4
+        },
+        "frozen": {
+          "test_acc": 0.8313,
+          "best_epoch": 4
+        },
+        "finetuned_noaug": {
+          "test_acc": 0.9156,
+          "best_epoch": 3
+        },
+        "scratch": {
+          "test_acc": 0.875,
+          "best_epoch": 11
+        }
+      },
+      "baseline": 0.7656
+    },
+    "evolution": {
+      "row": 1792,
+      "col": 5760,
+      "block": 2,
+      "share": 0.1371,
+      "best_epoch": 24,
+      "epochs": 30,
+      "shown": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        24
+      ],
+      "iou": {
+        "1": 0.8098,
+        "2": 0.9144,
+        "4": 0.9337,
+        "8": 0.8668,
+        "16": 0.8531,
+        "24": 0.8948
+      },
+      "val_iou_best": 0.7183
+    },
+    "street": {
+      "image": "1211673680555546",
+      "street": "nassau_street",
+      "green_view_index": 0.242,
+      "sky": 0.043,
+      "label_map": [
+        384,
+        512
+      ],
+      "picture": [
+        1536,
+        2048
+      ],
+      "shares": {
+        "building": 0.2723,
+        "road": 0.2541,
+        "vegetation": 0.242,
+        "car": 0.1465,
+        "sky": 0.043,
+        "sidewalk": 0.032,
+        "pole": 0.0027,
+        "person": 0.0025
+      },
+      "classes": 19,
+      "green_view_index_street": 0.211,
+      "sky_street": 0.237,
+      "images_street": 6,
+      "date": "2024-11-11"
+    }
+  }
+}
