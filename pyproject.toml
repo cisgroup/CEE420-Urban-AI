@@ -24,6 +24,10 @@ dependencies = [
     "pystac-client>=0.8,<1",
     "planetary-computer>=1.0,<2",
     "odc-stac>=0.4,<1",
+    # deep learning for P05 (the U-Net of Lecture 05 and the learned features of 04_03); on Linux the CPU builds come
+    # from the PyTorch index, so the container and a Linux laptop never download the CUDA libraries
+    "torch>=2.14,<2.15",
+    "torchvision>=0.29,<0.30",
     # notebooks
     "ipykernel>=6",
     "jupyterlab>=4",
@@ -37,6 +41,16 @@ dev = [
 
 [tool.uv]
 package = false
+environments = ["sys_platform == 'darwin'", "sys_platform == 'linux'", "sys_platform == 'win32'"]
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu", marker = "sys_platform == 'linux'" }]
+torchvision = [{ index = "pytorch-cpu", marker = "sys_platform == 'linux'" }]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
 
 [tool.pytest.ini_options]
 addopts = "--nbmake -m 'not network'"

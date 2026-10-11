@@ -64,6 +64,8 @@ Your environment is set up when Princeton appears.
 
 The container and the =uv= path install exactly the same packages, pinned in =pyproject.toml= and =uv.lock=. Nothing else is needed, and no notebook in this course should ever ask you to =pip install=.
 
+From P05 on, the environment includes PyTorch, the deep learning library of Lecture 05, as a CPU build. The container and a Linux laptop take it from the PyTorch index, a Mac or a Windows laptop from PyPI, and the first pull after P05 is published rebuilds the container or downloads a few hundred megabytes once. A graphics chip is not needed for anything in this course.
+
 * Your coding agent
 The course agent for the first weeks is Google Antigravity, on its free tier. Setup and sign-in are in [[file:docs/agent-antigravity.org]]. Any agent you already have is welcome too. What the course asks is not which tool you use but that you can say what it did and what you verified.
 
