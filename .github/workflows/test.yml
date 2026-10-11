@@ -6,7 +6,43 @@ on:
   workflow_dispatch:
 
 jobs:
+  # A push that changes the environment also triggers build-image. The container job below pulls the
+  # image the moment it starts, so without this wait it tests the commit in the previous image, which
+  # is how the re-lock of October 2026 failed once and passed on rerun. A push that leaves the
+  # environment alone, and a manual run, go straight through.
+  wait-for-image:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait for the image build of this commit when the push changed the environment
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BEFORE: ${{ github.event.before }}
+          EVENT: ${{ github.event_name }}
+        run: |
+          if [ "$EVENT" != "push" ] || [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
+            echo "not a push with a known parent, the image is taken as it is"
+            exit 0
+          fi
+          changed=$(gh api "repos/$GITHUB_REPOSITORY/compare/$BEFORE...$GITHUB_SHA" --paginate --jq '.files[].filename')
+          if ! printf '%s\n' "$changed" | grep -qxE '\.devcontainer/Dockerfile|pyproject\.toml|uv\.lock|\.github/workflows/build-image\.yml'; then
+            echo "the environment did not change, the image is current"
+            exit 0
+          fi
+          echo "the environment changed, waiting for build-image on $GITHUB_SHA"
+          for i in $(seq 1 60); do
+            state=$(gh run list --repo "$GITHUB_REPOSITORY" --workflow build-image --commit "$GITHUB_SHA" --json status,conclusion \
+              --jq 'if length == 0 then "none yet" else "\(.[0].status) \(.[0].conclusion)" end')
+            case "$state" in
+              "completed success") echo "the image is built"; exit 0 ;;
+              "completed "*) echo "build-image ended with ${state#completed }, so these tests would run in a stale image"; exit 1 ;;
+              *) echo "$state, waiting"; sleep 30 ;;
+            esac
+          done
+          echo "gave up waiting for the image after thirty minutes"
+          exit 1
+
   pytest-in-image:
+    needs: wait-for-image
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/cisgroup/cee420-urban-ai:fa26
