@@ -19,7 +19,7 @@ CHECK = REPO / "P01" / "01_01_environment_check.ipynb"
 STDLIB = {
     "json", "pathlib", "sys", "platform", "re", "math", "os", "textwrap",
     "itertools", "random", "warnings", "time", "datetime", "collections",
-    "subprocess", "importlib", "shutil", "inspect",
+    "subprocess", "importlib", "shutil", "inspect", "logging",
 }
 
 

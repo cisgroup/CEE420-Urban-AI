@@ -44,6 +44,11 @@ P03b/output/
 P04/data/my_*
 P03b/data/my_*
 
+# the P06 notebooks write the masks of your own pictures here, and your pictures stay yours
+P06/output/
+P06/my_images/*
+!P06/my_images/README.org
+
 # point clouds never travel through git; the thinned sample in P03/data/ stands in for them
 *.laz
 *.las

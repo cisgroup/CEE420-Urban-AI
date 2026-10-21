@@ -1,0 +1,2177 @@
+{
+ "source": "USDA NAIP 2023 (nj_m_4007443_ne_18_030_20230820_20231019, 2023-08-20) from the Planetary Computer, the window of Lecture 05; the model runs of Lecture 06, lectures/L06/figures/run_models.py, transformers 5.19 on the Mac's GPU; the AlphaEarth embeddings of the town",
+ "retrieved": "2026-10-21",
+ "seed": 20261026,
+ "licence": "public domain, USDA; the footprints ODbL 1.0, copyright OpenStreetMap contributors; the embeddings CC BY 4.0, Google and Google DeepMind, AlphaEarth Foundations Satellite Embedding dataset v1; the masks, numbers and this kit CC BY 4.0, CEE420 Urban AI, the course's own work",
+ "window": {
+  "item": "nj_m_4007443_ne_18_030_20230820_20231019",
+  "date": "2023-08-20",
+  "pixels": 10240,
+  "resolution_m": 0.3,
+  "metres": 3072.0,
+  "origin": [
+   527400.000000017,
+   4468060.199999991
+  ],
+  "crs": "EPSG:26918",
+  "bands": "red, green, blue, near infrared (the kit ships the first three)",
+  "small_resolution_m": 2.4,
+  "small_pixels": 1280
+ },
+ "mask": {
+  "rule": "a pixel is roof when its centre lies inside an OpenStreetMap footprint (the centre-in rule of Lecture 04)",
+  "share": 0.1077,
+  "footprints_inside": 3418,
+  "snapshot": "OpenStreetMap, August 2026"
+ },
+ "blocks": {
+  "n": 25,
+  "size_px": 2048,
+  "size_m": 614.4,
+  "role": {
+   "0": "train",
+   "1": "train",
+   "3": "train",
+   "4": "train",
+   "5": "train",
+   "6": "train",
+   "8": "train",
+   "9": "train",
+   "11": "train",
+   "15": "train",
+   "16": "train",
+   "17": "train",
+   "19": "train",
+   "21": "train",
+   "23": "train",
+   "24": "train",
+   "22": "val",
+   "14": "val",
+   "12": "val",
+   "2": "val",
+   "7": "test",
+   "18": "test",
+   "20": "test",
+   "10": "test",
+   "13": "test"
+  },
+  "test": [
+   7,
+   10,
+   13,
+   18,
+   20
+  ],
+  "val": [
+   2,
+   12,
+   14,
+   22
+  ],
+  "train": [
+   0,
+   1,
+   3,
+   4,
+   5,
+   6,
+   8,
+   9,
+   11,
+   15,
+   16,
+   17,
+   19,
+   21,
+   23,
+   24
+  ],
+  "share": {
+   "0": 0.009,
+   "1": 0.0605,
+   "2": 0.1108,
+   "3": 0.1473,
+   "4": 0.1137,
+   "5": 0.0845,
+   "6": 0.1523,
+   "7": 0.1602,
+   "8": 0.1442,
+   "9": 0.1306,
+   "10": 0.0899,
+   "11": 0.1253,
+   "12": 0.301,
+   "13": 0.2396,
+   "14": 0.0703,
+   "15": 0.0512,
+   "16": 0.1108,
+   "17": 0.1632,
+   "18": 0.1721,
+   "19": 0.054,
+   "20": 0.0463,
+   "21": 0.0648,
+   "22": 0.0371,
+   "23": 0.0549,
+   "24": 0.0
+  },
+  "fixed": {
+   "7": "the residential neighbourhood of the L04 Kahoot",
+   "18": "Poe Field and the class flight"
+  }
+ },
+ "chips": {
+  "size_px": 256,
+  "metres": 76.8,
+  "label_rule": "a chip holds a building when at least 2.5% of its pixels are roof",
+  "label_share": 0.025,
+  "tiled": {
+   "total": 1600,
+   "train": 1024,
+   "val": 256,
+   "test": 320,
+   "with_building": 1079
+  },
+  "overlapping": {
+   "total": 5625,
+   "train": 3600,
+   "val": 900,
+   "test": 1125
+  },
+  "stride_px": 128
+ },
+ "test_blocks": [
+  7,
+  10,
+  13,
+  18,
+  20
+ ],
+ "val_blocks": [
+  2,
+  12,
+  14,
+  22
+ ],
+ "block": {
+  "id": 7,
+  "why": "the residential neighbourhood of the L04 Kahoot",
+  "bounds": [
+   528628.800000017,
+   4466831.399999991,
+   529243.200000017,
+   4467445.7999999905
+  ],
+  "origin": [
+   2048,
+   4096
+  ],
+  "chips": 64,
+  "share": 0.1602,
+  "footprints": 338,
+  "footprints_touching": 358
+ },
+ "prompt": {
+  "crop_origin": [
+   1024,
+   1024
+  ],
+  "crop_px": 1024,
+  "building": 1878,
+  "building_px": 1584,
+  "point": [
+   695.75,
+   49.23
+  ],
+  "point2": [
+   704.83,
+   51.48
+  ],
+  "negative": [
+   657.0,
+   49.0
+  ],
+  "box": [
+   669,
+   24,
+   723,
+   74
+  ],
+  "alternative": {
+   "point": [
+    74.9,
+    68.3
+   ],
+   "building": 1870,
+   "building_px": 5404,
+   "rule": "the centroid of the largest footprint that lies wholly inside the crop"
+  },
+  "rule": "the building of median area among those wholly inside the crop; the second click a third of the way to its farthest pixel; the background click 12 px beyond the box on its freest side"
+ },
+ "phrases": {
+  "scored": [
+   "building",
+   "house",
+   "roof"
+  ],
+  "shown": [
+   "building",
+   "house",
+   "roof",
+   "car",
+   "tree",
+   "swimming pool"
+  ],
+  "chosen": "building",
+  "chosen_on": "the four validation blocks",
+  "answer": "house",
+  "open_phrase": "house",
+  "open_threshold": 0.2
+ },
+ "captions": {
+  "sets": {
+   "satellite": [
+    "a satellite photo of buildings",
+    "a satellite photo of trees and fields"
+   ],
+   "aerial": [
+    "an aerial photo of houses",
+    "an aerial photo of forest and grass"
+   ],
+   "plain": [
+    "buildings",
+    "vegetation"
+   ],
+   "long": [
+    "a satellite image of a residential area with houses and roofs",
+    "a satellite image of a park or forest with no buildings"
+   ]
+  },
+  "chosen": "satellite",
+  "answer": "aerial",
+  "building_first": true,
+  "masks": [
+   "a satellite photo of a building",
+   "a satellite photo of trees",
+   "a satellite photo of a road or parking lot",
+   "a satellite photo of a lawn or field"
+  ],
+  "head_C": 0.1
+ },
+ "questions": {
+  "class_question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "count_question": "How many buildings are in this aerial photograph? Answer with a single number.",
+  "parking_question": "Is there a parking lot in this aerial photograph? Answer yes or no.",
+  "caption_prompt": "Describe this aerial photograph in one sentence."
+ },
+ "models": {
+  "sam2": {
+   "id": "facebook/sam2.1-hiera-tiny",
+   "name": "SAM 2.1 hiera-tiny",
+   "maker": "Meta",
+   "licence": "Apache 2.0",
+   "weights_mb": 156
+  },
+  "sam2_large": {
+   "id": "facebook/sam2.1-hiera-large",
+   "name": "SAM 2.1 hiera-large",
+   "maker": "Meta",
+   "licence": "Apache 2.0",
+   "weights_mb": 898
+  },
+  "sam3": {
+   "id": "facebook/sam3",
+   "name": "SAM 3",
+   "maker": "Meta",
+   "licence": "SAM License of 19 November 2025, gated weights",
+   "weights_mb": 3400
+  },
+  "gdino": {
+   "id": "IDEA-Research/grounding-dino-tiny",
+   "name": "Grounding DINO tiny",
+   "maker": "IDEA Research",
+   "licence": "Apache 2.0",
+   "weights_mb": 690
+  },
+  "clip": {
+   "id": "openai/clip-vit-base-patch16",
+   "name": "CLIP ViT-B/16",
+   "maker": "OpenAI",
+   "licence": "MIT",
+   "weights_mb": 600
+  },
+  "vlm": {
+   "id": "Qwen/Qwen3-VL-2B-Instruct",
+   "name": "Qwen3-VL-2B-Instruct",
+   "maker": "Alibaba",
+   "licence": "Apache 2.0",
+   "weights_mb": 4300
+  },
+  "vlm_small": {
+   "id": "HuggingFaceTB/SmolVLM-500M-Instruct",
+   "name": "SmolVLM-500M-Instruct",
+   "maker": "Hugging Face",
+   "licence": "Apache 2.0",
+   "weights_mb": 1000
+  }
+ },
+ "sam3_sentence": "The masks of the text model are outputs of SAM 3 (Meta), whose weights are gated and released under the SAM License of 19 November 2025. That licence governs the distribution of the model and of works derived from it and asks that research using it acknowledge the use, which this kit does; it says nothing that restricts its outputs, so the masks ship as the course's own work under CC BY 4.0. The weights never ship, and the kit's live text lane is the open stand-in.",
+ "embeddings": {
+  "source": "Source Cooperative mirror tge-labs/aef of the AlphaEarth Foundations Satellite Embedding dataset v1 (annual)",
+  "attribution": "The AlphaEarth Foundations Satellite Embedding dataset is produced by Google and Google DeepMind",
+  "licence": "CC BY 4.0, Google and Google DeepMind, AlphaEarth Foundations Satellite Embedding dataset v1",
+  "dequantise": "((v / 127.5) ** 2) * sign(v); unit vectors; -128 is nodata",
+  "years_shipped": [
+   2021,
+   2025
+  ],
+  "label_year": 2021,
+  "map_year": 2025,
+  "change_years": [
+   2018,
+   2025
+  ],
+  "similarity_threshold": 0.85,
+  "change_threshold": 0.6,
+  "grid": {
+   "transform": [
+    10.0,
+    0.0,
+    523380.0,
+    0.0,
+    -10.0,
+    4471420.0
+   ],
+   "crs": "EPSG:32618",
+   "shape": [
+    998,
+    930
+   ],
+   "res_m": 10.0
+  },
+  "tiles": {
+   "2018": "https://data.source.coop/tge-labs/aef/v1/annual/2018/18N/xd9v12tnwfbep9w6l-0000000000-0000000000.tiff",
+   "2021": "https://data.source.coop/tge-labs/aef/v1/annual/2021/18N/x7o9r85r73m2ljn1r-0000000000-0000000000.tiff",
+   "2025": "https://data.source.coop/tge-labs/aef/v1/annual/2025/18N/xjrh5filzkv2q7l4q-0000000000-0000000000.tiff"
+  },
+  "masked": "cells outside the municipal boundary are nodata"
+ },
+ "places": {
+  "nassau_hall": {
+   "x": 528925.6687258305,
+   "y": 4466514.812020173,
+   "row": 490,
+   "col": 554,
+   "name": "Nassau Hall",
+   "vectors": {
+    "2021": [
+     -0.02461,
+     -0.21413,
+     -0.00301,
+     0.04484,
+     0.05173,
+     -0.29287,
+     -0.02977,
+     -0.01575,
+     -0.00615,
+     -0.11374,
+     0.1477,
+     -0.08421,
+     -0.1728,
+     -0.16,
+     -0.25196,
+     0.05536,
+     -0.08421,
+     0.24415,
+     -0.12457,
+     0.07536,
+     0.07111,
+     0.05536,
+     -0.11909,
+     0.06699,
+     -0.06299,
+     0.11374,
+     -0.07536,
+     -0.03845,
+     0.10851,
+     0.01778,
+     -0.01206,
+     -0.03845,
+     -0.05912,
+     0.00498,
+     0.17938,
+     -0.13017,
+     -0.11909,
+     -0.23646,
+     0.04484,
+     -0.1477,
+     -0.2289,
+     -0.08421,
+     0.11374,
+     0.03254,
+     0.05536,
+     0.1477,
+     0.11909,
+     0.00055,
+     0.21413,
+     -0.15379,
+     -0.08421,
+     0.08421,
+     -0.18608,
+     0.02713,
+     0.25196,
+     -0.04823,
+     0.21413,
+     0.1477,
+     0.03845,
+     0.06699,
+     -0.01206,
+     -0.15379,
+     -0.08421,
+     0.02713
+    ],
+    "2025": [
+     -0.02461,
+     -0.22145,
+     0.03845,
+     0.06299,
+     0.07536,
+     -0.29287,
+     -0.09842,
+     -0.02977,
+     -0.0104,
+     -0.11909,
+     0.1728,
+     -0.09356,
+     -0.15379,
+     -0.15379,
+     -0.3101,
+     0.0104,
+     -0.06699,
+     0.2289,
+     -0.09842,
+     0.06299,
+     0.06699,
+     0.06299,
+     -0.11374,
+     0.01778,
+     -0.08421,
+     0.14173,
+     -0.05912,
+     -0.00886,
+     0.07536,
+     -0.03845,
+     0.01206,
+     -0.04484,
+     -0.05173,
+     -0.01575,
+     0.17938,
+     -0.08421,
+     -0.08883,
+     -0.22145,
+     0.05912,
+     -0.05912,
+     -0.21413,
+     -0.12457,
+     0.15379,
+     0.01384,
+     0.07972,
+     0.14173,
+     0.13017,
+     -0.01575,
+     0.2289,
+     -0.1477,
+     -0.05536,
+     0.09356,
+     -0.15379,
+     0.05912,
+     0.23646,
+     -0.05536,
+     0.23646,
+     0.16634,
+     0.00154,
+     0.01575,
+     0.01384,
+     -0.10341,
+     -0.11909,
+     -0.01575
+    ]
+   }
+  },
+  "campus_lawn": {
+   "x": 529374.2370074794,
+   "y": 4465951.508951087,
+   "row": 546,
+   "col": 599,
+   "name": "Poe Field",
+   "vectors": {
+    "2021": [
+     -0.00498,
+     -0.24415,
+     0.05173,
+     -0.02461,
+     0.04484,
+     -0.11909,
+     0.14173,
+     -0.05912,
+     -0.01384,
+     -0.2289,
+     -0.05173,
+     -0.07536,
+     -0.17938,
+     -0.12457,
+     -0.06299,
+     0.25196,
+     -0.07536,
+     0.08421,
+     0.03254,
+     0.08883,
+     -0.03543,
+     -0.10851,
+     -0.09842,
+     -0.07111,
+     0.00615,
+     -0.02713,
+     -0.01206,
+     -0.29287,
+     0.10851,
+     0.02461,
+     -0.07972,
+     0.07536,
+     -0.2599,
+     0.09842,
+     -0.12457,
+     0.09842,
+     0.03254,
+     -0.2289,
+     -0.14173,
+     0.08883,
+     0.17938,
+     0.13589,
+     -0.09356,
+     0.1477,
+     0.2599,
+     -0.04484,
+     0.00886,
+     -0.02461,
+     0.04823,
+     -0.07111,
+     -0.17938,
+     -0.04823,
+     -0.26796,
+     0.03543,
+     0.07111,
+     0.01384,
+     0.02461,
+     0.09842,
+     0.01384,
+     0.22145,
+     -0.02977,
+     -0.05912,
+     -0.19291,
+     0.05173
+    ],
+    "2025": [
+     -0.00886,
+     -0.24415,
+     0.06699,
+     -0.02221,
+     0.04158,
+     -0.11909,
+     0.10341,
+     -0.09842,
+     -0.00744,
+     -0.23646,
+     -0.03543,
+     -0.04484,
+     -0.16,
+     -0.11909,
+     -0.06699,
+     0.24415,
+     -0.08421,
+     0.03254,
+     0.03543,
+     0.08883,
+     -0.02977,
+     -0.10851,
+     -0.10851,
+     -0.07972,
+     -0.00886,
+     0.00098,
+     0.03543,
+     -0.28444,
+     0.11909,
+     0.04158,
+     -0.02461,
+     0.07972,
+     -0.2599,
+     0.10341,
+     -0.11374,
+     0.1728,
+     0.03845,
+     -0.21413,
+     -0.10341,
+     0.11909,
+     0.13017,
+     0.1477,
+     -0.08883,
+     0.1477,
+     0.28444,
+     -0.05173,
+     0.01575,
+     -0.03254,
+     0.07536,
+     -0.14173,
+     -0.19291,
+     -0.10341,
+     -0.26796,
+     0.04158,
+     0.12457,
+     -0.05536,
+     -0.01993,
+     0.07536,
+     -0.00615,
+     0.16634,
+     -0.00615,
+     -0.06299,
+     -0.17938,
+     0.05173
+    ]
+   }
+  },
+  "lake_carnegie": {
+   "x": 531688.7322535352,
+   "y": 4466973.712373953,
+   "row": 444,
+   "col": 830,
+   "name": "Lake Carnegie",
+   "vectors": {
+    "2021": [
+     -0.02713,
+     -0.17938,
+     -0.11909,
+     -0.03845,
+     -0.02221,
+     -0.06699,
+     0.02221,
+     0.07111,
+     0.01778,
+     -0.05912,
+     0.1477,
+     -0.14173,
+     0.00886,
+     -0.12457,
+     -0.01384,
+     0.10851,
+     -0.01778,
+     -0.11374,
+     -0.07536,
+     -0.00615,
+     -0.01778,
+     -0.04823,
+     -0.05536,
+     0.1728,
+     -0.19986,
+     -0.04158,
+     0.03543,
+     -0.21413,
+     0.10851,
+     -0.07536,
+     -0.1728,
+     0.24415,
+     0.00301,
+     -0.06699,
+     -0.08883,
+     0.05536,
+     0.10341,
+     -0.17938,
+     0.00498,
+     0.19986,
+     -0.13589,
+     -0.09842,
+     0.24415,
+     0.05173,
+     -0.03845,
+     0.25196,
+     -0.15379,
+     0.12457,
+     -0.07536,
+     -0.25196,
+     -0.04484,
+     0.08883,
+     -0.1728,
+     0.07111,
+     0.02713,
+     -0.03254,
+     -0.00886,
+     0.19986,
+     0.08883,
+     -0.05173,
+     -0.10851,
+     -0.19291,
+     -0.00394,
+     0.33686
+    ],
+    "2025": [
+     -0.00498,
+     -0.18608,
+     -0.11374,
+     -0.06299,
+     -0.03254,
+     -0.07111,
+     0.03254,
+     0.03543,
+     0.02977,
+     -0.01993,
+     0.07972,
+     -0.16634,
+     0.01384,
+     -0.11374,
+     0.00154,
+     0.15379,
+     0.01206,
+     -0.13017,
+     -0.04823,
+     0.00301,
+     -0.00221,
+     0.01778,
+     -0.13589,
+     0.10851,
+     -0.23646,
+     -0.02977,
+     0.07536,
+     -0.23646,
+     0.16634,
+     -0.10851,
+     -0.16,
+     0.23646,
+     -0.03254,
+     -0.07972,
+     -0.06699,
+     0.10851,
+     0.08421,
+     -0.19291,
+     0.01384,
+     0.17938,
+     -0.15379,
+     -0.05173,
+     0.21413,
+     0.01993,
+     -0.02221,
+     0.26796,
+     -0.13017,
+     0.10851,
+     -0.08421,
+     -0.2599,
+     -0.00886,
+     0.03845,
+     -0.16634,
+     0.08883,
+     0.00886,
+     -0.02977,
+     -0.00221,
+     0.1728,
+     0.10341,
+     -0.02713,
+     -0.10851,
+     -0.2289,
+     0.01575,
+     0.29287
+    ]
+   }
+  },
+  "parking_lot": {
+   "x": 529192.0530112993,
+   "y": 4465489.345080879,
+   "row": 593,
+   "col": 581,
+   "name": "Lot 20",
+   "area_m2": 17190.718197624126,
+   "vectors": {
+    "2021": [
+     -0.02977,
+     -0.28444,
+     0.00498,
+     -0.13017,
+     0.07536,
+     -0.16,
+     -0.12457,
+     -0.28444,
+     -0.08421,
+     -0.10851,
+     0.2289,
+     -0.05173,
+     -0.12457,
+     -0.1477,
+     -0.23646,
+     -0.01778,
+     -0.05173,
+     0.11909,
+     -0.15379,
+     -0.02977,
+     -0.00744,
+     -0.04158,
+     -0.1477,
+     -0.01206,
+     -0.27614,
+     0.07972,
+     0.02713,
+     -0.00055,
+     0.02977,
+     0.00394,
+     -0.02977,
+     -0.01575,
+     0.07536,
+     -0.10341,
+     -0.07972,
+     -0.01778,
+     -0.10851,
+     -0.08421,
+     0.09842,
+     0.25196,
+     -0.09356,
+     -0.02713,
+     0.10851,
+     0.01778,
+     0.13589,
+     0.08421,
+     0.02977,
+     0.05912,
+     0.26796,
+     -0.2599,
+     0.02713,
+     0.19291,
+     -0.1477,
+     0.00301,
+     0.12457,
+     -0.07111,
+     0.08883,
+     0.07536,
+     0.05173,
+     -0.10341,
+     0.01993,
+     -0.13589,
+     -0.11909,
+     0.10341
+    ],
+    "2025": [
+     -0.02713,
+     -0.24415,
+     -0.07111,
+     -0.09842,
+     0.10851,
+     -0.1728,
+     -0.12457,
+     -0.19291,
+     -0.08421,
+     -0.06299,
+     0.19291,
+     -0.04823,
+     -0.09356,
+     -0.13017,
+     -0.26796,
+     -0.10851,
+     -0.05912,
+     0.12457,
+     -0.09356,
+     -0.01384,
+     -0.05173,
+     -0.05536,
+     -0.19291,
+     -0.10851,
+     -0.2289,
+     0.07972,
+     -0.00886,
+     -0.03254,
+     0.04484,
+     -0.04158,
+     -0.03254,
+     0.06699,
+     0.02221,
+     -0.07536,
+     -0.14173,
+     0.06299,
+     -0.07536,
+     -0.11374,
+     0.19291,
+     0.31889,
+     0.00301,
+     -0.02977,
+     0.1477,
+     0.00301,
+     0.16634,
+     0.09842,
+     0.10341,
+     0.01384,
+     0.26796,
+     -0.28444,
+     0.03845,
+     0.16,
+     -0.07111,
+     0.06299,
+     0.07972,
+     -0.05912,
+     0.07111,
+     0.05536,
+     0.03845,
+     -0.15379,
+     0.06699,
+     -0.10341,
+     -0.09356,
+     0.06299
+    ]
+   }
+  }
+ },
+ "poe_field": {
+  "rows": [
+   517,
+   578
+  ],
+  "cols": [
+   568,
+   629
+  ],
+  "rule": "the cells under the site window of the class flight"
+ },
+ "lecture": {
+  "sam2": {
+   "scores_one_point": [
+    0.9649,
+    0.4865,
+    0.9135
+   ],
+   "score_two_points": 0.9345,
+   "score_negative": 0.9556,
+   "score_box": 0.9708,
+   "box_iou": 0.7879,
+   "n_everything": 171,
+   "footprints_in_crop": 127
+  },
+  "data_engine": {
+   "masks": 171,
+   "footprints": 127,
+   "covered": 79,
+   "missed": 48,
+   "threshold": 0.5
+  },
+  "masks_named": {
+   "counts": {
+    "building": 96,
+    "trees": 41,
+    "road or lot": 9,
+    "lawn or field": 25
+   },
+   "recall": 0.638999748680573,
+   "precision": 0.7831950271375854,
+   "iou": 0.5429568381580409,
+   "captions": [
+    "a satellite photo of a building",
+    "a satellite photo of trees",
+    "a satellite photo of a road or parking lot",
+    "a satellite photo of a lawn or field"
+   ]
+  },
+  "masks_gallery": [
+   {
+    "mask": 7,
+    "cls": "building",
+    "probability": 0.994601845741272
+   },
+   {
+    "mask": 19,
+    "cls": "building",
+    "probability": 0.9945070147514343
+   },
+   {
+    "mask": 51,
+    "cls": "trees",
+    "probability": 0.9381129741668701
+   },
+   {
+    "mask": 39,
+    "cls": "trees",
+    "probability": 0.9088709354400635
+   },
+   {
+    "mask": 171,
+    "cls": "road or lot",
+    "probability": 0.8850436210632324
+   },
+   {
+    "mask": 68,
+    "cls": "road or lot",
+    "probability": 0.8668979406356812
+   },
+   {
+    "mask": 67,
+    "cls": "lawn or field",
+    "probability": 0.9546900987625122
+   },
+   {
+    "mask": 35,
+    "cls": "lawn or field",
+    "probability": 0.934971034526825
+   }
+  ],
+  "sam3": {
+   "phrase": "building",
+   "threshold": null,
+   "validation_iou": {
+    "building": 0.6662,
+    "house": 0.4685,
+    "roof": 0.6121
+   },
+   "test": {
+    "accuracy": 0.9407,
+    "precision": 0.7827,
+    "recall": 0.8044,
+    "iou": 0.6576,
+    "dice": 0.7934,
+    "no_building_accuracy": 0.8584
+   },
+   "test_by_phrase": {
+    "building": 0.6576,
+    "house": 0.4427,
+    "roof": 0.6303
+   },
+   "per_block": {
+    "7": {
+     "iou": 0.6978,
+     "precision": 0.7973,
+     "recall": 0.8483,
+     "accuracy": 0.9411,
+     "instances": 326,
+     "footprints": 358,
+     "objects": {
+      "reference": 351,
+      "predicted": 293,
+      "matched": 237,
+      "precision": 0.8089,
+      "recall": 0.6752
+     }
+    },
+    "10": {
+     "iou": 0.552,
+     "precision": 0.6743,
+     "recall": 0.7526,
+     "accuracy": 0.9451,
+     "instances": 142,
+     "footprints": 128,
+     "objects": {
+      "reference": 127,
+      "predicted": 117,
+      "matched": 78,
+      "precision": 0.6667,
+      "recall": 0.6142
+     }
+    },
+    "13": {
+     "iou": 0.7264,
+     "precision": 0.8335,
+     "recall": 0.8497,
+     "accuracy": 0.9233,
+     "instances": 139,
+     "footprints": 128,
+     "objects": {
+      "reference": 125,
+      "predicted": 108,
+      "matched": 75,
+      "precision": 0.6944,
+      "recall": 0.6
+     }
+    },
+    "18": {
+     "iou": 0.6296,
+     "precision": 0.7861,
+     "recall": 0.7598,
+     "accuracy": 0.9231,
+     "instances": 71,
+     "footprints": 35,
+     "objects": {
+      "reference": 32,
+      "predicted": 44,
+      "matched": 23,
+      "precision": 0.5227,
+      "recall": 0.7188
+     }
+    },
+    "20": {
+     "iou": 0.5197,
+     "precision": 0.6832,
+     "recall": 0.6847,
+     "accuracy": 0.9707,
+     "instances": 89,
+     "footprints": 66,
+     "objects": {
+      "reference": 64,
+      "predicted": 71,
+      "matched": 40,
+      "precision": 0.5634,
+      "recall": 0.625
+     }
+    }
+   },
+   "block7_counts": {
+    "building": {
+     "instances": 326,
+     "pixel_share": 0.17049860954284668
+    },
+    "house": {
+     "instances": 334,
+     "pixel_share": 0.1698307991027832
+    },
+    "roof": {
+     "instances": 322,
+     "pixel_share": 0.16098666191101074
+    },
+    "car": {
+     "instances": 264,
+     "pixel_share": 0.009514570236206055
+    },
+    "tree": {
+     "instances": 178,
+     "pixel_share": 0.09241247177124023
+    },
+    "swimming pool": {
+     "instances": 1,
+     "pixel_share": 0.00019550323486328125
+    },
+    "footprints": 358
+   },
+   "block7_resized": {
+    "iou": 0.2178,
+    "instances": 32,
+    "phrase": "building"
+   }
+  },
+  "open": {
+   "phrase": "house",
+   "threshold": 0.2,
+   "validation_iou": {
+    "building": 0.3125,
+    "house": 0.503,
+    "roof": 0.1134
+   },
+   "test": {
+    "accuracy": 0.8734,
+    "precision": 0.5379,
+    "recall": 0.7528,
+    "iou": 0.4571,
+    "dice": 0.6275,
+    "no_building_accuracy": 0.8584
+   },
+   "test_by_phrase": {
+    "building": 0.4883,
+    "house": 0.4571,
+    "roof": 0.1692
+   },
+   "per_block": {
+    "7": {
+     "iou": 0.3462,
+     "precision": 0.4115,
+     "recall": 0.6858,
+     "accuracy": 0.7925,
+     "instances": 295,
+     "footprints": 358,
+     "objects": {
+      "reference": 351,
+      "predicted": 274,
+      "matched": 137,
+      "precision": 0.5,
+      "recall": 0.3903
+     }
+    },
+    "10": {
+     "iou": 0.4203,
+     "precision": 0.5352,
+     "recall": 0.662,
+     "accuracy": 0.918,
+     "instances": 217,
+     "footprints": 128,
+     "objects": {
+      "reference": 127,
+      "predicted": 144,
+      "matched": 57,
+      "precision": 0.3958,
+      "recall": 0.4488
+     }
+    },
+    "13": {
+     "iou": 0.5936,
+     "precision": 0.6927,
+     "recall": 0.8059,
+     "accuracy": 0.8678,
+     "instances": 178,
+     "footprints": 128,
+     "objects": {
+      "reference": 125,
+      "predicted": 119,
+      "matched": 56,
+      "precision": 0.4706,
+      "recall": 0.448
+     }
+    },
+    "18": {
+     "iou": 0.4542,
+     "precision": 0.5053,
+     "recall": 0.8178,
+     "accuracy": 0.8309,
+     "instances": 107,
+     "footprints": 35,
+     "objects": {
+      "reference": 32,
+      "predicted": 54,
+      "matched": 16,
+      "precision": 0.2963,
+      "recall": 0.5
+     }
+    },
+    "20": {
+     "iou": 0.4146,
+     "precision": 0.5372,
+     "recall": 0.6451,
+     "accuracy": 0.9579,
+     "instances": 131,
+     "footprints": 66,
+     "objects": {
+      "reference": 64,
+      "predicted": 84,
+      "matched": 33,
+      "precision": 0.3929,
+      "recall": 0.5156
+     }
+    }
+   },
+   "block7_counts": {
+    "building": {
+     "instances": 258,
+     "pixel_share": 0.160844087600708
+    },
+    "house": {
+     "instances": 295,
+     "pixel_share": 0.2670612335205078
+    },
+    "roof": {
+     "instances": 53,
+     "pixel_share": 0.3159017562866211
+    },
+    "car": {
+     "instances": 194,
+     "pixel_share": 0.008018732070922852
+    },
+    "tree": {
+     "instances": 234,
+     "pixel_share": 0.2993814945220947
+    },
+    "swimming pool": {
+     "instances": 12,
+     "pixel_share": 0.312197208404541
+    },
+    "footprints": 358
+   }
+  },
+  "unet": {
+   "iou_centre": 0.681,
+   "precision": 0.742,
+   "recall": 0.684,
+   "iou_chip": 0.663,
+   "no_building_accuracy": 0.858,
+   "per_block": {
+    "7": {
+     "iou": 0.7444,
+     "precision": 0.8613,
+     "recall": 0.8457,
+     "accuracy": 0.9535
+    },
+    "10": {
+     "iou": 0.6233,
+     "precision": 0.7755,
+     "recall": 0.7606,
+     "accuracy": 0.9587
+    },
+    "13": {
+     "iou": 0.678,
+     "precision": 0.8404,
+     "recall": 0.7782,
+     "accuracy": 0.9115
+    },
+    "18": {
+     "iou": 0.6896,
+     "precision": 0.7967,
+     "recall": 0.8368,
+     "accuracy": 0.9352
+    },
+    "20": {
+     "iou": 0.5762,
+     "precision": 0.7538,
+     "recall": 0.7098,
+     "accuracy": 0.9759
+    }
+   }
+  },
+  "where_each_wins": {
+   "model": "sam_text",
+   "phrase": "building",
+   "n_chips": 53,
+   "word_wins": {
+    "chip": 451,
+    "row": 0,
+    "col": 768,
+    "share": 0.0762176513671875,
+    "unet": 0.470770095559303,
+    "word": 0.6083262531860663
+   },
+   "unet_wins": {
+    "chip": 500,
+    "row": 1536,
+    "col": 1024,
+    "share": 0.13275146484375,
+    "unet": 0.7477245745943807,
+    "word": 0.554165144318597
+   }
+  },
+  "footprint_sources": {
+   "the volunteers' footprints": {
+    "objects": 127,
+    "iou_with_volunteers": 1.0,
+    "pixel_share": 0.18973350524902344
+   },
+   "the company's model": {
+    "objects": 135,
+    "iou_with_volunteers": 0.7042399846811354,
+    "pixel_share": 0.20919227600097656
+   },
+   "the U-Net of Lecture 05": {
+    "objects": 124,
+    "iou_with_volunteers": 0.7303533051053848,
+    "pixel_share": 0.1964893341064453
+   },
+   "the word 'building' through SAM 3": {
+    "objects": 113,
+    "iou_with_volunteers": 0.6515802528404545,
+    "pixel_share": 0.20397090911865234
+   },
+   "company": "Microsoft Global ML Building Footprints, United States release of 2026-02-03",
+   "company_retrieved": "2026-10-21"
+  },
+  "clip": {
+   "zero_shot": {
+    "satellite": {
+     "test_accuracy": 0.83125,
+     "test_share_called_building": 0.753125,
+     "recall": 0.8816326530612245,
+     "precision": 0.8962655601659751
+    },
+    "aerial": {
+     "test_accuracy": 0.878125,
+     "test_share_called_building": 0.78125,
+     "recall": 0.9306122448979591,
+     "precision": 0.912
+    },
+    "plain": {
+     "test_accuracy": 0.640625,
+     "test_share_called_building": 0.46875,
+     "recall": 0.5714285714285714,
+     "precision": 0.9333333333333333
+    },
+    "long": {
+     "test_accuracy": 0.825,
+     "test_share_called_building": 0.640625,
+     "recall": 0.8040816326530612,
+     "precision": 0.9609756097560975
+    }
+   },
+   "fitted_head_test_accuracy": 0.93125,
+   "fitted_head_C": 0.1,
+   "fitted_head_validation": {
+    "0.001": 0.94921875,
+    "0.01": 0.96484375,
+    "0.1": 0.96875,
+    "1.0": 0.9609375,
+    "10.0": 0.9453125
+   },
+   "baseline_building_everywhere": 0.766,
+   "resnet_frozen_fitted_head": 0.9,
+   "resnet_finetuned": 0.919,
+   "n_test": 320,
+   "n_val": 256,
+   "n_train": 1024
+  },
+  "vlm": {
+   "n_class": 320,
+   "accuracy": 0.678125,
+   "majority_baseline": 0.6375,
+   "unparsed": 0,
+   "error_matrix": [
+    [
+     194,
+     4,
+     6,
+     0
+    ],
+    [
+     17,
+     4,
+     1,
+     0
+    ],
+    [
+     66,
+     9,
+     19,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ]
+   ],
+   "class_order": [
+    "tree cover",
+    "grass",
+    "built-up",
+    "water"
+   ],
+   "counts": [
+    {
+     "chip": 666,
+     "reference": 3,
+     "model": 2,
+     "answer": "2"
+    },
+    {
+     "chip": 1333,
+     "reference": 2,
+     "model": 1,
+     "answer": "1"
+    },
+    {
+     "chip": 661,
+     "reference": 2,
+     "model": 1,
+     "answer": "1"
+    },
+    {
+     "chip": 701,
+     "reference": 3,
+     "model": 2,
+     "answer": "2"
+    },
+    {
+     "chip": 647,
+     "reference": 5,
+     "model": 5,
+     "answer": "5"
+    },
+    {
+     "chip": 642,
+     "reference": 5,
+     "model": 2,
+     "answer": "2"
+    },
+    {
+     "chip": 689,
+     "reference": 2,
+     "model": 3,
+     "answer": "3"
+    },
+    {
+     "chip": 670,
+     "reference": 5,
+     "model": 4,
+     "answer": "4"
+    },
+    {
+     "chip": 1317,
+     "reference": 3,
+     "model": 3,
+     "answer": "3"
+    },
+    {
+     "chip": 470,
+     "reference": 12,
+     "model": 10,
+     "answer": "10"
+    },
+    {
+     "chip": 510,
+     "reference": 8,
+     "model": 10,
+     "answer": "10"
+    },
+    {
+     "chip": 1185,
+     "reference": 3,
+     "model": 3,
+     "answer": "3"
+    },
+    {
+     "chip": 836,
+     "reference": 3,
+     "model": 2,
+     "answer": "2"
+    },
+    {
+     "chip": 464,
+     "reference": 10,
+     "model": 10,
+     "answer": "10"
+    },
+    {
+     "chip": 833,
+     "reference": 7,
+     "model": 5,
+     "answer": "5"
+    },
+    {
+     "chip": 505,
+     "reference": 8,
+     "model": 12,
+     "answer": "12"
+    },
+    {
+     "chip": 840,
+     "reference": 2,
+     "model": 3,
+     "answer": "3"
+    },
+    {
+     "chip": 1191,
+     "reference": 1,
+     "model": 0,
+     "answer": "0"
+    },
+    {
+     "chip": 843,
+     "reference": 5,
+     "model": 2,
+     "answer": "2"
+    },
+    {
+     "chip": 1153,
+     "reference": 4,
+     "model": 12,
+     "answer": "12"
+    }
+   ],
+   "count_mean_abs_error": 1.65,
+   "count_max_abs_error": 8,
+   "model": "Qwen/Qwen3-VL-2B-Instruct"
+  },
+  "pca": {
+   "2021": [
+    0.3248104751110077,
+    0.16831961274147034,
+    0.10329528898000717
+   ],
+   "2025": [
+    0.3183109164237976,
+    0.1689380258321762,
+    0.09779594838619232
+   ]
+  },
+  "cell_pairs": {
+   "nassau_hall_vs_campus_lawn_2021": 0.36217216443056716,
+   "nassau_hall_vs_lake_carnegie_2021": 0.34331543071871606,
+   "campus_lawn_vs_lake_carnegie_2021": 0.2975013815206189,
+   "nassau_hall_vs_parking_lot_2021": 0.6381495419101966,
+   "nassau_hall_2024_vs_2025": 0.9662611543331534,
+   "campus_lawn_2024_vs_2025": 0.6395386524850063,
+   "lake_carnegie_2024_vs_2025": 0.9657841696510763,
+   "parking_lot_2024_vs_2025": 0.9502507129413831
+  },
+  "similarity": {
+   "nassau_hall": {
+    "query": "nassau_hall",
+    "name": "Nassau Hall",
+    "x": 528925.6687258305,
+    "y": 4466514.812020173,
+    "threshold": 0.85,
+    "region_cells_valid": 1000000,
+    "region_cells_above": 70973,
+    "region_share_above": 0.070973,
+    "top_cosines": [
+     0.9873161315917969,
+     0.9823479056358337,
+     0.9808533191680908,
+     0.9720571637153625,
+     0.9617223739624023,
+     0.9609394073486328,
+     0.9605594277381897,
+     0.9596297144889832,
+     0.9595964550971985,
+     0.9594517350196838
+    ],
+    "town_cells_above": 84818,
+    "percentiles_region": {
+     "p50": 0.6646531820297241,
+     "p90": 0.8360731601715088,
+     "p99": 0.8957582712173462,
+     "p999": 0.9250076413154602
+    }
+   },
+   "parking_lot": {
+    "query": "parking_lot",
+    "name": "Lot 20",
+    "x": 529192.0530112993,
+    "y": 4465489.345080879,
+    "threshold": 0.85,
+    "region_cells_valid": 1000000,
+    "region_cells_above": 11513,
+    "region_share_above": 0.011513,
+    "top_cosines": [
+     0.9983986616134644,
+     0.9971467852592468,
+     0.9959756731987,
+     0.9954821467399597,
+     0.995281994342804,
+     0.9948877096176147,
+     0.994754433631897,
+     0.9932909607887268,
+     0.9922810792922974,
+     0.9922083020210266
+    ],
+    "town_cells_above": 12757,
+    "percentiles_region": {
+     "p50": 0.47122782468795776,
+     "p90": 0.700692355632782,
+     "p99": 0.8553339242935181,
+     "p999": 0.9090233445167542
+    }
+   }
+  },
+  "kmeans": {
+   "4": {
+    "k": 4,
+    "inertia": 21710.84375,
+    "seconds": 0.5369491577148438,
+    "mapping": {
+     "0": 2,
+     "1": 1,
+     "2": 1,
+     "3": 1
+    },
+    "cluster_shares": {
+     "0": 0.13960910206779342,
+     "1": 0.29719573222547446,
+     "2": 0.4142951562647531,
+     "3": 0.14890000944197904
+    },
+    "agreement_reference": 0.8808777429467085,
+    "agreement_all_labelled": 0.8598268352836228,
+    "per_class_producer_reference": {
+     "tree cover": 0.9800796812749004,
+     "grass": 0.8333333333333334,
+     "built-up": 0.0,
+     "water": 0.0
+    },
+    "classes_named": [
+     "grass",
+     "tree cover"
+    ]
+   },
+   "8": {
+    "k": 8,
+    "inertia": 16713.849609375,
+    "seconds": 1.084791898727417,
+    "mapping": {
+     "0": 1,
+     "1": 1,
+     "2": 4,
+     "3": 2,
+     "4": 2,
+     "5": 1,
+     "6": 1,
+     "7": 3
+    },
+    "cluster_shares": {
+     "0": 0.174280049098291,
+     "1": 0.23389670474931545,
+     "2": 0.015468059883129283,
+     "3": 0.02015967435663404,
+     "4": 0.08665428718303801,
+     "5": 0.2231412415153327,
+     "6": 0.15979185681763342,
+     "7": 0.08660812639662607
+    },
+    "agreement_reference": 0.9090909090909091,
+    "agreement_all_labelled": 0.9177184236763394,
+    "per_class_producer_reference": {
+     "tree cover": 0.9322709163346613,
+     "grass": 0.8571428571428571,
+     "built-up": 0.7391304347826086,
+     "water": 1.0
+    },
+    "classes_named": [
+     "built-up",
+     "grass",
+     "tree cover",
+     "water"
+    ]
+   }
+  },
+  "few_shot": {
+   "label_year": 2021,
+   "map_year": 2025,
+   "labels_per_class": [
+    5,
+    10,
+    25,
+    100,
+    500
+   ],
+   "draws": 20,
+   "held_out_blocks": [
+    1,
+    1000,
+    1001,
+    1003,
+    2003,
+    3000,
+    3001,
+    3003
+   ],
+   "n_blocks": 16,
+   "held_out_cells_scored": 60000,
+   "held_out_class_counts": {
+    "tree cover": 44655,
+    "grass": 10385,
+    "built-up": 4930,
+    "water": 30
+   },
+   "reference_class_counts": {
+    "tree cover": 251,
+    "grass": 42,
+    "built-up": 23,
+    "water": 3
+   },
+   "forest_reference": 81.5,
+   "forest_interval": 4.3,
+   "majority_reference": 78.7,
+   "C": 1.0,
+   "seconds": 3.5376226902008057,
+   "results": {
+    "5": {
+     "ref": {
+      "mean": 0.7948275862068964,
+      "low": 0.6903605015673981,
+      "high": 0.8818181818181817
+     },
+     "heldout": {
+      "mean": 0.7505325,
+      "low": 0.6286745833333333,
+      "high": 0.85226125
+     },
+     "macro": {
+      "mean": 0.8521936361994126,
+      "low": 0.7971035885866581,
+      "high": 0.8877093386008928
+     },
+     "ref_2025": {
+      "mean": 0.7581504702194357,
+      "low": 0.659796238244514,
+      "high": 0.8576018808777429
+     },
+     "heldout_2025": {
+      "mean": 0.7225133333333333,
+      "low": 0.6097833333333333,
+      "high": 0.8261466666666666
+     },
+     "ref_hand": {
+      "mean": 0.7681818181818183,
+      "low": 0.5967868338557993,
+      "high": 0.8333072100313479
+     },
+     "per_class_mean": {
+      "tree cover": 0.7275590639346097,
+      "grass": 0.7744102070293692,
+      "built-up": 0.9068052738336714,
+      "water": 1.0
+     }
+    },
+    "10": {
+     "ref": {
+      "mean": 0.8133228840125393,
+      "low": 0.7391849529780564,
+      "high": 0.8782131661442005
+     },
+     "heldout": {
+      "mean": 0.7704475000000001,
+      "low": 0.7002666666666667,
+      "high": 0.8583145833333332
+     },
+     "macro": {
+      "mean": 0.8677604022129112,
+      "low": 0.8410962714934482,
+      "high": 0.8905074092489942
+     },
+     "ref_2025": {
+      "mean": 0.7703761755485894,
+      "low": 0.6938087774294671,
+      "high": 0.8544670846394984
+     },
+     "heldout_2025": {
+      "mean": 0.7392858333333334,
+      "low": 0.66315875,
+      "high": 0.8283112499999999
+     },
+     "ref_hand": {
+      "mean": 0.7974921630094044,
+      "low": 0.7568181818181818,
+      "high": 0.8456896551724137
+     },
+     "per_class_mean": {
+      "tree cover": 0.7474526928675399,
+      "grass": 0.7923110255175734,
+      "built-up": 0.9312778904665315,
+      "water": 1.0
+     }
+    },
+    "25": {
+     "ref": {
+      "mean": 0.8272727272727274,
+      "low": 0.7662225705329153,
+      "high": 0.8576018808777429
+     },
+     "heldout": {
+      "mean": 0.7934933333333334,
+      "low": 0.73741,
+      "high": 0.82369625
+     },
+     "macro": {
+      "mean": 0.8821802950952587,
+      "low": 0.8585274243365552,
+      "high": 0.9011651141278542
+     },
+     "ref_2025": {
+      "mean": 0.7843260188087774,
+      "low": 0.7221786833855799,
+      "high": 0.8308777429467085
+     },
+     "heldout_2025": {
+      "mean": 0.7603633333333333,
+      "low": 0.7094545833333333,
+      "high": 0.7962433333333333
+     },
+     "ref_hand": {
+      "mean": 0.80705329153605,
+      "low": 0.7660658307210031,
+      "high": 0.8496865203761755
+     },
+     "per_class_mean": {
+      "tree cover": 0.7701030119807412,
+      "grass": 0.827221954742417,
+      "built-up": 0.9330628803245435,
+      "water": 0.9983333333333333
+     }
+    },
+    "100": {
+     "ref": {
+      "mean": 0.8431034482758621,
+      "low": 0.8195141065830721,
+      "high": 0.8684952978056426
+     },
+     "heldout": {
+      "mean": 0.8134316666666667,
+      "low": 0.7911891666666667,
+      "high": 0.84207
+     },
+     "macro": {
+      "mean": 0.8921738812188085,
+      "low": 0.8738787090461572,
+      "high": 0.9041035984734042
+     },
+     "ref_2025": {
+      "mean": 0.8134796238244514,
+      "low": 0.7866771159874608,
+      "high": 0.8417711598746082
+     },
+     "heldout_2025": {
+      "mean": 0.78641,
+      "low": 0.7607579166666667,
+      "high": 0.8109804166666666
+     },
+     "ref_hand": {
+      "mean": 0.8280564263322884,
+      "low": 0.8008620689655171,
+      "high": 0.8605799373040752
+     },
+     "per_class_mean": {
+      "tree cover": 0.7926245661180159,
+      "grass": 0.8478863745787193,
+      "built-up": 0.928184584178499,
+      "water": 1.0
+     }
+    },
+    "500": {
+     "ref": {
+      "mean": 0.8567398119122256,
+      "low": 0.8478840125391849,
+      "high": 0.8652037617554859
+     },
+     "heldout": {
+      "mean": 0.8327933333333333,
+      "low": 0.8235279166666667,
+      "high": 0.84122625
+     },
+     "macro": {
+      "mean": 0.9076035063251512,
+      "low": 0.90237770835483,
+      "high": 0.9107334976510406
+     },
+     "ref_2025": {
+      "mean": 0.8393416927899686,
+      "low": 0.8244514106583072,
+      "high": 0.8495297805642633
+     },
+     "heldout_2025": {
+      "mean": 0.8177983333333334,
+      "low": 0.7998575,
+      "high": 0.8309125
+     },
+     "ref_hand": {
+      "mean": 0.8399686520376175,
+      "low": 0.8338557993730408,
+      "high": 0.8495297805642633
+     },
+     "per_class_mean": {
+      "tree cover": 0.8086160564326503,
+      "grass": 0.8886133846894559,
+      "built-up": 0.9331845841784988,
+      "water": 1.0
+     }
+    }
+   }
+  },
+  "change": {
+   "years": [
+    2018,
+    2025
+   ],
+   "threshold": 0.6,
+   "cells_valid": 476595,
+   "cells_below": 3420,
+   "share_below": 0.0071759040694929655,
+   "percentiles": {
+    "p1": 0.6865342855453491,
+    "p5": 0.8949379920959473,
+    "p50": 0.9635121822357178,
+    "p95": 0.9845442771911621
+   },
+   "lowest_cosines": [
+    0.2697370946407318,
+    0.271660715341568,
+    0.2750779092311859,
+    0.2780989408493042,
+    0.29909780621528625,
+    0.3021080195903778,
+    0.30567285418510437,
+    0.30572134256362915,
+    0.31009814143180847,
+    0.31081992387771606
+   ],
+   "poe_field": {
+    "mean": 0.9037181735038757,
+    "min": 0.2697370946407318,
+    "cells": 3721
+   }
+  },
+  "forest": {
+   "reference": 81.5,
+   "interval": 4.3,
+   "majority": 78.7
+  },
+  "runs": {
+   "clip_chips": {
+    "model": "openai/clip-vit-base-patch16",
+    "revision": "57c216476eefef5ab752ec549e440a49ae4ae5f3",
+    "dtype": "float32",
+    "device": "mps",
+    "seconds": 94.07640194892883
+   },
+   "sam_prompts": {
+    "model": "facebook/sam2.1-hiera-large",
+    "revision": "665f8e2ad61cf5f53d65644ff27c8ee525124610",
+    "dtype": "float32",
+    "device": "mps",
+    "seconds_prompts": 9.322195291519165,
+    "seconds_everything": 19.54274272918701
+   },
+   "clip_masks": {
+    "model": "openai/clip-vit-base-patch16",
+    "revision": "57c216476eefef5ab752ec549e440a49ae4ae5f3",
+    "dtype": "float32",
+    "device": "mps",
+    "seconds": 4.006435871124268
+   },
+   "vlm": {
+    "model": "Qwen/Qwen3-VL-2B-Instruct",
+    "revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+    "dtype": "bfloat16",
+    "device": "mps",
+    "seconds": 156.52228999137878
+   },
+   "vlm_smolvlm": {
+    "model": "HuggingFaceTB/SmolVLM-500M-Instruct",
+    "revision": "a7da5b986cb59b408707209984f360a5f4ad7e47",
+    "dtype": "bfloat16",
+    "device": "mps",
+    "seconds": 658.9754090309143
+   },
+   "sam_text_building_block7": {
+    "model": "facebook/sam3",
+    "revision": "3c879f39826c281e95690f02c7821c4de09afae7",
+    "dtype": "float32",
+    "device": "mps",
+    "seconds": 5.789785146713257
+   },
+   "text_fallback_building_block7": {
+    "model": "IDEA-Research/grounding-dino-tiny + facebook/sam2.1-hiera-large",
+    "revision": "a2bb814dd30d776dcf7e30523b00659f4f141c71 + 665f8e2ad61cf5f53d65644ff27c8ee525124610",
+    "dtype": "float32",
+    "device": "mps",
+    "seconds": 20.360525131225586
+   }
+  },
+  "vlm_count_chips": [
+   666,
+   1333,
+   661,
+   701,
+   647,
+   642,
+   689,
+   670,
+   1317,
+   470,
+   510,
+   1185,
+   836,
+   464,
+   833,
+   505,
+   840,
+   1191,
+   843,
+   1153
+  ],
+  "vlm_four_chips": [
+   647,
+   470,
+   833,
+   1153
+  ]
+ },
+ "choices": {
+  "toy_places": {
+   "roof 1": {
+    "kind": "roof",
+    "chip": 1153,
+    "row": 6144,
+    "col": 6400,
+    "block": 18,
+    "rule": "largest roof share of its block among the test chips"
+   },
+   "roof 2": {
+    "kind": "roof",
+    "chip": 856,
+    "row": 4864,
+    "col": 6144,
+    "block": 13,
+    "rule": "largest roof share of its block among the test chips"
+   },
+   "lawn 1": {
+    "kind": "lawn",
+    "chip": 122,
+    "row": 1792,
+    "col": 2560,
+    "block": 1,
+    "rule": "no roof pixel, WorldCover grass under at least 80 percent of its cells, the greenest picture"
+   },
+   "lawn 2": {
+    "kind": "lawn",
+    "chip": 1440,
+    "row": 9216,
+    "col": 4096,
+    "block": 22,
+    "rule": "no roof pixel, WorldCover grass under at least 80 percent of its cells, the greenest picture"
+   },
+   "pond 1": {
+    "kind": "pond",
+    "chip": 1255,
+    "row": 7168,
+    "col": 9984,
+    "block": 19,
+    "rule": "no roof pixel, WorldCover water under at least 80 percent of its cells, the darkest picture"
+   },
+   "pond 2": {
+    "kind": "pond",
+    "chip": 1254,
+    "row": 7168,
+    "col": 9728,
+    "block": 19,
+    "rule": "no roof pixel, WorldCover water under at least 80 percent of its cells, the darkest picture"
+   },
+   "car park": {
+    "kind": "new",
+    "chip": null,
+    "row": 8441,
+    "col": 5845,
+    "block": 22,
+    "rule": "the chip centred on Lot 20, the largest parking lot of the town"
+   }
+  },
+  "few_shot": {
+   "per_class": 25,
+   "draw": 0,
+   "C": 1.0,
+   "answer": 100,
+   "label_year": 2021
+  },
+  "kmeans": {
+   "k": 4,
+   "sample": 120000,
+   "n_init": 4
+  },
+  "pca": {
+   "sample": 60000
+  },
+  "clip": {
+   "captions": "satellite",
+   "head_C": 0.1
+  },
+  "photo": {
+   "file": "photo_site.jpg",
+   "source": "a photograph of the class flight of 23 September 2026 over Poe Field, downsized to 2000 pixels, EXIF removed",
+   "licence": "CC BY 4.0, CEE420 Urban AI course flight",
+   "click": [
+    1850,
+    350
+   ],
+   "what": "the roof of the building at the right edge"
+  }
+ },
+ "footprints_by_block": {
+  "7": {
+   "touching": 358,
+   "centre_in": 338
+  },
+  "10": {
+   "touching": 128,
+   "centre_in": 123
+  },
+  "13": {
+   "touching": 130,
+   "centre_in": 117
+  },
+  "18": {
+   "touching": 36,
+   "centre_in": 29
+  },
+  "20": {
+   "touching": 66,
+   "centre_in": 58
+  }
+ }
+}

@@ -1,0 +1,2161 @@
+{
+ "source": "Qwen3-VL-2B-Instruct (Qwen/Qwen3-VL-2B-Instruct, revision 89644892e4d85e24eaac8bacfd4f463576704203, bfloat16 on mps) asked the class question on the 320 test chips, the count on 20 of them, a caption and the parking question on four, and three questions on the street image; the model runs of Lecture 06, lectures/L06/figures/run_models.py, transformers 5.19 on the Mac's GPU",
+ "licence": "CC BY 4.0, CEE420 Urban AI, the course's own work; the model Apache 2.0, Alibaba",
+ "retrieved": "2026-10-21",
+ "class_448": {
+  "chip": 448,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "built-up",
+  "seconds": 0.5334551334381104
+ },
+ "class_449": {
+  "chip": 449,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "built-up",
+  "seconds": 0.28998398780822754
+ },
+ "class_450": {
+  "chip": 450,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2935490608215332
+ },
+ "class_451": {
+  "chip": 451,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2910420894622803
+ },
+ "class_452": {
+  "chip": 452,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.292896032333374
+ },
+ "class_453": {
+  "chip": 453,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2929048538208008
+ },
+ "class_454": {
+  "chip": 454,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2890040874481201
+ },
+ "class_455": {
+  "chip": 455,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2985198497772217
+ },
+ "class_456": {
+  "chip": 456,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2907900810241699
+ },
+ "class_457": {
+  "chip": 457,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29060912132263184
+ },
+ "class_458": {
+  "chip": 458,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.28935813903808594
+ },
+ "class_459": {
+  "chip": 459,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29458093643188477
+ },
+ "class_460": {
+  "chip": 460,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2909419536590576
+ },
+ "class_461": {
+  "chip": 461,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2889678478240967
+ },
+ "class_462": {
+  "chip": 462,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2898519039154053
+ },
+ "class_463": {
+  "chip": 463,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.28815293312072754
+ },
+ "class_464": {
+  "chip": 464,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2931067943572998
+ },
+ "class_465": {
+  "chip": 465,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2949042320251465
+ },
+ "class_466": {
+  "chip": 466,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2964060306549072
+ },
+ "class_467": {
+  "chip": 467,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.293536901473999
+ },
+ "class_468": {
+  "chip": 468,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29830312728881836
+ },
+ "class_469": {
+  "chip": 469,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2918400764465332
+ },
+ "class_470": {
+  "chip": 470,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2927820682525635
+ },
+ "class_471": {
+  "chip": 471,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2952611446380615
+ },
+ "class_472": {
+  "chip": 472,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.28840112686157227
+ },
+ "class_473": {
+  "chip": 473,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2955329418182373
+ },
+ "class_474": {
+  "chip": 474,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29406189918518066
+ },
+ "class_475": {
+  "chip": 475,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2901580333709717
+ },
+ "class_476": {
+  "chip": 476,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.28684282302856445
+ },
+ "class_477": {
+  "chip": 477,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2893240451812744
+ },
+ "class_478": {
+  "chip": 478,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29059910774230957
+ },
+ "class_479": {
+  "chip": 479,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2921438217163086
+ },
+ "class_480": {
+  "chip": 480,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2883720397949219
+ },
+ "class_481": {
+  "chip": 481,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "built-up",
+  "seconds": 0.2916548252105713
+ },
+ "class_482": {
+  "chip": 482,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2922348976135254
+ },
+ "class_483": {
+  "chip": 483,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2964670658111572
+ },
+ "class_484": {
+  "chip": 484,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2927718162536621
+ },
+ "class_485": {
+  "chip": 485,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29294323921203613
+ },
+ "class_486": {
+  "chip": 486,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.30135321617126465
+ },
+ "class_487": {
+  "chip": 487,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.292449951171875
+ },
+ "class_488": {
+  "chip": 488,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.30294013023376465
+ },
+ "class_489": {
+  "chip": 489,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2892920970916748
+ },
+ "class_490": {
+  "chip": 490,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.28973817825317383
+ },
+ "class_491": {
+  "chip": 491,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2896912097930908
+ },
+ "class_492": {
+  "chip": 492,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29099273681640625
+ },
+ "class_493": {
+  "chip": 493,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "built-up",
+  "seconds": 0.2930128574371338
+ },
+ "class_494": {
+  "chip": 494,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2906620502471924
+ },
+ "class_495": {
+  "chip": 495,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2898099422454834
+ },
+ "class_496": {
+  "chip": 496,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.292510986328125
+ },
+ "class_497": {
+  "chip": 497,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2953941822052002
+ },
+ "class_498": {
+  "chip": 498,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.3009769916534424
+ },
+ "class_499": {
+  "chip": 499,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29207324981689453
+ },
+ "class_500": {
+  "chip": 500,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2912259101867676
+ },
+ "class_501": {
+  "chip": 501,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2932407855987549
+ },
+ "class_502": {
+  "chip": 502,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.28858518600463867
+ },
+ "class_503": {
+  "chip": 503,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2992691993713379
+ },
+ "class_504": {
+  "chip": 504,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29107189178466797
+ },
+ "class_505": {
+  "chip": 505,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.30980992317199707
+ },
+ "class_506": {
+  "chip": 506,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "built-up",
+  "seconds": 0.2903459072113037
+ },
+ "class_507": {
+  "chip": 507,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29462385177612305
+ },
+ "class_508": {
+  "chip": 508,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29537081718444824
+ },
+ "class_509": {
+  "chip": 509,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29383182525634766
+ },
+ "class_510": {
+  "chip": 510,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2893550395965576
+ },
+ "class_511": {
+  "chip": 511,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2924678325653076
+ },
+ "class_640": {
+  "chip": 640,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2920868396759033
+ },
+ "class_641": {
+  "chip": 641,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2946920394897461
+ },
+ "class_642": {
+  "chip": 642,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29533982276916504
+ },
+ "class_643": {
+  "chip": 643,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2938840389251709
+ },
+ "class_644": {
+  "chip": 644,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2994241714477539
+ },
+ "class_645": {
+  "chip": 645,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.28983092308044434
+ },
+ "class_646": {
+  "chip": 646,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2874641418457031
+ },
+ "class_647": {
+  "chip": 647,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.3010690212249756
+ },
+ "class_648": {
+  "chip": 648,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.28821301460266113
+ },
+ "class_649": {
+  "chip": 649,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.3081350326538086
+ },
+ "class_650": {
+  "chip": 650,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29594922065734863
+ },
+ "class_651": {
+  "chip": 651,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.3080921173095703
+ },
+ "class_652": {
+  "chip": 652,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.28989410400390625
+ },
+ "class_653": {
+  "chip": 653,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2941713333129883
+ },
+ "class_654": {
+  "chip": 654,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2918260097503662
+ },
+ "class_655": {
+  "chip": 655,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29000401496887207
+ },
+ "class_656": {
+  "chip": 656,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29379916191101074
+ },
+ "class_657": {
+  "chip": 657,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2944450378417969
+ },
+ "class_658": {
+  "chip": 658,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2902688980102539
+ },
+ "class_659": {
+  "chip": 659,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2924070358276367
+ },
+ "class_660": {
+  "chip": 660,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29469895362854004
+ },
+ "class_661": {
+  "chip": 661,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29207491874694824
+ },
+ "class_662": {
+  "chip": 662,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29372501373291016
+ },
+ "class_663": {
+  "chip": 663,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2950599193572998
+ },
+ "class_664": {
+  "chip": 664,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29303503036499023
+ },
+ "class_665": {
+  "chip": 665,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29195499420166016
+ },
+ "class_666": {
+  "chip": 666,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2877650260925293
+ },
+ "class_667": {
+  "chip": 667,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2945840358734131
+ },
+ "class_668": {
+  "chip": 668,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29143691062927246
+ },
+ "class_669": {
+  "chip": 669,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29301023483276367
+ },
+ "class_670": {
+  "chip": 670,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29053592681884766
+ },
+ "class_671": {
+  "chip": 671,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2930121421813965
+ },
+ "class_672": {
+  "chip": 672,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29662489891052246
+ },
+ "class_673": {
+  "chip": 673,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.28990602493286133
+ },
+ "class_674": {
+  "chip": 674,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2918858528137207
+ },
+ "class_675": {
+  "chip": 675,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2957921028137207
+ },
+ "class_676": {
+  "chip": 676,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2957723140716553
+ },
+ "class_677": {
+  "chip": 677,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2934448719024658
+ },
+ "class_678": {
+  "chip": 678,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2973780632019043
+ },
+ "class_679": {
+  "chip": 679,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29163217544555664
+ },
+ "class_680": {
+  "chip": 680,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2865290641784668
+ },
+ "class_681": {
+  "chip": 681,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2886371612548828
+ },
+ "class_682": {
+  "chip": 682,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.28686094284057617
+ },
+ "class_683": {
+  "chip": 683,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2917749881744385
+ },
+ "class_684": {
+  "chip": 684,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29233312606811523
+ },
+ "class_685": {
+  "chip": 685,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2937600612640381
+ },
+ "class_686": {
+  "chip": 686,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2953767776489258
+ },
+ "class_687": {
+  "chip": 687,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2973477840423584
+ },
+ "class_688": {
+  "chip": 688,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29467296600341797
+ },
+ "class_689": {
+  "chip": 689,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2926371097564697
+ },
+ "class_690": {
+  "chip": 690,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29122114181518555
+ },
+ "class_691": {
+  "chip": 691,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29103612899780273
+ },
+ "class_692": {
+  "chip": 692,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29427504539489746
+ },
+ "class_693": {
+  "chip": 693,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2871379852294922
+ },
+ "class_694": {
+  "chip": 694,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.28864598274230957
+ },
+ "class_695": {
+  "chip": 695,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2934112548828125
+ },
+ "class_696": {
+  "chip": 696,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2917661666870117
+ },
+ "class_697": {
+  "chip": 697,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29799699783325195
+ },
+ "class_698": {
+  "chip": 698,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29280781745910645
+ },
+ "class_699": {
+  "chip": 699,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29256701469421387
+ },
+ "class_700": {
+  "chip": 700,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2888050079345703
+ },
+ "class_701": {
+  "chip": 701,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29386210441589355
+ },
+ "class_702": {
+  "chip": 702,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2919578552246094
+ },
+ "class_703": {
+  "chip": 703,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2882957458496094
+ },
+ "class_832": {
+  "chip": 832,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.28856801986694336
+ },
+ "class_833": {
+  "chip": 833,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2931509017944336
+ },
+ "class_834": {
+  "chip": 834,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2941460609436035
+ },
+ "class_835": {
+  "chip": 835,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29442310333251953
+ },
+ "class_836": {
+  "chip": 836,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.28969788551330566
+ },
+ "class_837": {
+  "chip": 837,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2903470993041992
+ },
+ "class_838": {
+  "chip": 838,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29245996475219727
+ },
+ "class_839": {
+  "chip": 839,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2784159183502197
+ },
+ "class_840": {
+  "chip": 840,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2928011417388916
+ },
+ "class_841": {
+  "chip": 841,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29557204246520996
+ },
+ "class_842": {
+  "chip": 842,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29508304595947266
+ },
+ "class_843": {
+  "chip": 843,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2970619201660156
+ },
+ "class_844": {
+  "chip": 844,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29455089569091797
+ },
+ "class_845": {
+  "chip": 845,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.3035609722137451
+ },
+ "class_846": {
+  "chip": 846,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2945690155029297
+ },
+ "class_847": {
+  "chip": 847,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29343199729919434
+ },
+ "class_848": {
+  "chip": 848,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2914857864379883
+ },
+ "class_849": {
+  "chip": 849,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2944979667663574
+ },
+ "class_850": {
+  "chip": 850,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29727792739868164
+ },
+ "class_851": {
+  "chip": 851,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2971537113189697
+ },
+ "class_852": {
+  "chip": 852,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.28717899322509766
+ },
+ "class_853": {
+  "chip": 853,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.28872203826904297
+ },
+ "class_854": {
+  "chip": 854,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "built-up",
+  "seconds": 0.2893061637878418
+ },
+ "class_855": {
+  "chip": 855,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2883896827697754
+ },
+ "class_856": {
+  "chip": 856,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "built-up",
+  "seconds": 0.3001060485839844
+ },
+ "class_857": {
+  "chip": 857,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.28783321380615234
+ },
+ "class_858": {
+  "chip": 858,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.30462098121643066
+ },
+ "class_859": {
+  "chip": 859,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "built-up",
+  "seconds": 0.31002306938171387
+ },
+ "class_860": {
+  "chip": 860,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2946970462799072
+ },
+ "class_861": {
+  "chip": 861,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29470205307006836
+ },
+ "class_862": {
+  "chip": 862,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2953910827636719
+ },
+ "class_863": {
+  "chip": 863,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "built-up",
+  "seconds": 0.28998684883117676
+ },
+ "class_864": {
+  "chip": 864,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2937028408050537
+ },
+ "class_865": {
+  "chip": 865,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "grass",
+  "seconds": 0.2762939929962158
+ },
+ "class_866": {
+  "chip": 866,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.30286312103271484
+ },
+ "class_867": {
+  "chip": 867,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.30701708793640137
+ },
+ "class_868": {
+  "chip": 868,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29416394233703613
+ },
+ "class_869": {
+  "chip": 869,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29434704780578613
+ },
+ "class_870": {
+  "chip": 870,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "grass",
+  "seconds": 0.2725338935852051
+ },
+ "class_871": {
+  "chip": 871,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "built-up",
+  "seconds": 0.2948181629180908
+ },
+ "class_872": {
+  "chip": 872,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2939760684967041
+ },
+ "class_873": {
+  "chip": 873,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29558515548706055
+ },
+ "class_874": {
+  "chip": 874,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29133105278015137
+ },
+ "class_875": {
+  "chip": 875,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "grass",
+  "seconds": 0.2771189212799072
+ },
+ "class_876": {
+  "chip": 876,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "grass",
+  "seconds": 0.2825441360473633
+ },
+ "class_877": {
+  "chip": 877,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.3057558536529541
+ },
+ "class_878": {
+  "chip": 878,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "built-up",
+  "seconds": 0.30358314514160156
+ },
+ "class_879": {
+  "chip": 879,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "built-up",
+  "seconds": 0.291046142578125
+ },
+ "class_880": {
+  "chip": 880,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2920551300048828
+ },
+ "class_881": {
+  "chip": 881,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.3012979030609131
+ },
+ "class_882": {
+  "chip": 882,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2900099754333496
+ },
+ "class_883": {
+  "chip": 883,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "built-up",
+  "seconds": 0.2872610092163086
+ },
+ "class_884": {
+  "chip": 884,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "built-up",
+  "seconds": 0.2960519790649414
+ },
+ "class_885": {
+  "chip": 885,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "built-up",
+  "seconds": 0.2898228168487549
+ },
+ "class_886": {
+  "chip": 886,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "built-up",
+  "seconds": 0.2896711826324463
+ },
+ "class_887": {
+  "chip": 887,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "grass",
+  "seconds": 0.27519679069519043
+ },
+ "class_888": {
+  "chip": 888,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29793834686279297
+ },
+ "class_889": {
+  "chip": 889,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29713892936706543
+ },
+ "class_890": {
+  "chip": 890,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2910487651824951
+ },
+ "class_891": {
+  "chip": 891,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29238176345825195
+ },
+ "class_892": {
+  "chip": 892,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2945740222930908
+ },
+ "class_893": {
+  "chip": 893,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2963378429412842
+ },
+ "class_894": {
+  "chip": 894,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2951390743255615
+ },
+ "class_895": {
+  "chip": 895,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29018402099609375
+ },
+ "class_1152": {
+  "chip": 1152,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.28961730003356934
+ },
+ "class_1153": {
+  "chip": 1153,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "built-up",
+  "seconds": 0.2836449146270752
+ },
+ "class_1154": {
+  "chip": 1154,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29180908203125
+ },
+ "class_1155": {
+  "chip": 1155,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "built-up",
+  "seconds": 0.288438081741333
+ },
+ "class_1156": {
+  "chip": 1156,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.28552675247192383
+ },
+ "class_1157": {
+  "chip": 1157,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.28406190872192383
+ },
+ "class_1158": {
+  "chip": 1158,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "grass",
+  "seconds": 0.26984095573425293
+ },
+ "class_1159": {
+  "chip": 1159,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "built-up",
+  "seconds": 0.29727888107299805
+ },
+ "class_1160": {
+  "chip": 1160,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "built-up",
+  "seconds": 0.28944993019104004
+ },
+ "class_1161": {
+  "chip": 1161,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.286635160446167
+ },
+ "class_1162": {
+  "chip": 1162,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2965209484100342
+ },
+ "class_1163": {
+  "chip": 1163,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2933621406555176
+ },
+ "class_1164": {
+  "chip": 1164,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "built-up",
+  "seconds": 0.29035186767578125
+ },
+ "class_1165": {
+  "chip": 1165,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29079604148864746
+ },
+ "class_1166": {
+  "chip": 1166,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "grass",
+  "seconds": 0.2769911289215088
+ },
+ "class_1167": {
+  "chip": 1167,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "grass",
+  "seconds": 0.2962639331817627
+ },
+ "class_1168": {
+  "chip": 1168,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2951619625091553
+ },
+ "class_1169": {
+  "chip": 1169,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2919118404388428
+ },
+ "class_1170": {
+  "chip": 1170,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "built-up",
+  "seconds": 0.30016613006591797
+ },
+ "class_1171": {
+  "chip": 1171,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.3150911331176758
+ },
+ "class_1172": {
+  "chip": 1172,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2918698787689209
+ },
+ "class_1173": {
+  "chip": 1173,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "built-up",
+  "seconds": 0.2911651134490967
+ },
+ "class_1174": {
+  "chip": 1174,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "grass",
+  "seconds": 0.2710599899291992
+ },
+ "class_1175": {
+  "chip": 1175,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29096317291259766
+ },
+ "class_1176": {
+  "chip": 1176,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29354214668273926
+ },
+ "class_1177": {
+  "chip": 1177,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "built-up",
+  "seconds": 0.2918069362640381
+ },
+ "class_1178": {
+  "chip": 1178,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "grass",
+  "seconds": 0.2732517719268799
+ },
+ "class_1179": {
+  "chip": 1179,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.30797386169433594
+ },
+ "class_1180": {
+  "chip": 1180,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2897810935974121
+ },
+ "class_1181": {
+  "chip": 1181,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29214000701904297
+ },
+ "class_1182": {
+  "chip": 1182,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29019999504089355
+ },
+ "class_1183": {
+  "chip": 1183,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "built-up",
+  "seconds": 0.2878282070159912
+ },
+ "class_1184": {
+  "chip": 1184,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "built-up",
+  "seconds": 0.29233503341674805
+ },
+ "class_1185": {
+  "chip": 1185,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2896850109100342
+ },
+ "class_1186": {
+  "chip": 1186,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "grass",
+  "seconds": 0.2708930969238281
+ },
+ "class_1187": {
+  "chip": 1187,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29467201232910156
+ },
+ "class_1188": {
+  "chip": 1188,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.28690361976623535
+ },
+ "class_1189": {
+  "chip": 1189,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2896261215209961
+ },
+ "class_1190": {
+  "chip": 1190,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2926020622253418
+ },
+ "class_1191": {
+  "chip": 1191,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2919728755950928
+ },
+ "class_1192": {
+  "chip": 1192,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.28629612922668457
+ },
+ "class_1193": {
+  "chip": 1193,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "grass",
+  "seconds": 0.27501535415649414
+ },
+ "class_1194": {
+  "chip": 1194,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "grass",
+  "seconds": 0.28573083877563477
+ },
+ "class_1195": {
+  "chip": 1195,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2958552837371826
+ },
+ "class_1196": {
+  "chip": 1196,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2902209758758545
+ },
+ "class_1197": {
+  "chip": 1197,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2938210964202881
+ },
+ "class_1198": {
+  "chip": 1198,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2884998321533203
+ },
+ "class_1199": {
+  "chip": 1199,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2909722328186035
+ },
+ "class_1200": {
+  "chip": 1200,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.30347394943237305
+ },
+ "class_1201": {
+  "chip": 1201,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "grass",
+  "seconds": 0.279202938079834
+ },
+ "class_1202": {
+  "chip": 1202,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.30042386054992676
+ },
+ "class_1203": {
+  "chip": 1203,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2976491451263428
+ },
+ "class_1204": {
+  "chip": 1204,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "grass",
+  "seconds": 0.2932579517364502
+ },
+ "class_1205": {
+  "chip": 1205,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2946431636810303
+ },
+ "class_1206": {
+  "chip": 1206,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29099202156066895
+ },
+ "class_1207": {
+  "chip": 1207,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "grass",
+  "seconds": 0.2756028175354004
+ },
+ "class_1208": {
+  "chip": 1208,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.30007076263427734
+ },
+ "class_1209": {
+  "chip": 1209,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.28786206245422363
+ },
+ "class_1210": {
+  "chip": 1210,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29039692878723145
+ },
+ "class_1211": {
+  "chip": 1211,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2890663146972656
+ },
+ "class_1212": {
+  "chip": 1212,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29291200637817383
+ },
+ "class_1213": {
+  "chip": 1213,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.28798508644104004
+ },
+ "class_1214": {
+  "chip": 1214,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "grass",
+  "seconds": 0.27014589309692383
+ },
+ "class_1215": {
+  "chip": 1215,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2946350574493408
+ },
+ "class_1280": {
+  "chip": 1280,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2920410633087158
+ },
+ "class_1281": {
+  "chip": 1281,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2905879020690918
+ },
+ "class_1282": {
+  "chip": 1282,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2856466770172119
+ },
+ "class_1283": {
+  "chip": 1283,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29291415214538574
+ },
+ "class_1284": {
+  "chip": 1284,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2890598773956299
+ },
+ "class_1285": {
+  "chip": 1285,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.3004453182220459
+ },
+ "class_1286": {
+  "chip": 1286,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29288506507873535
+ },
+ "class_1287": {
+  "chip": 1287,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2851581573486328
+ },
+ "class_1288": {
+  "chip": 1288,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2897951602935791
+ },
+ "class_1289": {
+  "chip": 1289,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.28693294525146484
+ },
+ "class_1290": {
+  "chip": 1290,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2867157459259033
+ },
+ "class_1291": {
+  "chip": 1291,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.28759193420410156
+ },
+ "class_1292": {
+  "chip": 1292,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2851991653442383
+ },
+ "class_1293": {
+  "chip": 1293,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29273390769958496
+ },
+ "class_1294": {
+  "chip": 1294,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29223108291625977
+ },
+ "class_1295": {
+  "chip": 1295,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2912161350250244
+ },
+ "class_1296": {
+  "chip": 1296,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2945737838745117
+ },
+ "class_1297": {
+  "chip": 1297,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2899661064147949
+ },
+ "class_1298": {
+  "chip": 1298,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.30535411834716797
+ },
+ "class_1299": {
+  "chip": 1299,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2910342216491699
+ },
+ "class_1300": {
+  "chip": 1300,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29190802574157715
+ },
+ "class_1301": {
+  "chip": 1301,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2908968925476074
+ },
+ "class_1302": {
+  "chip": 1302,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2850019931793213
+ },
+ "class_1303": {
+  "chip": 1303,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.28830695152282715
+ },
+ "class_1304": {
+  "chip": 1304,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.28937292098999023
+ },
+ "class_1305": {
+  "chip": 1305,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2881159782409668
+ },
+ "class_1306": {
+  "chip": 1306,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.28683018684387207
+ },
+ "class_1307": {
+  "chip": 1307,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.28740715980529785
+ },
+ "class_1308": {
+  "chip": 1308,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2935190200805664
+ },
+ "class_1309": {
+  "chip": 1309,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2906637191772461
+ },
+ "class_1310": {
+  "chip": 1310,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29381513595581055
+ },
+ "class_1311": {
+  "chip": 1311,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2881779670715332
+ },
+ "class_1312": {
+  "chip": 1312,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2930901050567627
+ },
+ "class_1313": {
+  "chip": 1313,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2968451976776123
+ },
+ "class_1314": {
+  "chip": 1314,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2958109378814697
+ },
+ "class_1315": {
+  "chip": 1315,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2903110980987549
+ },
+ "class_1316": {
+  "chip": 1316,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2851541042327881
+ },
+ "class_1317": {
+  "chip": 1317,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2873961925506592
+ },
+ "class_1318": {
+  "chip": 1318,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.28860998153686523
+ },
+ "class_1319": {
+  "chip": 1319,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29993104934692383
+ },
+ "class_1320": {
+  "chip": 1320,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2880280017852783
+ },
+ "class_1321": {
+  "chip": 1321,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.28488707542419434
+ },
+ "class_1322": {
+  "chip": 1322,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.28888869285583496
+ },
+ "class_1323": {
+  "chip": 1323,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.28858113288879395
+ },
+ "class_1324": {
+  "chip": 1324,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2879462242126465
+ },
+ "class_1325": {
+  "chip": 1325,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.28729987144470215
+ },
+ "class_1326": {
+  "chip": 1326,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2914698123931885
+ },
+ "class_1327": {
+  "chip": 1327,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.289229154586792
+ },
+ "class_1328": {
+  "chip": 1328,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2930569648742676
+ },
+ "class_1329": {
+  "chip": 1329,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29386186599731445
+ },
+ "class_1330": {
+  "chip": 1330,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29061388969421387
+ },
+ "class_1331": {
+  "chip": 1331,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29089808464050293
+ },
+ "class_1332": {
+  "chip": 1332,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29338598251342773
+ },
+ "class_1333": {
+  "chip": 1333,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.28736281394958496
+ },
+ "class_1334": {
+  "chip": 1334,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2913360595703125
+ },
+ "class_1335": {
+  "chip": 1335,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.29172801971435547
+ },
+ "class_1336": {
+  "chip": 1336,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2921741008758545
+ },
+ "class_1337": {
+  "chip": 1337,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2992398738861084
+ },
+ "class_1338": {
+  "chip": 1338,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2888772487640381
+ },
+ "class_1339": {
+  "chip": 1339,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.292219877243042
+ },
+ "class_1340": {
+  "chip": 1340,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2921762466430664
+ },
+ "class_1341": {
+  "chip": 1341,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.292449951171875
+ },
+ "class_1342": {
+  "chip": 1342,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2964479923248291
+ },
+ "class_1343": {
+  "chip": 1343,
+  "question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "answer": "tree cover",
+  "seconds": 0.2943117618560791
+ },
+ "count_666": {
+  "chip": 666,
+  "question": "How many buildings are in this aerial photograph? Answer with a single number.",
+  "answer": "2",
+  "seconds": 0.285858154296875
+ },
+ "count_1333": {
+  "chip": 1333,
+  "question": "How many buildings are in this aerial photograph? Answer with a single number.",
+  "answer": "1",
+  "seconds": 0.2714650630950928
+ },
+ "count_661": {
+  "chip": 661,
+  "question": "How many buildings are in this aerial photograph? Answer with a single number.",
+  "answer": "1",
+  "seconds": 0.2601187229156494
+ },
+ "count_701": {
+  "chip": 701,
+  "question": "How many buildings are in this aerial photograph? Answer with a single number.",
+  "answer": "2",
+  "seconds": 0.25702881813049316
+ },
+ "count_647": {
+  "chip": 647,
+  "question": "How many buildings are in this aerial photograph? Answer with a single number.",
+  "answer": "5",
+  "seconds": 0.2707641124725342
+ },
+ "count_642": {
+  "chip": 642,
+  "question": "How many buildings are in this aerial photograph? Answer with a single number.",
+  "answer": "2",
+  "seconds": 0.26314806938171387
+ },
+ "count_689": {
+  "chip": 689,
+  "question": "How many buildings are in this aerial photograph? Answer with a single number.",
+  "answer": "3",
+  "seconds": 0.2767517566680908
+ },
+ "count_670": {
+  "chip": 670,
+  "question": "How many buildings are in this aerial photograph? Answer with a single number.",
+  "answer": "4",
+  "seconds": 0.2670290470123291
+ },
+ "count_1317": {
+  "chip": 1317,
+  "question": "How many buildings are in this aerial photograph? Answer with a single number.",
+  "answer": "3",
+  "seconds": 0.27160191535949707
+ },
+ "count_470": {
+  "chip": 470,
+  "question": "How many buildings are in this aerial photograph? Answer with a single number.",
+  "answer": "10",
+  "seconds": 0.27907896041870117
+ },
+ "count_510": {
+  "chip": 510,
+  "question": "How many buildings are in this aerial photograph? Answer with a single number.",
+  "answer": "10",
+  "seconds": 0.27573609352111816
+ },
+ "count_1185": {
+  "chip": 1185,
+  "question": "How many buildings are in this aerial photograph? Answer with a single number.",
+  "answer": "3",
+  "seconds": 0.2649726867675781
+ },
+ "count_836": {
+  "chip": 836,
+  "question": "How many buildings are in this aerial photograph? Answer with a single number.",
+  "answer": "2",
+  "seconds": 0.2679438591003418
+ },
+ "count_464": {
+  "chip": 464,
+  "question": "How many buildings are in this aerial photograph? Answer with a single number.",
+  "answer": "10",
+  "seconds": 0.29025983810424805
+ },
+ "count_833": {
+  "chip": 833,
+  "question": "How many buildings are in this aerial photograph? Answer with a single number.",
+  "answer": "5",
+  "seconds": 0.2626962661743164
+ },
+ "count_505": {
+  "chip": 505,
+  "question": "How many buildings are in this aerial photograph? Answer with a single number.",
+  "answer": "12",
+  "seconds": 0.28448939323425293
+ },
+ "count_840": {
+  "chip": 840,
+  "question": "How many buildings are in this aerial photograph? Answer with a single number.",
+  "answer": "3",
+  "seconds": 0.25497913360595703
+ },
+ "count_1191": {
+  "chip": 1191,
+  "question": "How many buildings are in this aerial photograph? Answer with a single number.",
+  "answer": "0",
+  "seconds": 0.2613699436187744
+ },
+ "count_843": {
+  "chip": 843,
+  "question": "How many buildings are in this aerial photograph? Answer with a single number.",
+  "answer": "2",
+  "seconds": 0.2690749168395996
+ },
+ "count_1153": {
+  "chip": 1153,
+  "question": "How many buildings are in this aerial photograph? Answer with a single number.",
+  "answer": "12",
+  "seconds": 0.2792840003967285
+ },
+ "caption_647": {
+  "chip": 647,
+  "question": "Describe this aerial photograph in one sentence.",
+  "answer": "An aerial view of a residential neighborhood with several swimming pools, surrounded by lush green trees and houses.",
+  "seconds": 0.5652210712432861
+ },
+ "parking_647": {
+  "chip": 647,
+  "question": "Is there a parking lot in this aerial photograph? Answer yes or no.",
+  "answer": "no",
+  "seconds": 0.24355506896972656
+ },
+ "caption_470": {
+  "chip": 470,
+  "question": "Describe this aerial photograph in one sentence.",
+  "answer": "An aerial view of a residential neighborhood with houses, trees, and a paved road.",
+  "seconds": 0.512321949005127
+ },
+ "parking_470": {
+  "chip": 470,
+  "question": "Is there a parking lot in this aerial photograph? Answer yes or no.",
+  "answer": "yes",
+  "seconds": 0.24327707290649414
+ },
+ "caption_833": {
+  "chip": 833,
+  "question": "Describe this aerial photograph in one sentence.",
+  "answer": "An aerial view of a residential neighborhood with a large, multi-story building and a parking lot, surrounded by trees and streets with crosswalks.",
+  "seconds": 0.7092320919036865
+ },
+ "parking_833": {
+  "chip": 833,
+  "question": "Is there a parking lot in this aerial photograph? Answer yes or no.",
+  "answer": "yes",
+  "seconds": 0.24045729637145996
+ },
+ "caption_1153": {
+  "chip": 1153,
+  "question": "Describe this aerial photograph in one sentence.",
+  "answer": "An aerial view of a large, multi-building complex with a flat roof, surrounded by smaller structures and greenery.",
+  "seconds": 0.6128683090209961
+ },
+ "parking_1153": {
+  "chip": 1153,
+  "question": "Is there a parking lot in this aerial photograph? Answer yes or no.",
+  "answer": "yes",
+  "seconds": 0.24571990966796875
+ },
+ "street_caption": {
+  "chip": -1,
+  "question": "Describe this street photograph in one sentence.",
+  "answer": "A wide-angle street photograph captures a quiet, autumnal corner of a city street, where a silver sedan and a dark SUV are parked in front of a row of shops, including a Noodle House and a Nassau Diner, with bare trees and fallen leaves scattered across the pavement.",
+  "seconds": 8.86162781715393
+ },
+ "street_0": {
+  "chip": -1,
+  "question": "Is the sidewalk continuous along this street? Answer yes or no, then one sentence.",
+  "answer": "Yes, the sidewalk is continuous along this street. The sidewalk runs alongside the street, providing a continuous path for pedestrians.",
+  "seconds": 8.446689128875732
+ },
+ "street_1": {
+  "chip": -1,
+  "question": "How many parked cars are visible? Answer with a single number.",
+  "answer": "3",
+  "seconds": 10.140723943710327
+ },
+ "street_2": {
+  "chip": -1,
+  "question": "What is the condition of the street surface? Answer in one sentence.",
+  "answer": "The street surface is wet and has fallen leaves on it.",
+  "seconds": 10.529810905456543
+ },
+ "_run": {
+  "model": "Qwen/Qwen3-VL-2B-Instruct",
+  "revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+  "dtype": "bfloat16",
+  "device": "mps",
+  "seconds": 156.52228999137878,
+  "count_chips": [
+   666,
+   1333,
+   661,
+   701,
+   647,
+   642,
+   689,
+   670,
+   1317,
+   470,
+   510,
+   1185,
+   836,
+   464,
+   833,
+   505,
+   840,
+   1191,
+   843,
+   1153
+  ],
+  "four_chips": [
+   647,
+   470,
+   833,
+   1153
+  ],
+  "class_question": "This is an aerial photograph of about 77 by 77 metres at 30 cm per pixel. Which one of these four classes covers most of it: tree cover, grass, built-up, water? Answer with the class name only.",
+  "count_question": "How many buildings are in this aerial photograph? Answer with a single number.",
+  "parking_question": "Is there a parking lot in this aerial photograph? Answer yes or no.",
+  "caption_prompt": "Describe this aerial photograph in one sentence.",
+  "street_questions": [
+   "Is the sidewalk continuous along this street? Answer yes or no, then one sentence.",
+   "How many parked cars are visible? Answer with a single number.",
+   "What is the condition of the street surface? Answer in one sentence."
+  ]
+ }
+}

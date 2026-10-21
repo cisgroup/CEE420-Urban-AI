@@ -169,3 +169,29 @@ def p05():
 @pytest.fixture(scope="session")
 def scene05():
     return json.loads((P05_DATA / "scene.json").read_text())
+
+
+# Precept 06, the zero-shot models of Lecture 06 on the test blocks, and the town's satellite embeddings.
+P06_KIT = REPO / "P06"
+P06_DATA = P06_KIT / "data"
+
+
+@pytest.fixture(scope="session")
+def fm():
+    """The kit's toolbox, loaded from its file so that no sys.path entry leaks into other tests."""
+    from importlib.util import module_from_spec, spec_from_file_location
+
+    spec = spec_from_file_location("fm_tools_for_tests", P06_KIT / "fm_tools.py")
+    module = module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+@pytest.fixture(scope="session")
+def p06():
+    return json.loads((P06_DATA / "ground_truth.json").read_text())["p06"]
+
+
+@pytest.fixture(scope="session")
+def scene06():
+    return json.loads((P06_DATA / "scene.json").read_text())

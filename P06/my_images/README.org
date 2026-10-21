@@ -1,0 +1,11 @@
+# =============================================================================
+# File      : README.org -- Your own pictures for the P06 kit
+# Author    : Jürgen Hackl <hackl@princeton.edu>
+# Copyright (c) 2026 Jürgen Hackl <hackl@princeton.edu>
+# =============================================================================
+#+OPTIONS: toc:nil num:nil tags:nil
+#+TITLE: Urban AI
+#+SUBTITLE: Your own pictures for Precept 06
+#+AUTHOR: Jürgen Hackl
+
+Drop a picture of your own into this folder, a JPEG, a PNG or a GeoTIFF, and the last model section of =06_01_prompts_and_masks.ipynb= takes the first one it finds, by name. A plain picture gets one click at its centre until you move the click in the cell, and the best mask comes back as a PNG in =output/=. A GeoTIFF keeps its map system, and the mask comes back as GeoJSON that QGIS opens on top of the original. The folder is ignored by git, so your pictures stay on your machine, and the kit's own example, a photograph of the class flight, lives in =data/photo_site.jpg=.
