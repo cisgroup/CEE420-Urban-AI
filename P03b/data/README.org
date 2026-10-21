@@ -45,4 +45,4 @@ Small, pinned snapshots so nothing here depends on a live service.
 | dense_sample.npz         | 100 000 points of the software's classified dense cloud of the whole flight, as points of the map frame (the products' system minus the offset in flight.json), with colours and ASPRS class codes; the same sample as P03's points_sample.npz | CC BY 4.0, CEE420 Urban AI course flight |
 | mesh_whole.npz           | The software's 2.5D mesh of the whole flight, thinned to every fourth vertex and triangulated again in plan with edges over 3 m dropped; vertices in the map frame, triangles as vertex indices                                                | CC BY 4.0, CEE420 Urban AI course flight |
 
-Retrieved 2026-10-06 by the course data pipeline.
+Retrieved 2026-10-21 by the course data pipeline.

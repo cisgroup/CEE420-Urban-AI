@@ -98,6 +98,16 @@
   "rule": "at least 14 m from every kept photograph, or 6 m within 80 m of the pinned window's centre",
   "chosen": "2026-09-29"
  },
+ "release": {
+  "tag": "flight-2026-09-23",
+  "repository": "https://github.com/cisgroup/CEE420-Urban-AI",
+  "orthophoto_url": "https://github.com/cisgroup/CEE420-Urban-AI/releases/download/flight-2026-09-23/flight-2026-09-23-orthomosaic-3cm.tif",
+  "orthophoto_file": "flight-2026-09-23-orthomosaic-3cm.tif",
+  "orthophoto_bytes": 200697777,
+  "published": "2026-10-21",
+  "licence": "CC BY 4.0, CEE420 Urban AI course flight",
+  "note": "the full orthomosaic of the flight at 3 cm as a release of the student repository, read by window over the network by the live lane of 03_06; the file is tiled with overviews, so one window costs only the tiles under it"
+ },
  "p03b": {
   "window": {
    "centre": [
