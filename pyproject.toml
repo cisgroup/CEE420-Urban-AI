@@ -28,6 +28,9 @@ dependencies = [
     # from the PyTorch index, so the container and a Linux laptop never download the CUDA libraries
     "torch>=2.14,<2.15",
     "torchvision>=0.29,<0.30",
+    # the transformers library for P06: SAM 2.1 and CLIP through their published loaders, the weights cached in the
+    # container and downloaded once on the uv path
+    "transformers>=5.19,<6",
     # notebooks
     "ipykernel>=6",
     "jupyterlab>=4",
@@ -54,5 +57,5 @@ explicit = true
 
 [tool.pytest.ini_options]
 addopts = "--nbmake --nbmake-timeout=900 -m 'not network'"
-testpaths = ["tests", "F00", "P01", "A01", "P02", "P03", "P04", "P03b", "P05"]
+testpaths = ["tests", "F00", "P01", "A01", "P02", "P03", "P04", "P03b", "P05", "P06"]
 markers = ["network: hits a live service, deselected by default", "slow: trains the P04 forests ten times, about a minute"]
