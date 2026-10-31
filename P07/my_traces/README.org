@@ -1,0 +1,13 @@
+# =============================================================================
+# File      : README.org -- Your own trace for the P07 kit
+# Author    : Jürgen Hackl <hackl@princeton.edu>
+# Copyright (c) 2026 Jürgen Hackl <hackl@princeton.edu>
+# =============================================================================
+#+OPTIONS: toc:nil num:nil tags:nil
+#+TITLE: Urban AI
+#+SUBTITLE: Your own trace for Precept 07
+#+AUTHOR: Jürgen Hackl
+
+Drop the export of your team's tracker into this folder, a GPX file or a CSV with columns for latitude, longitude and time (a date and a time in two columns, and hemisphere letters, work too), and the own-trace sections of =07_03_traces.ipynb= take the first GPX or CSV they find, by name. The notebook reads only the points, drops the fixes without a time or a position and says how many, reads times without a zone as local time, drops the date and keeps the clock, cuts the first and last 200 m of the walk and prints the span it kept, projects the rest into the course's metres, and runs the stay rule, the trips on Princeton's walk graph and the counts per cell and hour on it, the same way it ran them on the specimen. Beside the trace you may put =diary.csv= with the columns =stop=, =start= and =end= (clock times such as =14:05= or =2:05 pm=), the diary your team kept at the stations, and the notebook scores the detected stays against it as the specimen was scored against its coded stops.
+
+The folder is ignored by git, so your trace stays on your machine. The class's traces reach the kit, if they do, only as counts of trackers per cell and hour at or above a minimum, under the rules on the consent form: codes for names, both ends trimmed, local time only, no line that one person walked.

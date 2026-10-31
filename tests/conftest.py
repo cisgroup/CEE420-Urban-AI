@@ -195,3 +195,29 @@ def p06():
 @pytest.fixture(scope="session")
 def scene06():
     return json.loads((P06_DATA / "scene.json").read_text())
+
+
+# Precept 07, Princeton's networks and places, the theme-park specimen, Porto's matrices and the commuting flows.
+P07_KIT = REPO / "P07"
+P07_DATA = P07_KIT / "data"
+
+
+@pytest.fixture(scope="session")
+def mob():
+    """The kit's toolbox, loaded from its file so that no sys.path entry leaks into other tests."""
+    from importlib.util import module_from_spec, spec_from_file_location
+
+    spec = spec_from_file_location("mob_tools_for_tests", P07_KIT / "mob_tools.py")
+    module = module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+@pytest.fixture(scope="session")
+def p07():
+    return json.loads((P07_DATA / "ground_truth.json").read_text())["p07"]
+
+
+@pytest.fixture(scope="session")
+def scene07():
+    return json.loads((P07_DATA / "scene.json").read_text())

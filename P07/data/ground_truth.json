@@ -1,0 +1,2235 @@
+{
+  "generated": "2026-10-30",
+  "p07": {
+    "snapshot": {
+      "graphs": "2026-10-30",
+      "osmnx": "2.1.1",
+      "destinations": "2026-10-30",
+      "census": "2026-10-30",
+      "census_vintage": 2024,
+      "lodes_year": 2023,
+      "porto": "trips of 2013-07-01 to 2014-06-30",
+      "themepark": "2026-10-30",
+      "transit_departure": "2026-11-02T08:00",
+      "rail_feed": "2026-09-17"
+    },
+    "rules": {
+      "walk_kph": 4.8,
+      "bike_kph": 15.0,
+      "iso_minutes": [
+        5,
+        10,
+        15
+      ],
+      "budget_min": 15,
+      "six": [
+        "food",
+        "grocery",
+        "pharmacy",
+        "school",
+        "park",
+        "transit"
+      ],
+      "hansen_beta": 0.1,
+      "matrix_cutoff_min": 45.0,
+      "stay": {
+        "dist_m": 50.0,
+        "min_s": 600.0,
+        "overlap_s": 60.0,
+        "poi_dist_m": 60.0
+      },
+      "surface": {
+        "dist_m": [
+          20,
+          30,
+          40,
+          50,
+          60,
+          80,
+          100
+        ],
+        "min": [
+          2,
+          3,
+          5,
+          8,
+          10,
+          15,
+          20
+        ]
+      },
+      "trim_m": 200.0,
+      "local_tz": "America/New_York",
+      "k": 10,
+      "grid_m": 250.0,
+      "porto_cell_m": 500.0,
+      "porto_cells_m": [
+        500.0,
+        1000.0,
+        2000.0
+      ],
+      "porto_crs": "EPSG:3763",
+      "unique_min_points": 4,
+      "agg_k": 10,
+      "population": "the block groups' population spread over the cells by built area, a cell belonging to the block group that holds its centre"
+    },
+    "anchors": {
+      "nassau_hall": {
+        "x": 528936.0,
+        "y": 4466524.0,
+        "lon": -74.659271,
+        "lat": 40.348769
+      },
+      "e225": {
+        "lon": -74.65119,
+        "lat": 40.35,
+        "rule": "the point P01's duel notebook used for E225"
+      },
+      "nassau_cell": 541
+    },
+    "graphs": {
+      "drive": {
+        "nodes": 932,
+        "edges": 2442,
+        "km": 242.0851,
+        "intersection_density_km": 16.7861,
+        "segment_m": 185.9333,
+        "circuity": 1.105036,
+        "dead_end_share": 0.1416,
+        "three_way_share": 0.7253,
+        "four_way_share": 0.117,
+        "degree_hist": {
+          "1": 141,
+          "2": 72,
+          "3": 618,
+          "4": 100,
+          "5": 1
+        },
+        "lecture": {
+          "nodes": 932,
+          "edges": 2442,
+          "street_km": 242.08510467323174,
+          "entropy": 3.3504335996044388,
+          "order": 0.20091008952910527
+        }
+      },
+      "bike": {
+        "nodes": 3167,
+        "edges": 7907,
+        "km": 410.9511,
+        "intersection_density_km": 52.3725,
+        "segment_m": 98.3137,
+        "circuity": 1.11009,
+        "dead_end_share": 0.2119,
+        "three_way_share": 0.6896,
+        "four_way_share": 0.0859,
+        "degree_hist": {
+          "1": 692,
+          "2": 330,
+          "3": 1892,
+          "4": 249,
+          "5": 4
+        },
+        "lecture": {
+          "nodes": 3167,
+          "edges": 7907,
+          "street_km": 410.9510606943097,
+          "entropy": 3.438985246841356,
+          "order": 0.12723321177409275
+        }
+      },
+      "walk": {
+        "nodes": 6814,
+        "edges": 19922,
+        "km": 608.3549,
+        "intersection_density_km": 118.8033,
+        "segment_m": 61.0737,
+        "circuity": 1.096427,
+        "dead_end_share": 0.1691,
+        "three_way_share": 0.5679,
+        "four_way_share": 0.2559,
+        "degree_hist": {
+          "1": 1167,
+          "2": 368,
+          "3": 3575,
+          "4": 1663,
+          "5": 30,
+          "6": 9,
+          "7": 2
+        },
+        "lecture": {
+          "nodes": 6814,
+          "edges": 19922,
+          "street_km": 608.3549199192987,
+          "entropy": 3.317094175030187,
+          "order": 0.22780746277660358
+        }
+      },
+      "walk_drive_ratio": 7.3112,
+      "area_km2": 47.6586
+    },
+    "towns": {
+      "princeton": {
+        "entropy": 3.3493,
+        "order": 0.2018,
+        "n_segments": 1245,
+        "bins": 36,
+        "nodes": 932,
+        "area_km2": 47.6586,
+        "intersection_density_km": 16.7861,
+        "segment_m": 185.9333,
+        "circuity": 1.105036,
+        "dead_end_share": 0.1416,
+        "three_way_share": 0.7253,
+        "four_way_share": 0.117,
+        "lecture": {
+          "entropy": 3.3504335996044388,
+          "order": 0.20091008952910527,
+          "place": "Princeton, New Jersey (municipal boundary)"
+        }
+      },
+      "trenton": {
+        "entropy": 3.4779,
+        "order": 0.0938,
+        "n_segments": 2648,
+        "bins": 36,
+        "nodes": 1716,
+        "area_km2": 21.222,
+        "intersection_density_km": 75.7234,
+        "segment_m": 120.9503,
+        "circuity": 1.025069,
+        "dead_end_share": 0.0635,
+        "three_way_share": 0.6439,
+        "four_way_share": 0.2838,
+        "lecture": {
+          "entropy": 3.4779144121782357,
+          "order": 0.09381536004556534,
+          "place": "Trenton, Mercer County, New Jersey, United States"
+        }
+      },
+      "hopewell": {
+        "entropy": 2.6632,
+        "order": 0.6623,
+        "n_segments": 98,
+        "bins": 36,
+        "nodes": 77,
+        "area_km2": 1.818,
+        "intersection_density_km": 33.0026,
+        "segment_m": 171.8298,
+        "circuity": 1.044763,
+        "dead_end_share": 0.2208,
+        "three_way_share": 0.6494,
+        "four_way_share": 0.1299,
+        "lecture": {
+          "entropy": 2.663227672370481,
+          "order": 0.6622560824188416,
+          "place": "Hopewell, Mercer County, New Jersey, 08525, United States"
+        }
+      }
+    },
+    "toy": {
+      "dist_from_A": {
+        "A": 0.0,
+        "B": 200.0,
+        "C": 300.0,
+        "D": 500.0,
+        "E": 500.0,
+        "F": 800.0,
+        "G": 900.0
+      },
+      "order": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "checks": 18,
+      "improvements": 6,
+      "pred": {
+        "A": null,
+        "B": "A",
+        "C": "A",
+        "D": "B",
+        "E": "C",
+        "F": "D",
+        "G": "E"
+      },
+      "hops_from_A": {
+        "A": 0,
+        "B": 1,
+        "C": 1,
+        "D": 2,
+        "E": 2,
+        "F": 3,
+        "G": 3
+      },
+      "fewest_AG": {
+        "path": [
+          "A",
+          "C",
+          "E",
+          "G"
+        ],
+        "edges": 3,
+        "length_m": 900.0
+      },
+      "simple_paths_AG": 8,
+      "shortest_AG_m": 900.0,
+      "longest_AG_m": 1400.0,
+      "contraction": {
+        "order": "AFGBCDE",
+        "shortcuts": [
+          [
+            "G",
+            "D",
+            500.0,
+            "F",
+            600.0
+          ]
+        ],
+        "meetings": [
+          [
+            "E",
+            900.0
+          ],
+          [
+            "D",
+            1000.0
+          ]
+        ],
+        "distance_m": 900.0
+      },
+      "brandes_D": {
+        "by_source": {
+          "A": 1.0,
+          "B": 1.5,
+          "C": 1.0,
+          "E": 1.0,
+          "F": 4.0,
+          "G": 0.5
+        },
+        "total": 9.0,
+        "half": 4.5
+      },
+      "betweenness": {
+        "A": 0.0,
+        "B": 0.1333,
+        "C": 0.2333,
+        "D": 0.3,
+        "E": 0.3,
+        "F": 0.1,
+        "G": 0.0
+      },
+      "closeness_per_km": {
+        "A": 1.875,
+        "B": 2.4,
+        "C": 2.5,
+        "D": 2.7273,
+        "E": 2.7273,
+        "F": 1.9355,
+        "G": 1.7647
+      },
+      "astar_to_F": {
+        "settled": [
+          "A",
+          "B",
+          "D",
+          "F"
+        ],
+        "pushes": 6,
+        "dijkstra_settled": 6
+      },
+      "lecture": {
+        "toy checks": "18",
+        "toy improvements": "6"
+      }
+    },
+    "routing": {
+      "fewest_edges": {
+        "edges": 25,
+        "length_m": 1013.2273
+      },
+      "shortest": {
+        "edges": 32,
+        "length_m": 854.3617
+      },
+      "dijkstra": {
+        "settled": 1625,
+        "pushes": 2051,
+        "every_node": 6814,
+        "nodes": 6814
+      },
+      "astar": {
+        "settled": 290,
+        "pushes": 420,
+        "reopened": 0,
+        "length_m": 854.3617,
+        "short_edges": 4640,
+        "short_by_m": 0.9799
+      },
+      "bidirectional": {
+        "forward": 404,
+        "backward": 404,
+        "length_m": 854.3617
+      },
+      "yen": {
+        "k": 50,
+        "spread_m": 9.0163,
+        "at_or_under_80": 8
+      },
+      "alternative": {
+        "length_m": 945.2204,
+        "shared": 0.0
+      },
+      "all_pairs": {
+        "walk": {
+          "dijkstra": 2319920855.8428483,
+          "floyd_warshall": 316378081144.0
+        },
+        "drive": {
+          "dijkstra": 31018604.096523218,
+          "floyd_warshall": 809557568.0
+        }
+      },
+      "lecture": {
+        "fewest edges": "25",
+        "fewest metres": "1,013",
+        "shortest edges": "32",
+        "dijkstra settled": "1,625",
+        "dijkstra pushes": "2,051",
+        "astar settled": "290",
+        "astar pushes": "420",
+        "bidir forward": "404",
+        "bidir backward": "404",
+        "yen k": "50",
+        "yen spread": "9",
+        "yen under80": "8",
+        "alt metres": "945",
+        "allpairs walk dijkstra": "2.3 billion",
+        "allpairs walk floyd": "320 billion",
+        "allpairs drive dijkstra": "31 million",
+        "allpairs drive floyd": "810 million",
+        "drive settled dijkstra": "642",
+        "drive settled astar": "95",
+        "chord shortfall edges": "4,640",
+        "chord shortfall max": "0.98"
+      }
+    },
+    "circuity": {
+      "to": "Princeton",
+      "network_m": 854.3617,
+      "straight_m": 736.9662,
+      "circuity": 1.1593,
+      "path_nodes": 33,
+      "node_to_node_m": 738.4375,
+      "lecture": {
+        "network_m": 854.3616629143565,
+        "straight_m": 736.9662499853492,
+        "circuity": 1.1592955076726257
+      }
+    },
+    "centrality": {
+      "mode": "drive",
+      "exact": true,
+      "top_streets": [
+        [
+          "Nassau Street",
+          0.2113
+        ],
+        [
+          "Mount Lucas Road",
+          0.1375
+        ],
+        [
+          "Stockton Street",
+          0.1359
+        ],
+        [
+          "University Place",
+          0.1316
+        ],
+        [
+          "Chambers Street",
+          0.1308
+        ],
+        [
+          "Witherspoon Street",
+          0.1283
+        ],
+        [
+          "Great Road",
+          0.1232
+        ],
+        [
+          "Mercer Street",
+          0.1172
+        ]
+      ],
+      "top_share": 0.2113,
+      "max_node_betweenness": 0.2136,
+      "walk": {
+        "sources": 6814,
+        "exact": true,
+        "top_streets": [
+          [
+            "Greenview Avenue",
+            0.0905
+          ],
+          [
+            "Nassau Street",
+            0.0811
+          ],
+          [
+            "Wiggins Street",
+            0.0805
+          ],
+          [
+            "North Tulane Street",
+            0.0804
+          ],
+          [
+            "Walnut Lane",
+            0.0795
+          ],
+          [
+            "Chancellor Way",
+            0.0776
+          ],
+          [
+            "Stockton Street",
+            0.0711
+          ],
+          [
+            "Hodge Road",
+            0.0704
+          ]
+        ],
+        "segments": 9749,
+        "top_segment": 0.103,
+        "top_segment_named": false,
+        "unnamed_in_top_100": 51
+      },
+      "lecture": [
+        [
+          "Nassau Street",
+          0.2112892593224324
+        ],
+        [
+          "Mount Lucas Road",
+          0.1374842686114427
+        ],
+        [
+          "Stockton Street",
+          0.1359307219612489
+        ],
+        [
+          "University Place",
+          0.1316388764676867
+        ],
+        [
+          "Chambers Street",
+          0.1308206137661751
+        ],
+        [
+          "Witherspoon Street",
+          0.1282713220820291
+        ],
+        [
+          "Great Road",
+          0.1231773486444498
+        ],
+        [
+          "Mercer Street",
+          0.1172167082328752
+        ]
+      ]
+    },
+    "access": {
+      "cells": 839,
+      "residents": 30756.0003,
+      "minutes": 15,
+      "six": [
+        "food",
+        "grocery",
+        "pharmacy",
+        "school",
+        "park",
+        "transit"
+      ],
+      "share_grocery_15": {
+        "drive": 1.0,
+        "bike": 0.9411,
+        "walk": 0.6445,
+        "transit": 0.5392
+      },
+      "all_six": {
+        "walk": {
+          "share": 0.4256,
+          "cells": 67,
+          "by_type": {
+            "food": 0.6589,
+            "grocery": 0.6445,
+            "pharmacy": 0.4881,
+            "school": 0.7677,
+            "park": 0.712,
+            "transit": 0.8558
+          },
+          "lowest": "pharmacy"
+        },
+        "bike": {
+          "share": 0.8959,
+          "cells": 483,
+          "by_type": {
+            "food": 0.9424,
+            "grocery": 0.9411,
+            "pharmacy": 0.9089,
+            "school": 0.9844,
+            "park": 0.9966,
+            "transit": 0.9806
+          },
+          "lowest": "pharmacy"
+        }
+      },
+      "isochrones": {
+        "walk_5": {
+          "area_ha": 31.2201,
+          "food": 44,
+          "nodes": 466
+        },
+        "walk_10": {
+          "area_ha": 116.8872,
+          "food": 64,
+          "nodes": 1418
+        },
+        "walk_15": {
+          "area_ha": 239.1202,
+          "food": 77,
+          "nodes": 2470
+        },
+        "bike_15": {
+          "area_ha": 1022.7551,
+          "food": 92,
+          "nodes": 2206
+        },
+        "drive_15": {
+          "area_ha": 1109.1479,
+          "food": 92,
+          "nodes": 932
+        },
+        "circle_1200": {
+          "area_ha": 451.663,
+          "food": 77,
+          "ratio_to_walk_15": 1.8889
+        }
+      },
+      "duel": {
+        "circle": 20,
+        "network": 3,
+        "nodes": 170,
+        "lecture": {
+          "circle": 20,
+          "network": 3
+        }
+      },
+      "toy": {
+        "reached_400": [
+          "A",
+          "B",
+          "C"
+        ],
+        "partial_400": {
+          "BD": 0.6667,
+          "CE": 0.5
+        },
+        "cumulative_400": 3,
+        "hansen": 3.6916,
+        "hansen_terms": {
+          "B": 1.3406,
+          "C": 0.5488,
+          "D": 1.1036,
+          "E": 0.3679,
+          "G": 0.3306
+        },
+        "beta_per_m": 0.002
+      },
+      "grocery_count15": {
+        "mean": 0.2861,
+        "max": 4,
+        "cells_zero": 680
+      },
+      "hansen": {
+        "beta": 0.1,
+        "cutoff_min": 45.0,
+        "median": 3.3719,
+        "max": 68.8356,
+        "cell_max": 542,
+        "weight_10": 0.3679,
+        "weight_30": 0.0498,
+        "destinations": 293,
+        "finite_share": 0.3082
+      },
+      "grocery_min": {
+        "walk_median": 31.185,
+        "bike_median": 10.5242
+      },
+      "fairness": {
+        "gini_walk_hansen": 0.4176,
+        "pearson_income_hansen": -0.5906,
+        "spearman_income_hansen": -0.5449,
+        "n_block_groups": 21,
+        "block_groups_with_income": 17,
+        "no_vehicle_share": 0.1191,
+        "transit_junction": {
+          "block_groups": 20,
+          "min": 27.0,
+          "max": 113.0
+        },
+        "lecture": {
+          "gini_walk_hansen": 0.41762699896541633,
+          "pearson_income_hansen": -0.5905596509767101,
+          "spearman_income_hansen": -0.5449023245918807,
+          "n_block_groups": 21,
+          "no_vehicle_share_town": 0.11913978494623656,
+          "fill": {
+            "gini walk": "0.42",
+            "corr income sign": "negative, minus 0.59",
+            "no vehicle share": "12"
+          }
+        }
+      },
+      "transit": {
+        "nassau_cell": 541,
+        "destination": "PRINCETON JCT.",
+        "walk_min": 89,
+        "car_min": 11,
+        "transit_p10": 22,
+        "transit_p50": 30,
+        "transit_p90": 38,
+        "share30": {
+          "transit": 0.1864,
+          "car": 1.0,
+          "walk": 0.0
+        },
+        "share45": {
+          "transit": 0.3417,
+          "car": 1.0,
+          "walk": 0.0
+        },
+        "fast_cells": 21,
+        "fast_near_station": 1.0,
+        "unreached": {
+          "transit": 0.0036,
+          "car": 0.0,
+          "walk": 0.081
+        },
+        "max_time_min": 180,
+        "lecture": {
+          "origin": 541,
+          "walk_to_princeton_min": 14,
+          "transit_p10": 22,
+          "transit_p50": 30,
+          "transit_p90": 38,
+          "walk_min": 89,
+          "car_min": 11,
+          "straight_m": 4678
+        }
+      },
+      "dinky": {
+        "trips": 94,
+        "each_way": 47,
+        "ride_min": 5.0,
+        "km": 4.262,
+        "headway_peak_min": 20.0,
+        "walk_leg_min": 14,
+        "access_min": 16,
+        "minutes": 271,
+        "matches": 271,
+        "hour": {
+          "min": 21.0,
+          "max": 44.0,
+          "median": 30.5,
+          "mean_wait": 9.6,
+          "platform_min": 2.0,
+          "platform_max": 25.0,
+          "same_by_every_route": true
+        },
+        "example": {
+          "leave": "08:00",
+          "at_platform": "08:14",
+          "train": "08:33",
+          "arrive": "08:38",
+          "total": 38.0,
+          "new_york": "08:44"
+        },
+        "worst": {
+          "leave": "09:58",
+          "minutes": 83.0,
+          "missed": "10:13",
+          "next": "11:16"
+        },
+        "faster_by_bus_7_to_10": 13,
+        "lecture": {
+          "dinky trips": "94",
+          "dinky each way": "47",
+          "dinky ride": "5",
+          "dinky km": "4.3",
+          "dinky headway": "20",
+          "dinky headway noon": "30.5",
+          "dinky feed date": "2026-09-17",
+          "dinky transfer": "6 to 14",
+          "jn walk": "89",
+          "jn transit": "30",
+          "jn car": "11",
+          "jn transit p10": "22",
+          "jn transit p90": "38",
+          "jn walk leg": "14",
+          "jn access": "16",
+          "jn hour min": "21",
+          "jn hour max": "44",
+          "jn mean wait": "9.6",
+          "jn worst": "83",
+          "jn worst clock": "9:58",
+          "jn worst missed": "10:13",
+          "jn worst next": "11:16",
+          "jn window": "60",
+          "jn example leave": "8:00",
+          "jn example at platform": "8:14",
+          "jn fast near words": "all of them",
+          "jn share30 transit": "19",
+          "jn share30 car": "100",
+          "jn share30 walk": "0",
+          "jn share45 transit": "34",
+          "jn share45 car": "100",
+          "jn share45 walk": "0",
+          "jn fast near": "100",
+          "jn platform min": "2",
+          "jn platform max": "25",
+          "jn platform mean": "12",
+          "jn hour median": "30.5",
+          "jn example total": "38",
+          "jn example platform": "19",
+          "jn example train": "8:33",
+          "jn example arrive": "8:38",
+          "jn example ny": "8:44"
+        }
+      },
+      "lecture": {
+        "fill": {
+          "share walk grocery": "64",
+          "share bike grocery": "94",
+          "share car grocery": "100",
+          "share transit grocery": "54",
+          "share6 walk": "43",
+          "share6 bike": "90",
+          "iso15 area ha": "239",
+          "iso15 food": "77",
+          "iso15 bike food": "92",
+          "iso15 drive food": "92",
+          "iso15 circle ratio": "1.9",
+          "duel circle": "20",
+          "duel network": "3",
+          "nassau dinky network": "854",
+          "nassau dinky straight": "737",
+          "nassau dinky circuity": "1.16"
+        },
+        "share_grocery_15": {
+          "walk": 0.6445178990044441,
+          "bike": 0.9410847344309792,
+          "drive": 1.0,
+          "transit": 0.5392201274119971
+        },
+        "share_all_six": {
+          "walk": 0.42559801921771684,
+          "bike": 0.8958640119724656
+        }
+      }
+    },
+    "traces": {
+      "rule": {
+        "dist_m": 50.0,
+        "min_s": 600.0,
+        "overlap_s": 60.0,
+        "poi_dist_m": 60.0
+      },
+      "toy": {
+        "stays": [
+          {
+            "start": "09:00",
+            "end": "09:14",
+            "minutes": 14.0
+          },
+          {
+            "start": "09:24",
+            "end": "09:40",
+            "minutes": 16.0
+          }
+        ],
+        "trip": {
+          "walked_m": 500.0214,
+          "straight_m": 466.2074,
+          "directness": 0.9324
+        }
+      },
+      "kp2": {
+        "fixes": 8918,
+        "first": "12:05",
+        "last": "18:09",
+        "gaps_over_60_s": 17,
+        "longest_gap_s": 2349.0,
+        "longest_gap_min": 39.2,
+        "longest_gap_from": "14:49",
+        "longest_gap_to": "15:28",
+        "longest_gap_inside": "Saloon",
+        "n_detected": 11,
+        "n_coded": 16,
+        "n_coded_timed": 15,
+        "stay_minutes": [
+          11.3,
+          27.15,
+          27.9333,
+          12.0333,
+          17.6167,
+          18.2833,
+          22.5667,
+          12.0667,
+          18.9333,
+          19.55,
+          25.6
+        ],
+        "stay_clocks": [
+          [
+            "12:44",
+            "12:55"
+          ],
+          [
+            "12:57",
+            "13:24"
+          ],
+          [
+            "13:37",
+            "14:05"
+          ],
+          [
+            "14:17",
+            "14:29"
+          ],
+          [
+            "14:29",
+            "14:47"
+          ],
+          [
+            "15:28",
+            "15:46"
+          ],
+          [
+            "15:54",
+            "16:17"
+          ],
+          [
+            "16:20",
+            "16:32"
+          ],
+          [
+            "16:32",
+            "16:51"
+          ],
+          [
+            "16:55",
+            "17:15"
+          ],
+          [
+            "17:18",
+            "17:44"
+          ]
+        ],
+        "precision": 0.7273,
+        "recall": 0.5333,
+        "matched": 8,
+        "matched_pairs": [
+          [
+            2,
+            "Pony Express",
+            1639.0
+          ],
+          [
+            1,
+            "Ghostrider",
+            1592.0
+          ],
+          [
+            10,
+            "Hangtime",
+            1491.0
+          ],
+          [
+            6,
+            "Coast Rider",
+            1315.0
+          ],
+          [
+            5,
+            "Saloon",
+            1054.0
+          ],
+          [
+            4,
+            "Silver Bullet",
+            1034.0
+          ],
+          [
+            8,
+            "Xcelerator",
+            831.0
+          ],
+          [
+            9,
+            "Sky Cabin?/Games",
+            436.0
+          ]
+        ],
+        "unmatched_coded": [
+          [
+            "Calico River Rapids",
+            17.3667
+          ],
+          [
+            "CRR Bathroom",
+            2.7667
+          ],
+          [
+            "CRR Bathroom",
+            4.5667
+          ],
+          [
+            "Wheeler Dealer",
+            6.2
+          ],
+          [
+            "Lee's Last Stop Shop",
+            2.95
+          ],
+          [
+            "Jaguar!",
+            9.05
+          ],
+          [
+            "Sol Spin Line Stop",
+            1.4167
+          ]
+        ],
+        "unmatched_detected": [
+          0,
+          3,
+          7
+        ],
+        "coded_under_10_min": 7,
+        "coded_under_10_missed": 6,
+        "trips": 10,
+        "directness_mean_between_places": 0.5632,
+        "n_between_places": 6,
+        "directness_median_all": 0.4465,
+        "paper_directness": 0.6996,
+        "lecture": {
+          "n_detected": 11,
+          "precision": 0.7272727272727273,
+          "recall": 0.5333333333333333,
+          "longest_gap_min": "39.2"
+        }
+      },
+      "leg": {
+        "from_": "Wheeler Dealer",
+        "to": "Silver Bullet",
+        "walked_m": 646.587,
+        "shortest_m": 312.642,
+        "directness": 0.4835,
+        "from_clock": "14:13",
+        "to_clock": "14:24",
+        "lecture": {
+          "from": "Wheeler Dealer",
+          "to": "Silver Bullet",
+          "seq": 7,
+          "walked_m": 646.587,
+          "shortest_m": 312.642,
+          "directness": 0.4835265787898612,
+          "walked_along_fixes_m": 645.7998906548977,
+          "from_clock": "14:13",
+          "to_clock": "14:24",
+          "chosen_because": "named Silver Bullet reached from Wheeler Dealer",
+          "by_name": true,
+          "convention": "a coded row's walked_dist_m, shortest_path_m and path_directness describe the walk arriving at that stop"
+        }
+      },
+      "surface": {
+        "dist_m": [
+          20,
+          30,
+          40,
+          50,
+          60,
+          80,
+          100
+        ],
+        "min": [
+          2,
+          3,
+          5,
+          8,
+          10,
+          15,
+          20
+        ],
+        "precision": [
+          [
+            0.3182,
+            0.4,
+            0.5,
+            0.7273,
+            0.7778,
+            1.0,
+            1.0
+          ],
+          [
+            0.3061,
+            0.4667,
+            0.5789,
+            0.7273,
+            0.7778,
+            1.0,
+            1.0
+          ],
+          [
+            0.375,
+            0.4688,
+            0.5217,
+            0.6923,
+            0.6364,
+            1.0,
+            1.0
+          ],
+          [
+            0.4054,
+            0.4839,
+            0.5909,
+            0.7692,
+            0.7273,
+            1.0,
+            1.0
+          ],
+          [
+            0.4545,
+            0.5172,
+            0.65,
+            0.7143,
+            0.7692,
+            1.0,
+            1.0
+          ],
+          [
+            0.5,
+            0.5556,
+            0.619,
+            0.8,
+            0.75,
+            1.0,
+            1.0
+          ],
+          [
+            0.52,
+            0.7,
+            0.7647,
+            0.9286,
+            0.9091,
+            1.0,
+            1.0
+          ]
+        ],
+        "recall": [
+          [
+            0.9333,
+            0.9333,
+            0.6,
+            0.5333,
+            0.4667,
+            0.2667,
+            0.0667
+          ],
+          [
+            1.0,
+            0.9333,
+            0.7333,
+            0.5333,
+            0.4667,
+            0.4,
+            0.2667
+          ],
+          [
+            1.0,
+            1.0,
+            0.8,
+            0.6,
+            0.4667,
+            0.4667,
+            0.2667
+          ],
+          [
+            1.0,
+            1.0,
+            0.8667,
+            0.6667,
+            0.5333,
+            0.5333,
+            0.4
+          ],
+          [
+            1.0,
+            1.0,
+            0.8667,
+            0.6667,
+            0.6667,
+            0.5333,
+            0.4667
+          ],
+          [
+            1.0,
+            1.0,
+            0.8667,
+            0.8,
+            0.6,
+            0.6,
+            0.4667
+          ],
+          [
+            0.8667,
+            0.9333,
+            0.8667,
+            0.8667,
+            0.6667,
+            0.6,
+            0.5333
+          ]
+        ],
+        "detected": [
+          [
+            44,
+            35,
+            18,
+            11,
+            9,
+            4,
+            1
+          ],
+          [
+            49,
+            30,
+            19,
+            11,
+            9,
+            6,
+            4
+          ],
+          [
+            40,
+            32,
+            23,
+            13,
+            11,
+            7,
+            4
+          ],
+          [
+            37,
+            31,
+            22,
+            13,
+            11,
+            8,
+            6
+          ],
+          [
+            33,
+            29,
+            20,
+            14,
+            13,
+            8,
+            7
+          ],
+          [
+            30,
+            27,
+            21,
+            15,
+            12,
+            9,
+            7
+          ],
+          [
+            25,
+            20,
+            17,
+            14,
+            11,
+            9,
+            8
+          ]
+        ]
+      },
+      "pooled": {
+        "visitors": 15,
+        "matched": 82,
+        "detected": 110,
+        "coded": 151,
+        "precision": 0.7455,
+        "recall": 0.543,
+        "per_visitor": {
+          "CP1": {
+            "fixes": 3073,
+            "detected": 6,
+            "coded": 8,
+            "matched": 5
+          },
+          "CP2": {
+            "fixes": 8144,
+            "detected": 12,
+            "coded": 10,
+            "matched": 7
+          },
+          "CP3": {
+            "fixes": 5165,
+            "detected": 4,
+            "coded": 11,
+            "matched": 4
+          },
+          "CP4": {
+            "fixes": 2872,
+            "detected": 6,
+            "coded": 6,
+            "matched": 4
+          },
+          "CP5": {
+            "fixes": 11306,
+            "detected": 13,
+            "coded": 20,
+            "matched": 11
+          },
+          "CP6": {
+            "fixes": 6978,
+            "detected": 4,
+            "coded": 10,
+            "matched": 3
+          },
+          "CP7": {
+            "fixes": 3159,
+            "detected": 4,
+            "coded": 9,
+            "matched": 4
+          },
+          "CP8": {
+            "fixes": 8765,
+            "detected": 10,
+            "coded": 11,
+            "matched": 8
+          },
+          "KP2": {
+            "fixes": 8918,
+            "detected": 11,
+            "coded": 15,
+            "matched": 8
+          },
+          "KP3": {
+            "fixes": 7797,
+            "detected": 8,
+            "coded": 14,
+            "matched": 7
+          },
+          "KP4": {
+            "fixes": 4369,
+            "detected": 9,
+            "coded": 7,
+            "matched": 6
+          },
+          "KP5": {
+            "fixes": 7786,
+            "detected": 8,
+            "coded": 11,
+            "matched": 6
+          },
+          "KP6": {
+            "fixes": 3027,
+            "detected": 4,
+            "coded": 2,
+            "matched": 2
+          },
+          "KP7": {
+            "fixes": 8188,
+            "detected": 6,
+            "coded": 11,
+            "matched": 3
+          },
+          "KP8": {
+            "fixes": 4842,
+            "detected": 5,
+            "coded": 6,
+            "matched": 4
+          }
+        },
+        "lecture": {
+          "matched": 82,
+          "detected": 110,
+          "coded": 151,
+          "precision": 0.7454545454545455,
+          "recall": 0.543046357615894
+        }
+      },
+      "on_paths": {
+        "visitors": 15,
+        "fixes": 94389,
+        "within_10_m": 71295,
+        "share": 0.7553,
+        "lecture": "76"
+      },
+      "stranger": {
+        "arrived": "12:05",
+        "left": "18:09",
+        "attractions": 10,
+        "attractions_timed": 9,
+        "mean_minutes_at_attraction": 21.887,
+        "shops": 2,
+        "bathroom_minutes": [
+          2.7667,
+          4.5667
+        ],
+        "longest": {
+          "name": "Saloon",
+          "minutes": 56.85,
+          "start": "14:49"
+        },
+        "distance_km": 4.348,
+        "speed_mps": 0.5948,
+        "dataset_wait_min": 21.887,
+        "fixes_km": 11.839,
+        "lecture": {
+          "kp2 attractions": "10",
+          "kp2 wait": "21.9",
+          "kp2 bathrooms": "2",
+          "kp2 bathroom min": "2.8 and 4.6",
+          "kp2 shops": "2",
+          "kp2 meal min": "56.9",
+          "kp2 meal start": "14:49",
+          "kp2 meal place": "Saloon",
+          "kp2 walked km": "4.3",
+          "kp2 speed": "0.59",
+          "kp2 arrived": "12:05",
+          "kp2 left": "18:09",
+          "kp2 coded stops": "16",
+          "toy home until": "9:14",
+          "toy work from": "9:24",
+          "toy work until": "9:40",
+          "toy walk m": "500"
+        }
+      },
+      "trim": {
+        "metres": 200.0,
+        "cut_start": 155,
+        "cut_end": 158,
+        "kept": 8605
+      }
+    },
+    "flows": {
+      "porto": {
+        "trips": 1674152,
+        "inside": 1459889,
+        "share_inside": 0.872,
+        "cells": 360,
+        "cell_m": 500.0,
+        "nonzero_pairs": 45047,
+        "inter_pairs": 44740,
+        "internal_trips": 45469,
+        "busiest_pair": {
+          "o": 61,
+          "d": 86,
+          "n": 6185
+        },
+        "busiest_internal": 3947,
+        "desire_lines": 300,
+        "threshold": 597,
+        "lines_share": 0.2566,
+        "lengths": {
+          "median": 4.011551297031437,
+          "mean": 5.6255857437117465,
+          "p90": 11.285610499547449,
+          "share_over_50": 0.0023390946580716687,
+          "fit": {
+            "alpha": 3.4807280211883853,
+            "se": 0.005370056957533241,
+            "n": 213403,
+            "xmin": 10.0
+          }
+        },
+        "lecture": {
+          "porto trips": "1,674,152",
+          "porto median km": "4.0",
+          "porto xmin": "10",
+          "porto alpha": "3.48"
+        }
+      },
+      "princeton": {
+        "jobs": 26709,
+        "live_and_work": 3071,
+        "in_commuters": 23638,
+        "out_commuters": 9219,
+        "by_state": {
+          "NJ": 19894,
+          "PA": 2530
+        },
+        "unplaced": 1214,
+        "top_municipality": [
+          "Hamilton Township (Mercer)",
+          1642
+        ],
+        "window": {
+          "km": 60.0,
+          "tracts": 1598,
+          "commuters": 19550,
+          "zero": 255
+        },
+        "half_km": 23.843,
+        "bands": [
+          {
+            "lo": 0.0,
+            "hi": 5.0,
+            "rate": 83.8656
+          },
+          {
+            "lo": 5.0,
+            "hi": 10.0,
+            "rate": 64.98
+          },
+          {
+            "lo": 10.0,
+            "hi": 15.0,
+            "rate": 35.6099
+          },
+          {
+            "lo": 15.0,
+            "hi": 20.0,
+            "rate": 21.5689
+          },
+          {
+            "lo": 20.0,
+            "hi": 25.0,
+            "rate": 12.0396
+          },
+          {
+            "lo": 25.0,
+            "hi": 30.0,
+            "rate": 7.3721
+          },
+          {
+            "lo": 30.0,
+            "hi": 35.0,
+            "rate": 4.6278
+          },
+          {
+            "lo": 35.0,
+            "hi": 40.0,
+            "rate": 3.3268
+          },
+          {
+            "lo": 40.0,
+            "hi": 50.0,
+            "rate": 1.9844
+          },
+          {
+            "lo": 50.0,
+            "hi": 60.0,
+            "rate": 1.3413
+          },
+          {
+            "lo": 60.0,
+            "hi": 80.0,
+            "rate": 0.8251
+          },
+          {
+            "lo": 80.0,
+            "hi": null,
+            "rate": 0.1834
+          }
+        ],
+        "power": {
+          "gamma": 1.8479,
+          "cpc": 0.7447
+        },
+        "exponential": {
+          "beta": 0.0878,
+          "half_km": 7.8918,
+          "cpc": 0.7589
+        },
+        "residents_exponent": 1.0139,
+        "radiation": {
+          "predicted": 4130.4018,
+          "cpc": 0.2308,
+          "cpc_rescaled": 0.3369
+        },
+        "circle": {
+          "tract": "34021003301",
+          "municipality": "Lawrence Township (Mercer)",
+          "inflow": 361,
+          "s": 44561.0,
+          "out_commuters": 3269,
+          "predicted": 83.5872,
+          "tracts_inside": 20
+        },
+        "above": [
+          [
+            "Hamilton Township (Mercer)",
+            1642,
+            973
+          ],
+          [
+            "Ewing",
+            909,
+            410
+          ]
+        ],
+        "below": [
+          [
+            "West Windsor",
+            872,
+            1572
+          ],
+          [
+            "Plainsboro",
+            737,
+            1160
+          ]
+        ],
+        "pennsylvania": {
+          "inflow": 2034,
+          "gravity": 2918
+        },
+        "lecture": {
+          "princeton jobs": "26,709",
+          "princeton in": "23,638",
+          "princeton live and work": "3,071",
+          "princeton residents": "12,290",
+          "princeton out": "9,219",
+          "nj": "19,894",
+          "nj tracts": "1,895",
+          "pa": "2,530",
+          "bucks": "1,757",
+          "ny": "768",
+          "other states": "446",
+          "other states n": "22",
+          "unplaced": "1,214",
+          "placed": "22,424",
+          "placed pct": "95",
+          "window km": "60",
+          "within window": "19,550",
+          "window tracts": "1,598",
+          "window zero": "255",
+          "window pct": "83",
+          "top muni": "Hamilton Township",
+          "top muni n": "1,642",
+          "half km": "24",
+          "three quarter km": "49",
+          "ninety km": "64",
+          "ninety km upper": "76",
+          "rate near": "84",
+          "rate far": "0.8",
+          "rate floor": "0.18",
+          "rate 20": "22",
+          "rate 40": "3.3",
+          "gamma": "1.85",
+          "beta": "0.088",
+          "beta half km": "7.9",
+          "K power": "3.00",
+          "K exp": "0.104",
+          "cpc power": "0.74",
+          "cpc exp": "0.76",
+          "cpc rad": "0.23",
+          "cpc rad rescaled": "0.34",
+          "cpc rad residents": "0.17",
+          "rad predicted": "4,130",
+          "rad predicted pct": "21",
+          "m exponent": "1.01",
+          "over 1": "Hamilton Township",
+          "over 1 n": "1,642",
+          "over 1 pred": "973",
+          "over 2": "Ewing",
+          "over 2 n": "909",
+          "over 2 pred": "410",
+          "under 1": "West Windsor",
+          "under 1 n": "872",
+          "under 1 pred": "1,572",
+          "under 2": "Plainsboro",
+          "under 2 n": "737",
+          "under 2 pred": "1,160",
+          "over 1 jobs": "0.9",
+          "under 1 jobs": "2.0",
+          "pa window": "2,034",
+          "pa window pred": "2,918",
+          "circle tract": "33.01",
+          "circle muni": "Lawrence Township",
+          "circle d": "7.8",
+          "circle s": "44,561",
+          "circle n": "20",
+          "circle obs": "361",
+          "circle m": "3,431",
+          "circle out": "3,269",
+          "circle rad": "84",
+          "circle grav": "230",
+          "circle share": "2.6",
+          "job centre m": "575"
+        }
+      },
+      "lodes": {
+        "tracts": 453,
+        "pairs": 93874,
+        "listed": {
+          "pairs": 93419,
+          "flows": 543572,
+          "a": 0.9378,
+          "b": 0.766,
+          "gamma": 0.8602,
+          "cpc": 0.7295
+        },
+        "complete": {
+          "pairs": 204750,
+          "zero": 111331,
+          "a": 1.1581,
+          "b": 0.9489,
+          "gamma": 1.0286,
+          "cpc": 0.6599,
+          "radiation_cpc": 0.1939,
+          "radiation_near": 4.7702,
+          "radiation_far": 0.0266
+        },
+        "town": {
+          "jobs_wac": 26709,
+          "flows_into_blocks_main_plus_aux": 26709,
+          "flows_from_within_nj": 22965,
+          "flows_from_outside_nj": 3744,
+          "in_commuters_home_outside_princeton": 23638,
+          "live_and_work_in_princeton": 3071,
+          "residents_jobs_rac": 12290,
+          "residents_working_elsewhere": 9219,
+          "residents_working_elsewhere_in_nj": 7193,
+          "residents_working_outside_nj_by_subtraction": 2026
+        },
+        "lecture": {
+          "region pairs": "204,750",
+          "region listed": "93,419",
+          "region zero": "111,331",
+          "region tracts": "453",
+          "region a": "1.16",
+          "region b": "0.95",
+          "region gamma": "1.03",
+          "region cpc gravity": "0.66",
+          "region cpc exp": "0.66",
+          "region cpc radiation": "0.19",
+          "region cpc radiation rescaled": "0.19",
+          "region max km": "79",
+          "region rad near": "4.8",
+          "region rad far pct": "3",
+          "region grav far pct": "113",
+          "region cpc listed": "0.73",
+          "region gamma listed": "0.86"
+        }
+      }
+    },
+    "privacy": {
+      "uniqueness": {
+        "taxi_days": 143479,
+        "taxi_days_with_points": 143333,
+        "scored": 140975,
+        "min_points": 4,
+        "points": 2932328,
+        "median_points": 19.0,
+        "p2": 0.0851,
+        "p4": 0.9355,
+        "draws": 1,
+        "curve": [
+          {
+            "cell_m": 250,
+            "cells": 1363,
+            "p2": 0.30552659759306144,
+            "n_p2": 141009,
+            "p4": 0.9823841031423526,
+            "n_p4": 141009
+          },
+          {
+            "cell_m": 500,
+            "cells": 360,
+            "p2": 0.08511438198262103,
+            "n_p2": 140975,
+            "p4": 0.9355488561801738,
+            "n_p4": 140975
+          },
+          {
+            "cell_m": 1000,
+            "cells": 96,
+            "p2": 0.00904328567980806,
+            "n_p2": 140878,
+            "p4": 0.671140987237184,
+            "n_p4": 140878
+          },
+          {
+            "cell_m": 2000,
+            "cells": 24,
+            "p2": 0.00022056364684202662,
+            "n_p2": 140549,
+            "p4": 0.137731325018321,
+            "n_p4": 140549
+          }
+        ],
+        "example": {
+          "n_points": 19,
+          "sharers": [
+            3382,
+            1483,
+            720,
+            266
+          ],
+          "together": [
+            3382,
+            30,
+            0,
+            0
+          ]
+        },
+        "halving_drop_pct": [
+          2.4129,
+          15.3019,
+          54.6988
+        ],
+        "lecture": {
+          "fill": {
+            "unique dataset": "Porto's taxis, one day each",
+            "unique n": "140,975",
+            "unique 2": "9",
+            "unique 4": "94"
+          },
+          "p2": 0.08532482118578943,
+          "p4": 0.935513388898741
+        }
+      },
+      "park": {
+        "visitors": 15,
+        "fixes": 94389,
+        "off_box": 1014,
+        "heat": {
+          "cell_m": 10.0,
+          "lit_cells": 1700,
+          "single": 0.3006,
+          "max_visitors": 14
+        },
+        "uniqueness": {
+          "p2": 0.785,
+          "p4": 0.987,
+          "p4_200": 0.67
+        },
+        "release": {
+          "25": {
+            "lit_cell_hours": 1430,
+            "lit_cells": 342,
+            "busiest": 7,
+            "k": {
+              "3": {
+                "cell_hours": 343,
+                "share": 0.2399,
+                "cells": 164
+              },
+              "5": {
+                "cell_hours": 48,
+                "share": 0.0336,
+                "cells": 34
+              },
+              "10": {
+                "cell_hours": 0,
+                "share": 0.0,
+                "cells": 0
+              }
+            }
+          },
+          "50": {
+            "lit_cell_hours": 514,
+            "lit_cells": 97,
+            "busiest": 8,
+            "k": {
+              "3": {
+                "cell_hours": 179,
+                "share": 0.3482,
+                "cells": 67
+              },
+              "5": {
+                "cell_hours": 49,
+                "share": 0.0953,
+                "cells": 28
+              },
+              "10": {
+                "cell_hours": 0,
+                "share": 0.0,
+                "cells": 0
+              }
+            }
+          },
+          "100": {
+            "lit_cell_hours": 172,
+            "lit_cells": 27,
+            "busiest": 11,
+            "k": {
+              "3": {
+                "cell_hours": 91,
+                "share": 0.5291,
+                "cells": 23
+              },
+              "5": {
+                "cell_hours": 33,
+                "share": 0.1919,
+                "cells": 13
+              },
+              "10": {
+                "cell_hours": 1,
+                "share": 0.0058,
+                "cells": 1
+              }
+            }
+          }
+        },
+        "busiest": {
+          "count": 7,
+          "hour": 12
+        },
+        "laplace": {
+          "1": {
+            "seed": 20261102,
+            "min": 3.5186,
+            "max": 11.7711,
+            "mean_abs_error": 1.0531
+          },
+          "0.1": {
+            "seed": 20261103,
+            "min": -42.634,
+            "max": 52.1298,
+            "mean_abs_error": 10.1898
+          }
+        },
+        "lecture": {
+          "park visitors": "15",
+          "park fixes": "94,389",
+          "park snap pct": "76",
+          "park snap sample": "20,000",
+          "park snap median": "1.5",
+          "park heat cells": "1,700",
+          "park heat single": "30",
+          "park heat under3": "44",
+          "park heat max": "14",
+          "park release lit": "1,430",
+          "park release cells": "342",
+          "park release lit 50": "514",
+          "park release lit 100": "172",
+          "park busiest": "7",
+          "park busiest hour": "12:00",
+          "park unique 2": "78",
+          "park unique 4": "99",
+          "park unique 4 200": "67",
+          "park unique 2 200": "21",
+          "park laplace min 1": "3.5",
+          "park laplace max 1": "11.8",
+          "park laplace min 01": "-42.6",
+          "park laplace max 01": "52.1",
+          "park laplace err 1": "1.1",
+          "park laplace err 01": "10.2",
+          "park release k3 25": "343",
+          "park release k3 pct 25": "24",
+          "park release cells k3 25": "164",
+          "park release k5 25": "48",
+          "park release k5 pct 25": "3.4",
+          "park release cells k5 25": "34",
+          "park release k10 25": "0",
+          "park release k10 pct 25": "0.0",
+          "park release cells k10 25": "0",
+          "park release k3 50": "179",
+          "park release k3 pct 50": "35",
+          "park release cells k3 50": "67",
+          "park release k5 50": "49",
+          "park release k5 pct 50": "9.5",
+          "park release cells k5 50": "28",
+          "park release k10 50": "0",
+          "park release k10 pct 50": "0.0",
+          "park release cells k10 50": "0",
+          "park release k3 100": "91",
+          "park release k3 pct 100": "53",
+          "park release cells k3 100": "23",
+          "park release k5 100": "33",
+          "park release k5 pct 100": "19",
+          "park release cells k5 100": "13",
+          "park release k10 100": "1",
+          "park release k10 pct 100": "0.6",
+          "park release cells k10 100": "1"
+        }
+      },
+      "homework": {
+        "block": {
+          "pairs": 22643,
+          "alone_pairs": 0.9186,
+          "alone_workers": 0.7787,
+          "median": 1.0
+        },
+        "tract": {
+          "pairs": 7677,
+          "alone_pairs": 0.5781,
+          "alone_workers": 0.1662,
+          "median": 9.0
+        },
+        "county": {
+          "pairs": 192,
+          "alone_pairs": 0.3646,
+          "alone_workers": 0.0026,
+          "median": 2292.0
+        },
+        "jobs": 26709,
+        "lecture": {
+          "lodes jobs": "26,709",
+          "lodes pairs": "22,643",
+          "lodes alone pairs": "91.9",
+          "lodes alone workers": "77.9",
+          "lodes block median": "1",
+          "lodes tract pairs": "7,677",
+          "lodes tract alone pairs": "57.8",
+          "lodes tract alone workers": "16.6",
+          "lodes tract median": "9",
+          "lodes county median": "2,292",
+          "lodes work tracts": "7",
+          "lodes home tracts": "3,587"
+        }
+      },
+      "aggregation": {
+        "k": 10,
+        "grids": {
+          "500m": {
+            "cells": 360,
+            "shape": [
+              15,
+              24
+            ],
+            "nonempty_pairs": 45047,
+            "trips": 1459889,
+            "suppressed_share": 0.6352,
+            "trips_in_suppressed_share": 0.0585,
+            "busiest_pair": 6185
+          },
+          "1km": {
+            "cells": 96,
+            "shape": [
+              8,
+              12
+            ],
+            "nonempty_pairs": 6363,
+            "trips": 1465299,
+            "suppressed_share": 0.3916,
+            "trips_in_suppressed_share": 0.0056,
+            "busiest_pair": 21881
+          },
+          "2km": {
+            "cells": 24,
+            "shape": [
+              4,
+              6
+            ],
+            "nonempty_pairs": 568,
+            "trips": 1465299,
+            "suppressed_share": 0.0951,
+            "trips_in_suppressed_share": 0.0001,
+            "busiest_pair": 81356
+          }
+        },
+        "laplace": {
+          "grid": "1km",
+          "pair": [
+            18,
+            19
+          ],
+          "count": 21881,
+          "draws": 100,
+          "budgets": {
+            "1": {
+              "seed": 20261112,
+              "min": 21875.6419,
+              "max": 21884.0505,
+              "mean_abs_error": 1.0395
+            },
+            "0.1": {
+              "seed": 20261113,
+              "min": 21831.6895,
+              "max": 21920.8582,
+              "mean_abs_error": 9.7342
+            }
+          }
+        },
+        "key_space": {
+          "formats": {
+            "9A99": 26000,
+            "AA999": 676000,
+            "AAA999": 17576000
+          },
+          "total": 18278000,
+          "timed_formats": [
+            "9A99",
+            "AA999"
+          ],
+          "timed_keys": 702000,
+          "example": "5X55",
+          "recovered": true,
+          "lecture": 18278000
+        },
+        "lecture": {
+          "suppressed 500": "64",
+          "suppressed 1km": "39",
+          "suppressed 2km": "10",
+          "key space": "18,278,000"
+        }
+      },
+      "laws": {
+        "demontjoye2013": {
+          "title": "Unique in the Crowd: The privacy bounds of human mobility",
+          "authors": "Y-A de Montjoye, C A Hidalgo, M Verleysen and V D Blondel",
+          "journal": "Scientific Reports 3, 1376",
+          "doi": "10.1038/srep01376",
+          "users": 1500000,
+          "months": 15,
+          "antennas": 6500,
+          "resolution": "antenna and hour",
+          "unique_at_4_points": 0.95,
+          "unique_at_2_points": 0.5,
+          "unique_at_2_points_note": "more than half (the paper writes epsilon > .5)",
+          "points_page": 2,
+          "quote": "four spatio-temporal points are enough to uniquely identify 95% of the individuals",
+          "quote_page": 1,
+          "law": "epsilon = alpha - (v h)^beta, v the antennas clustered into one cell, h the hours of one time window",
+          "law_page": 2,
+          "beta": "0.157 - 0.007 p",
+          "beta_intercept": 0.157,
+          "beta_slope": -0.007,
+          "beta_page": 3,
+          "beta_figure": "Fig. 4E p. 4",
+          "decay_note": "uniqueness decays approximately as the 1/10 power of the resolution (abstract, p. 1)",
+          "halving_note": "each time the spatial or temporal resolution is divided by two, uniqueness falls by a constant factor of about 2^-beta (p. 3)",
+          "halving_drop_at_4_points": 0.093,
+          "halving_drop_at_10_points": 0.062,
+          "halving_page": 3,
+          "halving_source": "Table S1, quoted on p. 3",
+          "coarse_example": "with four points, epsilon < .5 at h = 5 hours and v = 5 antennas (p. 2)",
+          "read": "2026-10-31",
+          "pdf": "literature/Lecture 07/deMontjoye2013UniqueInTheCrowd.pdf"
+        },
+        "aktay2020": {
+          "title": "Google COVID-19 Community Mobility Reports: Anonymization Process Description (version 1.1)",
+          "venue": "arXiv 2004.04145",
+          "definition_page": 2,
+          "definition": "epsilon-differential privacy over adding or removing a single user's data in a single day; delta = 0 (p. 5)",
+          "levels": {
+            "0": "country or region",
+            "1": "top-level subdivisions such as US states",
+            "2": "higher resolution such as US counties"
+          },
+          "visits_laplace_scale": {
+            "0": 9.09,
+            "1": 9.09,
+            "2": 4.55
+          },
+          "visits_epsilon": {
+            "0": 0.11,
+            "1": 0.11,
+            "2": 0.22
+          },
+          "visits_page": 3,
+          "epsilon_per_place_visit": 0.44,
+          "pairs_per_user_day": 4,
+          "epsilon_public_places_per_day": 1.76,
+          "epsilon_residential": 0.44,
+          "epsilon_workplaces": 0.44,
+          "residential_page": 4,
+          "workplaces_page": 4,
+          "epsilon_all_metrics_per_day": 2.64,
+          "epsilon_all_metrics_note": "derived, not printed in the paper: 1.76 for the public places plus 0.44 residential plus 0.44 workplaces by standard composition",
+          "min_region_km2": 3,
+          "min_noisy_count": 100,
+          "thresholds_page": 4,
+          "correction_2026_10_31": "the deck's earlier 'budget 2.64 with noise of scale 0.44' was wrong: 0.44 is the budget of one place visit, the noise scales are 9.09 and 4.55",
+          "read": "2026-10-31",
+          "pdf": "literature/Lecture 07/Aktay2020CommunityMobilityAnonymization.pdf"
+        },
+        "golle2009": {
+          "title": "On the Anonymity of Home/Work Location Pairs",
+          "authors": "P Golle and K Partridge",
+          "venue": "Pervasive Computing (Pervasive 2009), LNCS 5538, Springer, pp. 390 to 397",
+          "data": "LEHD Origin-Destination 2004 (synthetic homes), 42 states, 103,289,243 workers",
+          "median_anonymity_set": {
+            "block": 1,
+            "tract": 21,
+            "county": 34980
+          },
+          "p10_anonymity_set": {
+            "block": 1,
+            "tract": 3,
+            "county": 446
+          },
+          "p5_anonymity_set": {
+            "block": 1,
+            "tract": 1,
+            "county": 92
+          },
+          "table_page": 395,
+          "abstract_page": 390,
+          "tract_small_sets": "home and work tracts place 24.2 percent of workers in a set of 5 or fewer and 7.4 percent in 2 or fewer (p. 396)",
+          "tract_unique_note": "home and work tracts are uniquely identifying for 5 percent of US workers (p. 395)",
+          "read": "2026-10-31",
+          "pdf": "literature/Lecture 07/Golle2009HomeWorkPairs.pdf (author copy, Palo Alto Research Center)"
+        },
+        "pandurangan2014": {
+          "title": "On Taxis and Rainbows: Lessons from NYC's improperly anonymized taxi logs",
+          "author": "V Pandurangan",
+          "venue": "blog post, June 2014 (medium.com, mirrored at vijayp.ca)",
+          "formats": [
+            "9A99",
+            "AA999",
+            "AAA999"
+          ],
+          "note": "the medallion formats and the key space are recorded by compute_privacy from the post; the hash enumeration is Pandurangan's, A Tockar's post of September 2014 (Neustar) is the passenger side",
+          "to_verify": "the post's date and the timing sentence, read again before a slide quotes them"
+        }
+      }
+    },
+    "class_traces": {
+      "published": false,
+      "file": "class_counts.csv.gz",
+      "k": 10
+    },
+    "hunt": {
+      "date": "2026-11-04",
+      "trace_folder": "my_traces",
+      "diary": "my_traces/diary.csv",
+      "diary_columns": [
+        "stop",
+        "start",
+        "end"
+      ],
+      "rules": [
+        "consent on paper with the purpose stated",
+        "codes for names",
+        "the first and last 200 m of every trace trimmed",
+        "local time only",
+        "published only as counts per cell and hour above a minimum"
+      ],
+      "published": false,
+      "counts_file": "class_counts.csv.gz",
+      "counts_what": "trackers per 250 m cell and hour of the P02 grid, cells with fewer than 10 suppressed",
+      "tracker": "a GPS logger recording time, position, elevation and speed about once a second, the specimen's columns; the details are on Canvas"
+    }
+  }
+}

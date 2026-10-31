@@ -49,6 +49,11 @@ P06/output/
 P06/my_images/*
 !P06/my_images/README.org
 
+# the P07 notebooks write their maps and tables here, and your own trace of the hunt stays yours
+P07/output/
+P07/my_traces/*
+!P07/my_traces/README.org
+
 # point clouds never travel through git; the thinned sample in P03/data/ stands in for them
 *.laz
 *.las
