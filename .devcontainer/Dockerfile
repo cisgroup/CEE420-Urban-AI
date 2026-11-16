@@ -34,7 +34,7 @@ RUN --mount=type=cache,target=/root/.cache/uv uv sync --locked
 # One obvious kernel in the VS Code picker; pre-warm the matplotlib font cache; import torch once so a broken
 # wheel fails the build and not a student; fetch the ImageNet weights of ResNet-18 (45 MB) into the shared torch
 # cache, so 04_03 and the P05 kit run offline inside the container; and fetch the open weights of the P06 kit, SAM 2.1
-# hiera-tiny (156 MB) and CLIP ViT-B/16 (600 MB), into the shared Hugging Face cache for the same reason. The hub holds CLIP's
+# hiera-tiny (156 MB) and CLIP ViT-B/16 (600 MB), into the shared Hugging Face cache for the same reason; and import PyTorch Geometric once for the P08 kit. The hub holds CLIP's
 # weights in the old binary form on its main revision and a converted copy on a side branch, and the loader fetches both; the
 # offline loader resolves the main revision, so the side copy is dropped and the image stays 600 MB smaller.
 RUN /opt/venv/bin/python -m ipykernel install \
@@ -42,6 +42,7 @@ RUN /opt/venv/bin/python -m ipykernel install \
  && /opt/venv/bin/python -c "import matplotlib.pyplot" \
  && /opt/venv/bin/python -c "import torch, torchvision; from torchvision.models import resnet18, ResNet18_Weights; resnet18(weights=ResNet18_Weights.IMAGENET1K_V1); print(torch.__version__, torchvision.__version__)" \
  && /opt/venv/bin/python -c "import transformers; from transformers import CLIPModel, CLIPProcessor, Sam2Model, Sam2Processor; [f.from_pretrained(m) for m, f in (('facebook/sam2.1-hiera-tiny', Sam2Model), ('facebook/sam2.1-hiera-tiny', Sam2Processor), ('openai/clip-vit-base-patch16', CLIPModel), ('openai/clip-vit-base-patch16', CLIPProcessor))]; print(transformers.__version__)" \
+ && /opt/venv/bin/python -W ignore -c "import torch_geometric; from torch_geometric.nn import GCNConv; print(torch_geometric.__version__)" \
  && for f in $(find /opt/hf/hub -path '*clip-vit-base-patch16*' -name model.safetensors); do rm -f "$(readlink -f "$f")" "$f"; done \
  && chmod -R a+rX /opt/torch /opt/hf
 

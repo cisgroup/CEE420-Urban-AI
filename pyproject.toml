@@ -31,6 +31,9 @@ dependencies = [
     # the transformers library for P06: SAM 2.1 and CLIP through their published loaders, the weights cached in the
     # container and downloaded once on the uv path
     "transformers>=5.19,<6",
+    # PyTorch Geometric for P08: the graph convolution of Lecture 08 from the library beside the one written by hand; the
+    # pure wheel, without the compiled extension packages
+    "torch-geometric>=2.8,<2.9",
     # notebooks
     "ipykernel>=6",
     "jupyterlab>=4",
@@ -57,5 +60,5 @@ explicit = true
 
 [tool.pytest.ini_options]
 addopts = "--nbmake --nbmake-timeout=900 -m 'not network'"
-testpaths = ["tests", "F00", "P01", "A01", "P02", "P03", "P04", "P03b", "P05", "P06", "P07"]
+testpaths = ["tests", "F00", "P01", "A01", "P02", "P03", "P04", "P03b", "P05", "P06", "P07", "P08"]
 markers = ["network: hits a live service, deselected by default", "slow: trains the P04 forests ten times, about a minute"]

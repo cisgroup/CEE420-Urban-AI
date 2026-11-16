@@ -1,0 +1,1379 @@
+{
+ "source": "CEE420 Urban AI, the P08 kit",
+ "licence": "CC BY 4.0, CEE420 Urban AI, the course's own work",
+ "retrieved": "2026-11-15",
+ "seed": 20261116,
+ "crs": "EPSG:26918",
+ "rules": {
+  "streets": {
+   "n_labelled": 150,
+   "n_val": 100,
+   "n_labelled_blocks": 100,
+   "hidden": 32,
+   "layers": 2,
+   "epochs": 200,
+   "lr": 0.01,
+   "weight_decay": 0.0005,
+   "dropout": 0.5,
+   "draws": 20,
+   "classes": 4,
+   "split_seed": "SEED + 100 + draw",
+   "model_seed": "SEED + draw",
+   "threads": 1,
+   "main": "the lecture's one run in full: the feature set with the road class, the split from SEED + 1, the weights from SEED",
+   "fill": "the map filled in: every tagged segment but 100 validation ones (SEED + 2) labelled, the weights from SEED"
+  },
+  "metr": {
+   "lags": 12,
+   "step_s": 300,
+   "horizons": {
+    "15": 3,
+    "30": 6,
+    "60": 12
+   },
+   "threshold": 0.1,
+   "train": 0.7,
+   "val": 0.1,
+   "alphas": {
+    "ar 15": 1000.0,
+    "arnb 15": 100000.0,
+    "arclock 15": 100000.0,
+    "arboth 15": 100000.0,
+    "ar 30": 1.0,
+    "arnb 30": 100000.0,
+    "arclock 30": 100000.0,
+    "arboth 30": 100000.0,
+    "ar 60": 1.0,
+    "arnb 60": 10000.0,
+    "arclock 60": 10000.0,
+    "arboth 60": 10000.0
+   },
+   "line_alphas": {
+    "arnb 15": 100000.0,
+    "arboth 15": 100000.0,
+    "arnb 30": 10000.0,
+    "arboth 30": 100000.0,
+    "arnb 60": 1000.0,
+    "arboth 60": 10000.0
+   },
+   "missing": "a speed of zero is a missing reading, left out of every fit and every error"
+  }
+ },
+ "anchors": {
+  "nassau": 525,
+  "nassau_name": "Nassau Street",
+  "sensor": 0,
+  "sensor_id": "773869",
+  "line_pair": [
+   152,
+   153
+  ],
+  "streets_to_check": [
+   "Nassau Street",
+   "Witherspoon Street",
+   "Harrison Street"
+  ]
+ },
+ "choices": {
+  "rounds": {
+   "value": 2,
+   "answer": 32
+  },
+  "layers": {
+   "value": 2,
+   "answer": 8
+  },
+  "split": {
+   "value": "random",
+   "answer": "blocks"
+  },
+  "horizon": {
+   "value": 60,
+   "answer": 15
+  },
+  "live_draws": 5,
+  "first_new_draw": 20,
+  "live_features": "geometry and embedding"
+ },
+ "lecture": {
+  "numbers": {
+   "cells n": "782",
+   "cells grid": "839",
+   "cells m sides": "1,478",
+   "cells m walk": "1,035",
+   "cells isolated walk": "190",
+   "cells degree sides": "3.78",
+   "cells residential": "369",
+   "cells commercial": "46",
+   "cells public": "257",
+   "cells farm": "110",
+   "b majority": "39.7",
+   "b mlp": "56.3",
+   "b gcn": "54.8",
+   "b gcn walk": "57.2",
+   "b mlp none": "39.7",
+   "b gcn none": "42.8",
+   "b changed": "86",
+   "b fixed": "30",
+   "b broken": "35",
+   "b mlp epoch": "66",
+   "b gcn epoch": "60",
+   "b lab commercial": "5",
+   "cells labelled": "160",
+   "cells val": "100",
+   "cells test": "325",
+   "cells unlabelled": "197",
+   "homophily sides": "65",
+   "homophily walk": "63",
+   "gcn params": "2,212",
+   "none params": "25,188",
+   "r majority": "50.5",
+   "r mlp": "70.2",
+   "r gcn": "71.1",
+   "r gcn walk": "73.5",
+   "r mlp none": "50.5",
+   "r gcn none": "63.1",
+   "r changed": "65",
+   "r fixed": "28",
+   "r broken": "25",
+   "r mlp epoch": "24",
+   "r gcn epoch": "64",
+   "tb emb none": "56.7",
+   "tb emb none sd": "1.5",
+   "tb emb sides": "54.9",
+   "tb emb sides sd": "1.7",
+   "tb emb walk": "55.7",
+   "tb emb walk sd": "1.9",
+   "tb frac none": "42.4",
+   "tb frac none sd": "3.9",
+   "tb frac sides": "52.3",
+   "tb frac sides sd": "1.4",
+   "tb frac walk": "50.2",
+   "tb frac walk sd": "3.6",
+   "tb none none": "39.7",
+   "tb none none sd": "0.0",
+   "tb none sides": "42.4",
+   "tb none sides sd": "1.2",
+   "tb none walk": "41.8",
+   "tb none walk sd": "2.5",
+   "tr emb none": "71.0",
+   "tr emb none sd": "2.6",
+   "tr emb sides": "69.4",
+   "tr emb sides sd": "1.9",
+   "tr emb walk": "71.2",
+   "tr emb walk sd": "3.2",
+   "tr frac none": "59.2",
+   "tr frac none sd": "4.2",
+   "tr frac sides": "57.0",
+   "tr frac sides sd": "1.6",
+   "tr frac walk": "60.7",
+   "tr frac walk sd": "3.5",
+   "tr none none": "50.5",
+   "tr none none sd": "0.0",
+   "tr none sides": "64.1",
+   "tr none sides sd": "2.6",
+   "tr none walk": "56.8",
+   "tr none walk sd": "2.6",
+   "lab b emb 10 none": "45.4",
+   "lab b emb 10 sides": "43.0",
+   "lab b emb 20 none": "49.6",
+   "lab b emb 20 sides": "45.8",
+   "lab b emb 40 none": "53.0",
+   "lab b emb 40 sides": "50.8",
+   "lab b emb 80 none": "54.6",
+   "lab b emb 80 sides": "52.5",
+   "lab b emb 160 none": "56.7",
+   "lab b emb 160 sides": "54.9",
+   "lab b emb all none": "58.2",
+   "lab b emb all sides": "56.4",
+   "lab b none 10 none": "36.6",
+   "lab b none 10 sides": "36.6",
+   "lab b none 20 none": "38.8",
+   "lab b none 20 sides": "39.1",
+   "lab b none 40 none": "39.7",
+   "lab b none 40 sides": "40.4",
+   "lab b none 80 none": "39.7",
+   "lab b none 80 sides": "41.1",
+   "lab b none 160 none": "39.7",
+   "lab b none 160 sides": "42.4",
+   "lab b none all none": "39.7",
+   "lab b none all sides": "42.6",
+   "lab r emb 10 none": "43.3",
+   "lab r emb 10 sides": "42.8",
+   "lab r emb 20 none": "49.5",
+   "lab r emb 20 sides": "48.4",
+   "lab r emb 40 none": "63.0",
+   "lab r emb 40 sides": "59.5",
+   "lab r emb 80 none": "66.0",
+   "lab r emb 80 sides": "66.0",
+   "lab r emb 160 none": "71.0",
+   "lab r emb 160 sides": "69.4",
+   "lab r emb all none": "74.6",
+   "lab r emb all sides": "72.7",
+   "lab r none 10 none": "41.2",
+   "lab r none 10 sides": "40.9",
+   "lab r none 20 none": "43.6",
+   "lab r none 20 sides": "47.1",
+   "lab r none 40 none": "48.4",
+   "lab r none 40 sides": "54.0",
+   "lab r none 80 none": "47.6",
+   "lab r none 80 sides": "57.6",
+   "lab r none 160 none": "50.5",
+   "lab r none 160 sides": "64.1",
+   "lab r none all none": "50.5",
+   "lab r none all sides": "67.9",
+   "depth acc 1": "49.2",
+   "depth acc 2": "54.7",
+   "depth acc 3": "54.2",
+   "depth acc 4": "52.8",
+   "depth acc 5": "53.4",
+   "depth acc 6": "53.4",
+   "depth acc 7": "53.3",
+   "depth acc 8": "53.5",
+   "rf 1": "5",
+   "rf 2": "13",
+   "rf 4": "40",
+   "rf 8": "139",
+   "depth best": "2",
+   "karate n": "34",
+   "karate m": "78",
+   "karate tested": "32",
+   "karate correct": "31",
+   "st n": "1,219",
+   "st m": "2,377",
+   "st intersections": "932",
+   "st degree": "3.9",
+   "st tagged": "454",
+   "st untagged": "765",
+   "st shared": "1,303",
+   "st shared pct": "55",
+   "st km": "229",
+   "st km tagged": "91",
+   "st tagged pct": "37",
+   "st homophily street": "81",
+   "st homophily near": "82",
+   "st tagged in blocks": "200",
+   "st c25": "280",
+   "st c30": "53",
+   "st c35": "76",
+   "st c40": "45",
+   "st residential": "832",
+   "st tag residential": "15",
+   "st tertiary": "263",
+   "st tag tertiary": "83",
+   "st secondary": "71",
+   "st tag secondary": "87",
+   "st primary": "53",
+   "st tag primary": "94",
+   "st majority": "56.4",
+   "st mlp": "66.7",
+   "st near": "69.1",
+   "st gcn": "77.0",
+   "st fixed": "34",
+   "st broken": "13",
+   "st labelled": "150",
+   "st val": "100",
+   "st test": "204",
+   "st params": "2,436",
+   "st mlp epoch": "83",
+   "st gcn epoch": "50",
+   "st lab c30": "11",
+   "st test c30": "32",
+   "st mlp c30 right": "1",
+   "st gcn c30 right": "17",
+   "fill labelled": "354",
+   "fill disagree": "148",
+   "fill conf90": "563",
+   "fill mlp conf90": "339",
+   "fill within 1": "298",
+   "fill within 2": "528",
+   "fill val": "92",
+   "fill mlp val": "81",
+   "fill residential 25": "569",
+   "fill c25": "595",
+   "fill mlp c25": "683",
+   "fill c30": "62",
+   "fill mlp c30": "12",
+   "fill c35": "85",
+   "fill mlp c35": "59",
+   "fill c40": "23",
+   "fill mlp c40": "11",
+   "sr emb none": "66.4",
+   "sr emb none sd": "3.0",
+   "sr emb near": "69.5",
+   "sr emb near sd": "4.1",
+   "sr emb streets": "77.9",
+   "sr emb streets sd": "4.0",
+   "sr road none": "70.5",
+   "sr road none sd": "3.1",
+   "sr road near": "73.0",
+   "sr road near sd": "4.9",
+   "sr road streets": "77.9",
+   "sr road streets sd": "4.0",
+   "sr roadonly none": "61.2",
+   "sr roadonly none sd": "3.3",
+   "sr roadonly near": "61.6",
+   "sr roadonly near sd": "3.3",
+   "sr roadonly streets": "61.0",
+   "sr roadonly streets sd": "2.9",
+   "sr none none": "61.3",
+   "sr none none sd": "3.2",
+   "sr none near": "66.4",
+   "sr none near sd": "4.0",
+   "sr none streets": "78.6",
+   "sr none streets sd": "3.1",
+   "sr majority": "61.3",
+   "sr test": "204",
+   "sr labelled": "150",
+   "sb emb none": "63.3",
+   "sb emb none sd": "3.1",
+   "sb emb near": "62.9",
+   "sb emb near sd": "4.0",
+   "sb emb streets": "60.6",
+   "sb emb streets sd": "3.8",
+   "sb road none": "66.0",
+   "sb road none sd": "3.4",
+   "sb road near": "62.3",
+   "sb road near sd": "3.4",
+   "sb road streets": "58.7",
+   "sb road streets sd": "5.1",
+   "sb roadonly none": "61.2",
+   "sb roadonly none sd": "1.4",
+   "sb roadonly near": "60.7",
+   "sb roadonly near sd": "2.7",
+   "sb roadonly streets": "53.7",
+   "sb roadonly streets sd": "4.5",
+   "sb none none": "66.5",
+   "sb none none sd": "0.0",
+   "sb none near": "59.6",
+   "sb none near sd": "16.8",
+   "sb none streets": "67.2",
+   "sb none streets sd": "0.8",
+   "sb majority": "66.5",
+   "sb test": "200",
+   "sb labelled": "100",
+   "sd streets 1": "70.7",
+   "sd streets 2": "77.5",
+   "sd streets 3": "76.1",
+   "sd streets 4": "74.2",
+   "sd streets 5": "74.9",
+   "sd streets 6": "72.0",
+   "sd streets 7": "70.6",
+   "sd streets 8": "68.9",
+   "sd near 1": "67.8",
+   "sd near 2": "70.3",
+   "sd near 3": "68.3",
+   "sd near 4": "68.5",
+   "sd near 5": "68.7",
+   "sd near 6": "67.5",
+   "sd near 7": "67.1",
+   "sd near 8": "65.6",
+   "reach street 1": "5",
+   "reach near 1": "7",
+   "reach circle 1": "9",
+   "reach radius 1": "139",
+   "reach street 2": "14",
+   "reach near 2": "14",
+   "reach circle 2": "34",
+   "reach radius 2": "325",
+   "reach street 4": "47",
+   "reach near 4": "37",
+   "reach circle 4": "98",
+   "reach radius 4": "584",
+   "reach street 8": "206",
+   "reach near 8": "130",
+   "reach circle 8": "511",
+   "reach radius 8": "1,539",
+   "reach name": "Nassau Street",
+   "st diameter": "33",
+   "st pair hops": "7",
+   "st pair m": "115",
+   "st pair near": "yes",
+   "st tag residential n": "123",
+   "st none params": "39,172",
+   "sl 10 none": "44.4",
+   "sl 10 near": "48.8",
+   "sl 10 streets": "53.2",
+   "sl 20 none": "50.7",
+   "sl 20 near": "53.3",
+   "sl 20 streets": "57.5",
+   "sl 40 none": "57.5",
+   "sl 40 near": "59.8",
+   "sl 40 streets": "64.4",
+   "sl 80 none": "61.2",
+   "sl 80 near": "62.8",
+   "sl 80 streets": "68.9",
+   "sl 150 none": "67.3",
+   "sl 150 near": "70.4",
+   "sl 150 streets": "80.0",
+   "sl 250 none": "69.7",
+   "sl 250 near": "71.8",
+   "sl 250 streets": "82.9"
+  },
+  "streets": {
+   "n": 1219,
+   "m_street": 2377,
+   "m_near": 2377,
+   "mean_degree": 3.899917965545529,
+   "shared_edges": 1303,
+   "tagged": 454,
+   "untagged": 765,
+   "classes": {
+    "25 mph or less": 280,
+    "30 mph": 53,
+    "35 mph": 76,
+    "40 mph or more": 45
+   },
+   "road_classes": {
+    "residential": 832,
+    "tertiary": 263,
+    "secondary": 71,
+    "primary or trunk": 53
+   },
+   "tagged_by_road_class": {
+    "residential": 0.14783653846153846,
+    "tertiary": 0.8326996197718631,
+    "secondary": 0.8732394366197183,
+    "primary or trunk": 0.9433962264150944
+   },
+   "homophily_street": 0.8135593220338984,
+   "homophily_near": 0.8216432865731463,
+   "tagged_in_test_blocks": 200,
+   "km": 229.2328084056599,
+   "km_tagged": 91.0156259972917,
+   "without_embedding": 20,
+   "intersections": 932
+  },
+  "main": {
+   "mlp": {
+    "accuracy": 0.6666666666666666,
+    "balanced": 0.44497606107660453,
+    "best_epoch": 83,
+    "parameters": 2436,
+    "confusion": [
+     [
+      108,
+      0,
+      6,
+      1
+     ],
+     [
+      26,
+      1,
+      5,
+      0
+     ],
+     [
+      10,
+      0,
+      24,
+      2
+     ],
+     [
+      3,
+      0,
+      15,
+      3
+     ]
+    ],
+    "watch_accuracy": {
+     "1": 0.11764705882352941,
+     "5": 0.5049019607843137,
+     "20": 0.6372549019607843,
+     "50": 0.6470588235294118,
+     "200": 0.6764705882352942
+    }
+   },
+   "near": {
+    "accuracy": 0.6911764705882353,
+    "balanced": 0.5286587732919255,
+    "best_epoch": 44,
+    "parameters": 2436,
+    "confusion": [
+     [
+      102,
+      3,
+      6,
+      4
+     ],
+     [
+      14,
+      13,
+      5,
+      0
+     ],
+     [
+      8,
+      0,
+      21,
+      7
+     ],
+     [
+      2,
+      0,
+      14,
+      5
+     ]
+    ],
+    "watch_accuracy": {
+     "1": 0.14215686274509803,
+     "5": 0.5637254901960784,
+     "20": 0.6323529411764706,
+     "50": 0.6862745098039216,
+     "200": 0.7205882352941176
+    }
+   },
+   "gcn": {
+    "accuracy": 0.7696078431372549,
+    "balanced": 0.6440012508626639,
+    "best_epoch": 50,
+    "parameters": 2436,
+    "confusion": [
+     [
+      106,
+      3,
+      5,
+      1
+     ],
+     [
+      11,
+      17,
+      4,
+      0
+     ],
+     [
+      4,
+      1,
+      25,
+      6
+     ],
+     [
+      2,
+      2,
+      8,
+      9
+     ]
+    ],
+    "watch_accuracy": {
+     "1": 0.11274509803921569,
+     "5": 0.6715686274509803,
+     "20": 0.7205882352941176,
+     "50": 0.7696078431372549,
+     "200": 0.8088235294117647
+    }
+   },
+   "labelled": 150,
+   "val": 100,
+   "test": 204,
+   "labelled_per_class": [
+    102,
+    11,
+    25,
+    12
+   ],
+   "test_per_class": [
+    115,
+    32,
+    36,
+    21
+   ],
+   "majority_accuracy": 0.5637254901960784,
+   "fixed_by_graph": 34,
+   "broken_by_graph": 13,
+   "watch": [
+    1,
+    5,
+    20,
+    50,
+    200
+   ],
+   "seed": 20261116,
+   "fill": {
+    "mlp": {
+     "untagged_per_class": [
+      683,
+      12,
+      59,
+      11
+     ],
+     "mean_confidence": 0.7911006808280945,
+     "confident_90": 339,
+     "val_accuracy": 0.81,
+     "untagged_residential_25": 648
+    },
+    "gcn": {
+     "untagged_per_class": [
+      595,
+      62,
+      85,
+      23
+     ],
+     "mean_confidence": 0.907901406288147,
+     "confident_90": 563,
+     "val_accuracy": 0.92,
+     "untagged_residential_25": 569
+    },
+    "disagree": 148,
+    "labelled": 354,
+    "untagged_within_1": 298,
+    "untagged_within_2": 528,
+    "untagged_median_steps": 2.0,
+    "untagged_unreached": 0
+   }
+  },
+  "metr": {
+   "sensors": 207,
+   "times": 34272,
+   "start": "2012-03-01 00:00:00",
+   "end": "2012-06-27 23:55:00",
+   "missing_share": 0.08109350825676487,
+   "mean_speed": 58.45972533258659,
+   "sigma_m": 2584.4501035796166,
+   "threshold": 0.1,
+   "kappa_m": 3921.714701713962,
+   "edges_directed": 1515,
+   "edges_undirected": 1313,
+   "mean_degree": 12.68599033816425,
+   "isolated": 1,
+   "split": {
+    "train": [
+     "2012-03-01 00:00:00",
+     "2012-05-23 07:05:00",
+     23990
+    ],
+    "val": [
+     "2012-05-23 07:10:00",
+     "2012-06-04 04:40:00",
+     3427
+    ],
+    "test": [
+     "2012-06-04 04:45:00",
+     "2012-06-27 23:55:00",
+     6855
+    ],
+    "origins_test": 6832
+   },
+   "alphas": {
+    "ar 15": 1000.0,
+    "arnb 15": 100000.0,
+    "arclock 15": 100000.0,
+    "arboth 15": 100000.0,
+    "ar 30": 1.0,
+    "arnb 30": 100000.0,
+    "arclock 30": 100000.0,
+    "arboth 30": 100000.0,
+    "ar 60": 1.0,
+    "arnb 60": 10000.0,
+    "arclock 60": 10000.0,
+    "arboth 60": 10000.0
+   },
+   "results": {
+    "last": {
+     "15": {
+      "mae": 3.5010766858836857,
+      "rmse": 6.42267227339438,
+      "mape": 8.620222063431262
+     },
+     "30": {
+      "mae": 4.2094516488246185,
+      "rmse": 8.057790103345324,
+      "mape": 10.86971956095345
+     },
+     "60": {
+      "mae": 5.382738653531983,
+      "rmse": 10.348391290213117,
+      "mape": 14.540641146844763
+     }
+    },
+    "ha": {
+     "15": {
+      "mae": 4.192826993049318,
+      "rmse": 7.861683016372021,
+      "mape": 13.061412072755024
+     },
+     "30": {
+      "mae": 4.192946094867155,
+      "rmse": 7.861784392389887,
+      "mape": 13.06165047317776
+     },
+     "60": {
+      "mae": 4.193356353266131,
+      "rmse": 7.862005647035026,
+      "mape": 13.06156133901071
+     }
+    },
+    "ar": {
+     "15": {
+      "mae": 3.310484032403911,
+      "rmse": 5.985383843362763,
+      "mape": 8.916528435688102
+     },
+     "30": {
+      "mae": 4.094270161833607,
+      "rmse": 7.4134367395675405,
+      "mape": 11.785152613930402
+     },
+     "60": {
+      "mae": 5.294663593453026,
+      "rmse": 9.168120262625008,
+      "mape": 16.132394761199762
+     }
+    },
+    "arnb": {
+     "15": {
+      "mae": 3.300971721886861,
+      "rmse": 5.75929332754033,
+      "mape": 8.783777958671019
+     },
+     "30": {
+      "mae": 4.049078484786392,
+      "rmse": 7.0942661791795665,
+      "mape": 11.416995916665018
+     },
+     "60": {
+      "mae": 5.1753643028765355,
+      "rmse": 8.760756359140377,
+      "mape": 15.33621357193605
+     }
+    },
+    "arclock": {
+     "15": {
+      "mae": 3.1882638238975045,
+      "rmse": 5.68067241800731,
+      "mape": 8.817573717606999
+     },
+     "30": {
+      "mae": 3.6568248688687595,
+      "rmse": 6.6264884023701285,
+      "mape": 10.68367348188826
+     },
+     "60": {
+      "mae": 4.029096310734194,
+      "rmse": 7.3866965079606555,
+      "mape": 12.173018203516197
+     }
+    },
+    "arboth": {
+     "15": {
+      "mae": 3.1781563004701856,
+      "rmse": 5.551869079208808,
+      "mape": 8.644352672493023
+     },
+     "30": {
+      "mae": 3.6465879442971265,
+      "rmse": 6.50483930504994,
+      "mape": 10.50099372811817
+     },
+     "60": {
+      "mae": 4.027372197372678,
+      "rmse": 7.316928035485551,
+      "mape": 12.063166835399326
+     }
+    }
+   },
+   "helped": {
+    "15": 125,
+    "30": 130,
+    "60": 156
+   },
+   "per_sensor_gain_60": {
+    "median": 0.057877869456651965,
+    "max": 1.55701410356318,
+    "min": -0.6376431815400601
+   },
+   "sweep": [
+    {
+     "cut": 0.0,
+     "kappa_km": null,
+     "edges": 11546,
+     "isolated": 0,
+     "mean_degree": 71.18840579710145,
+     "mae15": 3.300930554633874,
+     "mae60": 5.16888204372267
+    },
+    {
+     "cut": 0.1,
+     "kappa_km": 3.9217147017139617,
+     "edges": 1515,
+     "isolated": 1,
+     "mean_degree": 12.68599033816425,
+     "mae15": 3.300971721886861,
+     "mae60": 5.1753643028765355
+    },
+    {
+     "cut": 0.3,
+     "kappa_km": 2.8358058263071877,
+     "edges": 791,
+     "isolated": 2,
+     "mean_degree": 7.0144927536231885,
+     "mae15": 3.2970682700981464,
+     "mae60": 5.180404108256336
+    },
+    {
+     "cut": 0.5,
+     "kappa_km": 2.151695851042199,
+     "edges": 469,
+     "isolated": 5,
+     "mean_degree": 4.2898550724637685,
+     "mae15": 3.2904999943124986,
+     "mae60": 5.1853709490968365
+    },
+    {
+     "cut": 0.7,
+     "kappa_km": 1.5434922484137181,
+     "edges": 255,
+     "isolated": 25,
+     "mean_degree": 2.347826086956522,
+     "mae15": 3.2847586514871487,
+     "mae60": 5.200412919054794
+    },
+    {
+     "cut": 0.9,
+     "kappa_km": 0.8388940144000024,
+     "edges": 112,
+     "isolated": 68,
+     "mean_degree": 0.9855072463768116,
+     "mae15": 3.307070605596277,
+     "mae60": 5.246053917610368
+    }
+   ],
+   "example": {
+    "jam_slot": 214,
+    "onset_slot": 202,
+    "candidates": 104,
+    "sensor": "773869",
+    "index": 0,
+    "neighbours": 18,
+    "origin": "2012-06-21 16:10:00",
+    "morning": {
+     "t": [
+      -55,
+      -50,
+      -45,
+      -40,
+      -35,
+      -30,
+      -25,
+      -20,
+      -15,
+      -10,
+      -5,
+      0,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60
+     ],
+     "speed": [
+      63.625,
+      65.25,
+      64.66666412353516,
+      65.0,
+      66.0,
+      63.33333206176758,
+      64.5,
+      62.44444274902344,
+      62.88888931274414,
+      65.125,
+      65.875,
+      62.44444274902344,
+      61.375,
+      27.88888931274414,
+      18.875,
+      19.375,
+      20.75,
+      21.0,
+      22.875,
+      16.55555534362793,
+      16.625,
+      20.125,
+      14.666666984558105,
+      19.75
+     ],
+     "neighbours": [
+      61.78084138373515,
+      62.38532662965298,
+      63.660555265023795,
+      65.07721956460598,
+      64.46790255624289,
+      62.511005900167866,
+      62.174563168143465,
+      62.49719490178816,
+      62.25456726434523,
+      60.78075631371765,
+      58.76969019003136,
+      53.26479344042428,
+      48.30705682917206,
+      46.67318134234996,
+      44.33581651668213,
+      40.74532067306155,
+      39.58240876878183,
+      38.77625525266353,
+      36.46677209538391,
+      34.54179433491584,
+      31.510935829145957,
+      31.694083926343755,
+      30.037096107988088,
+      29.934380548334193
+     ],
+     "last": [
+      62.44444274902344,
+      62.44444274902344,
+      62.44444274902344
+     ],
+     "ha": [
+      45.705247243245445,
+      47.526388549804686,
+      31.52658748626709
+     ],
+     "ar": [
+      62.569390999723865,
+      62.38872103246459,
+      62.06744422855693
+     ],
+     "arnb": [
+      57.66773758314613,
+      55.96040456182673,
+      50.229557072735204
+     ],
+     "arclock": [
+      55.94263888875551,
+      53.27435859435659,
+      35.03055471716662
+     ],
+     "arboth": [
+      53.89688741441762,
+      50.963975643130446,
+      33.19936334486285
+     ]
+    }
+   },
+   "li2018": {
+    "source": "Li, Yu, Shahabi and Liu 2018, ICLR, Table 1, p. 5",
+    "HA": {
+     "15": [
+      4.16,
+      7.8,
+      13.0
+     ],
+     "30": [
+      4.16,
+      7.8,
+      13.0
+     ],
+     "60": [
+      4.16,
+      7.8,
+      13.0
+     ]
+    },
+    "ARIMAkal": {
+     "15": [
+      3.99,
+      8.21,
+      9.6
+     ],
+     "30": [
+      5.15,
+      10.45,
+      12.7
+     ],
+     "60": [
+      6.9,
+      13.23,
+      17.4
+     ]
+    },
+    "VAR": {
+     "15": [
+      4.42,
+      7.89,
+      10.2
+     ],
+     "30": [
+      5.41,
+      9.13,
+      12.7
+     ],
+     "60": [
+      6.52,
+      10.11,
+      15.8
+     ]
+    },
+    "SVR": {
+     "15": [
+      3.99,
+      8.45,
+      9.3
+     ],
+     "30": [
+      5.05,
+      10.87,
+      12.1
+     ],
+     "60": [
+      6.72,
+      13.76,
+      16.7
+     ]
+    },
+    "FNN": {
+     "15": [
+      3.99,
+      7.94,
+      9.9
+     ],
+     "30": [
+      4.23,
+      8.17,
+      12.9
+     ],
+     "60": [
+      4.49,
+      8.69,
+      14.0
+     ]
+    },
+    "FC-LSTM": {
+     "15": [
+      3.44,
+      6.3,
+      9.6
+     ],
+     "30": [
+      3.77,
+      7.23,
+      10.9
+     ],
+     "60": [
+      4.37,
+      8.69,
+      13.2
+     ]
+    },
+    "DCRNN": {
+     "15": [
+      2.77,
+      5.38,
+      7.3
+     ],
+     "30": [
+      3.15,
+      6.45,
+      8.8
+     ],
+     "60": [
+      3.6,
+      7.59,
+      10.5
+     ]
+    }
+   },
+   "cini2023": {
+    "source": "Cini, Marisca, Zambon and Alippi 2023, arXiv 2310.15978, Table 2, p. 19",
+    "RNN": 3.54,
+    "RNN+AMP": 3.24,
+    "GCRNN-AMP": 3.22,
+    "RNN with embeddings": 3.15,
+    "RNN+AMP with embeddings": 3.06
+   },
+   "line": {
+    "rule": "same kernel and sigma as the road graph, cut at the straight-line distance that joins as many pairs as the release",
+    "kappa_m": 2363.2520361844695,
+    "pairs": 1313,
+    "shared": 931,
+    "same_cut_pairs": 2631,
+    "line_only": 382,
+    "road_only": 382,
+    "line_only_far": 15,
+    "pair": {
+     "a": "773996",
+     "b": "773995",
+     "index": [
+      152,
+      153
+     ],
+     "line_m": 31.051389137313166,
+     "road_ab_m": 6621.7,
+     "road_ba_m": 6741.6,
+     "in_road_graph": false
+    },
+    "results": {
+     "arnb": {
+      "15": {
+       "mae": 3.3139762263708787,
+       "rmse": 5.870082892825009,
+       "mape": 8.903054843465014
+      },
+      "30": {
+       "mae": 4.07402645770883,
+       "rmse": 7.197941628859459,
+       "mape": 11.526837772523187
+      },
+      "60": {
+       "mae": 5.210374763051534,
+       "rmse": 8.88772176374639,
+       "mape": 15.59210428972603
+      }
+     },
+     "arboth": {
+      "15": {
+       "mae": 3.1866381075888475,
+       "rmse": 5.6261554135496645,
+       "mape": 8.749151063444746
+      },
+      "30": {
+       "mae": 3.655442137026284,
+       "rmse": 6.576322502091419,
+       "mape": 10.61090124061323
+      },
+      "60": {
+       "mae": 4.03272364225686,
+       "rmse": 7.36095743505788,
+       "mape": 12.134479932923787
+      }
+     }
+    },
+    "alphas": {
+     "arnb 15": 100000.0,
+     "arboth 15": 100000.0,
+     "arnb 30": 10000.0,
+     "arboth 30": 100000.0,
+     "arnb 60": 1000.0,
+     "arboth 60": 10000.0
+    },
+    "helped_60": 145,
+    "road_beats_line_60": 121
+   }
+  },
+  "toy": {
+   "toy n": "7",
+   "toy m": "9",
+   "toy degrees": "2, 3, 3, 3, 3, 2, 2",
+   "toy x": "0, 2, 1, 3, 1, 0, 2",
+   "toy Ax": "3, 4, 3, 3, 6, 5, 1",
+   "toy sum 1": "3, 4, 3, 3, 6, 5, 1",
+   "toy sum 2": "7, 9, 13, 15, 7, 4, 11",
+   "toy smooth": "25",
+   "toy lambda2": "0.75",
+   "toy lambda max": "5.25",
+   "toy loss uniform": "1.10",
+   "toy total food": "9",
+   "toy sum1 total": "25",
+   "toy degree sum": "18",
+   "toy x A": "0",
+   "toy d A": "2",
+   "toy Ax A": "3",
+   "toy sum1 A": "3",
+   "toy loops1 A": "3",
+   "toy mean1 A": "1.00",
+   "toy sym1 A": "0.87",
+   "toy sum2 A": "7",
+   "toy loops2 A": "13",
+   "toy mean2 A": "1.17",
+   "toy sym2 A": "1.01",
+   "toy mean32 A": "1.36",
+   "toy PX A": "0.87",
+   "toy H1a A": "0.87",
+   "toy H1b A": "0.00",
+   "toy fiedler A": "-0.53",
+   "toy Lx A": "-3",
+   "toy x B": "2",
+   "toy d B": "3",
+   "toy Ax B": "4",
+   "toy sum1 B": "4",
+   "toy loops1 B": "6",
+   "toy mean1 B": "1.50",
+   "toy sym1 B": "1.50",
+   "toy sum2 B": "9",
+   "toy loops2 B": "19",
+   "toy mean2 B": "1.25",
+   "toy sym2 B": "1.25",
+   "toy mean32 B": "1.36",
+   "toy PX B": "1.50",
+   "toy H1a B": "1.50",
+   "toy H1b B": "0.00",
+   "toy fiedler B": "-0.33",
+   "toy Lx B": "2",
+   "toy x C": "1",
+   "toy d C": "3",
+   "toy Ax C": "3",
+   "toy sum1 C": "3",
+   "toy loops1 C": "4",
+   "toy mean1 C": "1.00",
+   "toy sym1 C": "1.00",
+   "toy sum2 C": "13",
+   "toy loops2 C": "20",
+   "toy mean2 C": "1.31",
+   "toy sym2 C": "1.33",
+   "toy mean32 C": "1.36",
+   "toy PX C": "1.00",
+   "toy H1a C": "1.00",
+   "toy H1b C": "0.00",
+   "toy fiedler C": "-0.33",
+   "toy Lx C": "0",
+   "toy x D": "3",
+   "toy d D": "3",
+   "toy Ax D": "3",
+   "toy sum1 D": "3",
+   "toy loops1 D": "6",
+   "toy mean1 D": "1.50",
+   "toy sym1 D": "1.50",
+   "toy sum2 D": "15",
+   "toy loops2 D": "24",
+   "toy mean2 D": "1.60",
+   "toy sym2 D": "1.65",
+   "toy mean32 D": "1.36",
+   "toy PX D": "1.50",
+   "toy H1a D": "1.50",
+   "toy H1b D": "0.00",
+   "toy fiedler D": "0.12",
+   "toy Lx D": "6",
+   "toy x E": "1",
+   "toy d E": "3",
+   "toy Ax E": "6",
+   "toy sum1 E": "6",
+   "toy loops1 E": "7",
+   "toy mean1 E": "1.75",
+   "toy sym1 E": "1.83",
+   "toy sum2 E": "7",
+   "toy loops2 E": "20",
+   "toy mean2 E": "1.31",
+   "toy sym2 E": "1.36",
+   "toy mean32 E": "1.36",
+   "toy PX E": "1.83",
+   "toy H1a E": "1.83",
+   "toy H1b E": "0.00",
+   "toy fiedler E": "0.12",
+   "toy Lx E": "-3",
+   "toy x F": "0",
+   "toy d F": "2",
+   "toy Ax F": "5",
+   "toy sum1 F": "5",
+   "toy loops1 F": "5",
+   "toy mean1 F": "1.67",
+   "toy sym1 F": "1.53",
+   "toy sum2 F": "4",
+   "toy loops2 F": "14",
+   "toy mean2 F": "1.39",
+   "toy sym2 F": "1.26",
+   "toy mean32 F": "1.36",
+   "toy PX F": "1.53",
+   "toy H1a F": "1.53",
+   "toy H1b F": "0.00",
+   "toy fiedler F": "0.48",
+   "toy Lx F": "-5",
+   "toy x G": "2",
+   "toy d G": "2",
+   "toy Ax G": "1",
+   "toy sum1 G": "1",
+   "toy loops1 G": "3",
+   "toy mean1 G": "1.00",
+   "toy sym1 G": "0.96",
+   "toy sum2 G": "11",
+   "toy loops2 G": "15",
+   "toy mean2 G": "1.47",
+   "toy sym2 G": "1.36",
+   "toy mean32 G": "1.36",
+   "toy PX G": "0.96",
+   "toy H1a G": "0.96",
+   "toy H1b G": "0.00",
+   "toy fiedler G": "0.48",
+   "toy Lx G": "3",
+   "toy gcn onehot correct": "4",
+   "toy mlp onehot correct": "1",
+   "toy gcn onehot pred": "W, W, W, M, M, E, E",
+   "toy gcn onehot params": "47",
+   "toy gcn food correct": "3",
+   "toy mlp food correct": "1",
+   "toy gcn food pred": "W, W, W, M, W, E, E",
+   "toy gcn food params": "23",
+   "toy grad W": "0.08",
+   "toy grad M": "-0.13",
+   "toy grad E": "0.05"
+  },
+  "reach": {
+   "centre": 525,
+   "name": "Nassau Street",
+   "street": [
+    1,
+    5,
+    14,
+    27,
+    47,
+    76,
+    113,
+    155,
+    206
+   ],
+   "proximity": [
+    1,
+    7,
+    14,
+    24,
+    37,
+    58,
+    87,
+    108,
+    130
+   ],
+   "diameter_street": 33,
+   "components": 0,
+   "radius": {
+    "1": 138.5650608253513,
+    "2": 325.35529064966346,
+    "4": 584.4763545624309,
+    "8": 1538.5758638930404
+   },
+   "circle": {
+    "1": 9,
+    "2": 34,
+    "4": 98,
+    "8": 511
+   }
+  }
+ },
+ "files": {
+  "scene.json": {
+   "source": "the kit's parameters and the numbers of Lecture 08",
+   "licence": "CC BY 4.0, CEE420 Urban AI, the course's own work"
+  },
+  "toy.json": {
+   "source": "the seven places of Lecture 07 with the hand-worked numbers of Lecture 08 (data08.py --toy)",
+   "licence": "CC BY 4.0, CEE420 Urban AI, the course's own work"
+  },
+  "streets.npz": {
+   "source": "OpenStreetMap via osmnx 2.1.1, the drive network of Princeton of Lecture 07 read as an undirected simple graph, one node per street segment, the limit from the maxspeed tag; the embedding sampled at the midpoint from the AlphaEarth annual embedding of 2021; data/scripts/47_build_l08_streets.py",
+   "licence": "ODbL 1.0, (c) OpenStreetMap contributors; the 64 embedding numbers of every segment CC BY 4.0, Google and Google DeepMind, AlphaEarth Foundations Satellite Embedding dataset v1"
+  },
+  "streets.gpkg": {
+   "source": "OpenStreetMap via osmnx 2.1.1, the drive network of Princeton of Lecture 07 read as an undirected simple graph, one node per street segment, the limit from the maxspeed tag; the embedding sampled at the midpoint from the AlphaEarth annual embedding of 2021; data/scripts/47_build_l08_streets.py",
+   "licence": "ODbL 1.0, (c) OpenStreetMap contributors"
+  },
+  "lecture_main.npz": {
+   "source": "Lecture 08, Graph Learning, CEE420 Urban AI, the lecture's own runs with code/P08/graph_tools.py (train_streets.py --run main)",
+   "licence": "CC BY 4.0, CEE420 Urban AI, the course's own work"
+  },
+  "lecture_runs.json": {
+   "source": "Lecture 08, Graph Learning, CEE420 Urban AI, the lecture's own runs with code/P08/graph_tools.py (train_streets.py and train_gcn.py, twenty draws each)",
+   "licence": "CC BY 4.0, CEE420 Urban AI, the course's own work"
+  },
+  "metr_speeds.npz": {
+   "source": "METR-LA, Li et al. 2018, ICLR, from Caltrans PeMS; data/scripts/46_fetch_metr_la.py, the columns in the order of the sensor graph",
+   "licence": "no licence stated by the release; METR-LA of Li, Yu, Shahabi and Liu 2018 (the DCRNN release), loop-detector speeds of the Los Angeles County highways collected by Caltrans PeMS, credit both"
+  },
+  "metr_graph.npz": {
+   "source": "METR-LA, Li et al. 2018, ICLR, from Caltrans PeMS; data/scripts/46_fetch_metr_la.py, the columns in the order of the sensor graph; the errors per sensor from metr08.py",
+   "licence": "no licence stated by the release; METR-LA of Li, Yu, Shahabi and Liu 2018 (the DCRNN release), loop-detector speeds of the Los Angeles County highways collected by Caltrans PeMS, credit both"
+  }
+ }
+}

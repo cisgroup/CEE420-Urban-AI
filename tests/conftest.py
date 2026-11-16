@@ -221,3 +221,30 @@ def p07():
 @pytest.fixture(scope="session")
 def scene07():
     return json.loads((P07_DATA / "scene.json").read_text())
+
+
+# Precept 08, the street segments of Princeton as a graph, the lecture's runs, the toy and the sensors of METR-LA.
+P08_KIT = REPO / "P08"
+P08_DATA = P08_KIT / "data"
+
+
+@pytest.fixture(scope="session")
+def gt08():
+    """The kit's toolbox, loaded from its file so that no sys.path entry leaks into other tests (named gt08, not gt, so
+    that it shadows nothing of the other kits' tests)."""
+    from importlib.util import module_from_spec, spec_from_file_location
+
+    spec = spec_from_file_location("graph_tools_for_tests", P08_KIT / "graph_tools.py")
+    module = module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+@pytest.fixture(scope="session")
+def p08():
+    return json.loads((P08_DATA / "ground_truth.json").read_text())["p08"]
+
+
+@pytest.fixture(scope="session")
+def scene08():
+    return json.loads((P08_DATA / "scene.json").read_text())
